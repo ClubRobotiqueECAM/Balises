@@ -1,0 +1,46 @@
+session {11/12 10:00:30am > christine.billon opened job C:/ProgramData/Stratasys/FDMControlCenter/10.1/jobs/christine248/Default.sjb.  Insight 10.1 (4582).}
+msg {10:00:31am > Read 100698 facets in 0:00 from "D:/CAO/Support 360.STL"}
+msg {10:00:31am > STL comment: solid Support 360}
+msg {10:00:31am > 118 free surface edges left in model (object is not closed).}
+msg {10:00:31am > Bounding box of this STL X, Y, Z:}
+msg {10:00:31am >       min = (0.0462, 0.5628, 0.0000)}
+msg {10:00:31am >       max = (60.0460, 10.5628, 60.0000)}
+msg {10:00:31am > Done loading STL file after 1 sec.}
+msg {10:00:52am > 	Slice height:	0.2540}
+msg {10:00:54am > Done slicing after 2 sec.}
+msg {10:00:56am > Supports removed}
+msg {10:00:56am > 	Support style:	SMART}
+msg {10:00:57am > Inspecting part curves}
+msg {10:00:57am > Generating supports}
+msg {10:01:02am > Done generating supports after 6 sec.}
+msg {10:01:06am > 	Part fill style:	One contour /  rasters}
+msg {10:01:06am > 	Part interior style:	Sparse - low density}
+msg {10:01:06am > 	Contour width:	0.5080}
+msg {10:01:06am > 	Part raster width:	0.5080}
+msg {10:01:12am > Done generating toolpaths after 6 sec.}
+msg {10:06:39am > Done writing boundary curves.}
+msg {10:06:39am > CMB moved to envelope center.}
+msg {10:06:41am > Toolpath Information}
+msg {10:06:41am > 	Est. build time:	1 hr 37 min }
+msg {10:06:41am > 	Model material:	8.215 cm³}
+msg {10:06:41am > 	Support material:	5.521 cm³}
+msg {10:06:42am > Done writing CMB file.}
+msg {10:06:42am > Job Summary}
+msg {10:06:42am > 	Full job path:	D:/CAO/ssys_Support 360/Support 360.sjb}
+msg {10:06:42am > 	Toolpath file name:	Support 360.cmb}
+msg {10:06:42am > 	Modeler:		Fortus 250mc}
+msg {10:06:42am > 	Est. build time:	1 hr 37 min }
+msg {10:06:42am > 	Model material:	8.215 cm³,	T14,	ABS P430}
+msg {10:06:42am > 	Support material:	5.521 cm³,	T16,	ABS SR30}
+msg {10:06:42am > 	Slice height:	0.2540}
+msg {10:06:42am > 	Part fill style:	One contour /  rasters}
+msg {10:06:42am > 	Part interior style:	Sparse - low density}
+msg {10:06:42am > 	Visible surface style:	Enhanced}
+msg {10:06:42am > 	Support style:	SMART}
+msg {10:06:42am > 	Contour width:	0.5080}
+msg {10:06:42am > 	Number of contours:	6.3500}
+msg {10:06:42am > 	Part interior contours:	0.3810}
+msg {10:06:42am > 	Part raster width:	0.5080}
+msg {10:06:42am > 	Application:	Insight 10.1, Build version: 4582}
+msg {10:06:42am > Saved job:  D:/CAO/ssys_Support 360/Support 360.sjb,  approximate build time 1 hr 37 min }
+session {11/12 10:13:51am > christine.billon closed job.}

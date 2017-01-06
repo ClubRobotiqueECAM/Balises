@@ -1,0 +1,32 @@
+
+global restoreLock;
+if { $restoreLock != "restoreSets" } {
+	errormsg "Cannot restore a set file without restoreSets.";
+	return;
+};
+
+				# Variables in sliceParams
+setVersionVar autoMinWall 	{false} 1.0;
+setVersionVar oldIntersectorNonSlicer 	{false} 1.0;
+setVersionVar oldSliceMergeMethod 	{false} 1.0;
+setVersionVar reqSliceBottom 	{0.000000} 1.0;
+setVersionVar reqSliceTop 	{12.000000} 1.0;
+setVersionVar sliceAutoClose 	{true} 1.0;
+setVersionVar sliceFilterTolerance 	{0.0004} 1.0;
+setVersionVar sliceHeight 	{0.010} 1.0;
+setVersionVar sliceNeverClose 	{false} 1.0;
+setVersionVar sliceOpenTolerance 	{0.005} 1.0;
+setVersionVar stlRotateX 	{90.000} 1.0;
+setVersionVar stlRotateY 	{0.000} 1.0;
+setVersionVar stlRotateZ 	{0.000} 1.0;
+setVersionVar stlSize 	{1.181100 2.362000 0.393700} 1.0;
+setVersionVar stlSurfaceArea 	{6.846413} 1.0;
+setVersionVar stlUnits 	{mm} 1.0;
+setVersionVar stlVolume 	{0.251690} 1.0;
+setVersionVar useNoPerimSparseFill 	{false} 1.0;
+setVersionVar useSMARTsupports 	{false} 1.0;
+setVersionVar useSliceBottom 	{false} 1.0;
+setVersionVar useSliceTop 	{false} 1.0;
+
+null " "
+

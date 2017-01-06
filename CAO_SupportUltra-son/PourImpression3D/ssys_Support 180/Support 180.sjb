@@ -1,0 +1,6 @@
+# Product version 10.1
+# Build version 4582
+setVersionVar currentJobCore "Support 180";
+setVersionVar stlDirectory "D:/CAO";
+setVersionVar stlPath "D:/CAO/Support 180.STL";
+setVersionVar toolpathFile "Support 180.cmb";

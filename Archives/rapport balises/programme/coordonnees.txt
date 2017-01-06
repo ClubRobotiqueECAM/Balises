@@ -1,0 +1,76 @@
+FORMULE D AL KASHI
+
+Dans le triangle quelconque RBgBd, on a les relations suivantes
+
+a² = RBd² + RBc² - 2RBd.RBc.cos(alpha)
+
+b² = RBc² + RBg² - 2RBc.RBg.cos(béta)
+
+FORMULES DES SINUS
+
+a/sin(alpha) = RBc/sin(Bd)
+
+b/sin(béta) = RBc/sin(Bg)
+
+FORMULES DE PYTHAGORE
+
+RBd² = X² + (a+b-Y)²
+
+RBc²= X² + (b-Y)²
+
+RBg² = X² + Y²
+
+ 
+__________________________________
+Avec ces trois relations, il s'agit de trouver une formule qui donne X et Y en fonction d' alpha et béta:
+
+on sait que sin(Bd) = X / RBd et que sin(Bg) = X / RBg, en remplaçant dans la formule des sinus, on trouve :
+
+RBc.RBd =  (a.X / sin(alpha) et RBc.RBg = (b.X / sin(beta) ).
+
+On peut alors remplacer les produits RBc.RBd  et RBc.RBg dans la formule d Al Kashi:
+
+En remplaçant RBd², RBg² et RBc², on obtient :
+
+ a² = X² + (a+b-Y)² + X² + (b-Y)² - 2. (a.X / sin(alpha)).cos(alpha)
+
+ b² = X² + (b-Y)² + X² + Y² - 2. (b.X / sin(beta)).cos(beta)
+
+En faisant (1-2) on trouve:
+
+a²-b²=(a+b-Y)²-Y²-2.X.((a.X / sin(alpha)).cos(alpha)-(b.X / sin(beta)).cos(beta))
+
+
+
+Nous disposons donc d'une première relation liant X,Y et Alpha,Beta. Il en faut une seconde:
+
+_________________________________________
+Comme me l'a fait si justement remarquer Mr G.Tetu (Ingénieur en Traitement d image), il est intéressant de s' intéresser aux tangentes:
+
+soit beta' l angle tel que tan(beta') = Y/X et alpha' l angle tel que tan(alpha') = (a+b-Y)/X
+
+On a (alpha' + beta') = (alpha + beta). 
+
+En se servant de la relation tan(a+b) = (tan a + tan b) / (1-tan a . tan b),
+
+on peut affirmer que :
+
+TAN (ALPHA + BETA) = (X.(a+b)) / (X² - Y(a+b-Y))
+
+___________________________________________
+Il suffit d'injecter le X trouvé à l'étape 1 dans la formule précédente, et on trouve :
+
+a.Y² + bY + c = 0
+
+a = (4+T²)*(t/T)
+
+b = (-2L/T²).(4+T²).t - 4.L/T
+
+c = (4.L².t)/T² + 4.L²/T
+
+t = Tan(Alpha+beta)
+
+T = (cos (BETA)/sin(BETA)) - (cos (ALPHA)/sin(ALHA))
+
+Cette équation du second degré linéaire en Y se résout par la méthode classique du discriminant, on trouve alors une ou deux valeurs pour Y. En remplaçant dans le résultat du calcul de l'étape 1, on trouve un ou deux couples X,Y. Le couple valide est celui pour lequel X et Y sont positifs.
+

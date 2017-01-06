@@ -1,0 +1,6 @@
+# Product version 10.1
+# Build version 4582
+setVersionVar currentJobCore "Support 90";
+setVersionVar stlDirectory "D:/CAO";
+setVersionVar stlPath "D:/CAO/Support 90.STL";
+setVersionVar toolpathFile "Support 90.cmb";

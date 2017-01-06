@@ -1,0 +1,21 @@
+{VERSION 3 0 "SUN SPARC SOLARIS" "3.0" }
+{USTYLETAB {CSTYLE "Maple Input" -1 0 "Courier" 0 1 255 0 0 1 0 1 0 0 
+1 0 0 0 0 }{CSTYLE "2D Math" -1 2 "Times" 0 1 0 0 0 0 0 0 2 0 0 0 0 0 
+0 }{CSTYLE "2D Output" 2 20 "" 0 1 0 0 255 1 0 0 0 0 0 0 0 0 0 }
+{PSTYLE "Normal" -1 0 1 {CSTYLE "" -1 -1 "" 0 1 0 0 0 0 0 0 0 0 0 0 0 
+0 0 }0 0 0 -1 -1 -1 0 0 0 0 0 0 -1 0 }{PSTYLE "Maple Output" 0 11 1 
+{CSTYLE "" -1 -1 "" 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 }3 3 0 -1 -1 -1 0 0 
+0 0 0 0 -1 0 }{PSTYLE "" 11 12 1 {CSTYLE "" -1 -1 "" 0 1 0 0 0 0 0 0 
+0 0 0 0 0 0 0 }1 0 0 -1 -1 -1 0 0 0 0 0 0 -1 0 }}
+{SECT 0 {EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 8 "restart;" }}}{EXCHG 
+{PARA 0 "> " 0 "" {MPLTEXT 1 0 35 "alpha:=solve(y/x=tan(alpha),alpha);
+" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#>%&alphaG-%'arctanG6#*&%\"yG\"\"\"
+%\"xG!\"\"" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 69 "solve(\{y/(x+
+b)=tan(alpha-alpha1) , y/(x-c)=tan(alpha+alpha2)\},\{x,y\});" }}{PARA 
+0 "> " 0 "" {MPLTEXT 1 0 0 "" }}{PARA 12 "" 1 "" {XPPMATH 20 "6#<$/%\"
+xG*&**,&*&%\"bG\"\"\"-%$tanG6#%'alpha2GF+F+*&%\"cGF+-F-6#%'alpha1GF+!
+\"\"F+F*\"\"\"F1F6,&F2F+F,F+F+F6,.*()F,\"\"#F6)F2F;F6)F1F;F6F+**F:F6F<
+F6F1F6F*F6F;*(F:F6F<F6)F*F;F6F+*&F@F6F:F6F+**F*F6F,F6F1F6F2F6!\"#*&F=F
+6F<F6F+!\"\"/%\"yG*&*.F,F6F2F6,&F1F+F*F+F+F*F6F1F6F7F6F6F8FE" }}}
+{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 0 "" }}}{EXCHG {PARA 0 "> " 0 "
+" {MPLTEXT 1 0 0 "" }}}}{MARK "3 0 0" 0 }{VIEWOPTS 1 1 0 1 1 1803 }

@@ -1,0 +1,6 @@
+# Product version 10.1
+# Build version 4582
+setVersionVar currentJobCore "Support 360";
+setVersionVar stlDirectory "D:/CAO";
+setVersionVar stlPath "D:/CAO/Support 360.STL";
+setVersionVar toolpathFile "Support 360.cmb";

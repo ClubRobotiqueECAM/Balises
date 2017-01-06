@@ -1,0 +1,29 @@
+JDF E
+// Created by ISE ver 1.0
+PROJECT R2
+DESIGN r2 Normal
+DEVKIT XC9536XL PC44
+DEVFAM xc9500xl
+FLOW XST VHDL
+STIMULUS testbench2.vhd Normal
+MODULE gener_trame.vhd
+MODSTYLE gen_trame Normal
+MODULE capteurs.vhd
+MODSTYLE filtre Normal
+MODULE carte.vhd
+MODSTYLE carte Normal
+MODULE timers.vhd
+MODSTYLE timers Normal
+MODULE horloges.vhd
+MODSTYLE horloges Normal
+
+[STRATEGY-LIST]
+Normal=True, 1046337448
+
+[Normal]
+xcpldFitTemplate=xstvhd, 9500XL, Implementation.t_fitDes, 1046337718, Optimize Density
+xcpldFitDesSlew=xstvhd, 9500XL, Implementation.t_fitDes, 1051454587, Slow
+xcpldFitDesInit=xstvhd, 9500XL, Implementation.t_fitDes, 1051454414, High
+xcpldFitDesPower=xstvhd, 9500XL, Implementation.t_fitDes, 1051454587, Low
+_SynthOpt=xstvhd, 9500XL, Schematic.t_synthesize, 1046337729, Area
+_SynthOptEffort=xstvhd, 9500XL, Schematic.t_synthesize, 1046337729, High

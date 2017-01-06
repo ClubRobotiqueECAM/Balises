@@ -1,0 +1,2 @@
+x=((b*tan(alpha2)-c*tan(alpha1))*b*c*(tan(alpha1)+tan(alpha2)))/(tan(alpha2)^2*tan(alpha1)^2*c^2+2*tan(alpha2)^2*tan(alpha1)^2*c*b+tan(alpha2)^2*tan(alpha1)^2*b^2+b^2*tan(alpha2)^2-2*b*tan(alpha2)*c*tan(alpha1)+c^2*tan(alpha1)^2) + a+b
+y=(tan(alpha2)*tan(alpha1)*(c+b)*b*c*(tan(alpha1)+tan(alpha2)))/(tan(alpha2)^2*tan(alpha1)^2*c^2+2*tan(alpha2)^2*tan(alpha1)^2*c*b+tan(alpha2)^2*tan(alpha1)^2*b^2+b^2*tan(alpha2)^2-2*b*tan(alpha2)*c*tan(alpha1)+c^2*tan(alpha1)^2)

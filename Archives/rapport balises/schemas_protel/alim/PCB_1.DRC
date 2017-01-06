@@ -1,0 +1,51 @@
+Protel Design System Design Rule Check
+PCB File : U:\ROBOT2~1\BALISES\ALIM3\PCB_1.PCB
+Date     : 15-May-2003
+Time     : 13:24:52
+
+Processing Rule : Width Constraint (Min=0.254mm) (Max=0.3mm)  Scope=Board
+   Violation         Polygon Arc (36.25mm,41.5mm)  Top Layer  Actual Width = 0.5mm
+   Violation         Polygon Arc (29.75mm,31.5mm)  Top Layer  Actual Width = 0.5mm
+   Violation         Polygon Arc (36.25mm,29.25mm)  Top Layer  Actual Width = 0.5mm
+   Violation         Polygon Arc (36.25mm,29.25mm)  Top Layer  Actual Width = 0.5mm
+   Violation         Polygon Arc (27.75mm,32.5mm)  Top Layer  Actual Width = 0.5mm
+   Violation         Polygon Arc (27.75mm,32.5mm)  Top Layer  Actual Width = 0.5mm
+   Violation         Polygon Arc (32mm,25mm)  Top Layer  Actual Width = 0.5mm
+   Violation         Polygon Arc (32mm,25mm)  Top Layer  Actual Width = 0.5mm
+   Violation         Polygon Arc (25.75mm,25mm)  Top Layer  Actual Width = 0.5mm
+   Violation         Polygon Arc (21.25mm,38.5mm)  Top Layer  Actual Width = 0.5mm
+   Violation         Polygon Arc (21.25mm,38.5mm)  Top Layer  Actual Width = 0.5mm
+   Violation         Polygon Arc (15.75mm,34.75mm)  Top Layer  Actual Width = 0.5mm
+   Violation         Polygon Track (41.98mm,42.1mm)(46.18mm,42.1mm)  Top Layer  Actual Width = 0.5mm
+   Violation         Polygon Track (44.08mm,40mm)(44.08mm,41.85mm)  Top Layer  Actual Width = 0.5mm
+   Violation         Polygon Track (41.1mm,41.8477mm)(41.98mm,41.8477mm)  Top Layer  Actual Width = 0.5mm
+   Violation         Polygon Track (41.1mm,41.59169mm)(41.98mm,41.59169mm)  Top Layer  Actual Width = 0.5mm
+   Violation         Polygon Track (44.08mm,40mm)(45.93mm,40mm)  Top Layer  Actual Width = 0.5mm
+   Violation         Polygon Track (42.23mm,40mm)(44.08mm,40mm)  Top Layer  Actual Width = 0.5mm
+   Violation         Polygon Track (41.1mm,41.33568mm)(41.98mm,41.33568mm)  Top Layer  Actual Width = 0.5mm
+   Violation         Polygon Track (41.1mm,41.07967mm)(41.98mm,41.07967mm)  Top Layer  Actual Width = 0.5mm
+   Violation         Polygon Track (41.1mm,40.82366mm)(41.98mm,40.82366mm)  Top Layer  Actual Width = 0.5mm
+   Violation         Polygon Track (41.1mm,40.56766mm)(41.98mm,40.56766mm)  Top Layer  Actual Width = 0.5mm
+   Violation         Polygon Track (41.1mm,40.31165mm)(41.98mm,40.31165mm)  Top Layer  Actual Width = 0.5mm
+   Violation         Polygon Track (41.1mm,40.05564mm)(41.98mm,40.05564mm)  Top Layer  Actual Width = 0.5mm
+   Violation         Polygon Track (41.1mm,39.79963mm)(41.98mm,39.79963mm)  Top Layer  Actual Width = 0.5mm
+   Violation         Polygon Track (46.18mm,37.9mm)(46.18mm,42.1mm)  Top Layer  Actual Width = 0.5mm
+   Violation         Polygon Track (46.5mm,33.104mm)(46.5mm,46.50001mm)  Top Layer  Actual Width = 0.5mm
+   Violation         Polygon Track (44.08mm,38.15mm)(44.08mm,40mm)  Top Layer  Actual Width = 0.5mm
+   Violation         Polygon Track (41.1mm,39.54362mm)(41.98mm,39.54362mm)  Top Layer  Actual Width = 0.5mm
+   Violation         Polygon Track (41.98mm,37.9mm)(46.18mm,37.9mm)  Top Layer  Actual Width = 0.5mm
+Rule Violations :30
+
+Processing Rule : Clearance Constraint (Gap=0.3mm)  Scope=Board - Different Nets Only
+Rule Violations :0
+
+Processing Rule : Broken-Net Constraint (  Scope=Board )
+Rule Violations :0
+
+Processing Rule : Short-Circuit Constraint (Allowed=Not Allowed)  Scope=Board - Different Nets Only
+Rule Violations :0
+
+More than 30 violations detected. DRC stopped!
+
+Violations Detected : 31
+Time Elapsed        : 00:00:03

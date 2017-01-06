@@ -1,0 +1,1393 @@
+%-12345X@PJL JOB
+@PJL SET RESOLUTION = 600
+@PJL ENTER LANGUAGE = POSTSCRIPT 
+
+%!PS-Adobe-3.0
+%%Title: PCB U:\ROBOT2~1\BALISES\TOURELLE\TOURELLE.PCB
+%%Creator: PSCRIPT.DRV Version 4.0
+%%CreationDate: 03/28/03 14:10:47
+%%BoundingBox: 14 13 581 829 
+%%Pages: (atend)
+%%PageOrder: Special
+%%Requirements: 
+%%DocumentNeededFonts: (atend)
+%%DocumentSuppliedFonts: (atend)
+%%DocumentData: Clean7Bit
+%%LanguageLevel: 2
+%%EndComments
+
+%%BeginProlog 
+%%BeginProcSet: Pscript_Win_ErrorHandler 1.0 1
+/currentpacking where{pop/oldpack currentpacking def/setpacking where{pop
+false setpacking}if}if/$brkpage 64 dict def $brkpage begin/prnt{dup type
+/stringtype ne{=string cvs}if dup length 6 mul/tx exch def/ty 10 def
+currentpoint/toy exch def/tox exch def 1 setgray newpath tox toy 2 sub moveto
+0 ty rlineto tx 0 rlineto 0 ty neg rlineto closepath fill tox toy moveto 0
+setgray show}bind def/nl{currentpoint exch pop lmargin exch moveto 0 -10
+rmoveto}def/=={/cp 0 def typeprint nl}def/typeprint{dup type exec}readonly def
+/lmargin 72 def/rmargin 72 def/tprint{dup length cp add rmargin gt{nl/cp 0 def
+}if dup length cp add/cp exch def prnt}readonly def/cvsprint{=string cvs
+tprint( )tprint}readonly def/integertype{cvsprint}readonly def/realtype{
+cvsprint}readonly def/booleantype{cvsprint}readonly def/operatortype{(--)
+tprint =string cvs tprint(-- )tprint}readonly def/marktype{pop(-mark- )tprint}
+readonly def/dicttype{pop(-dictionary- )tprint}readonly def/nulltype{pop
+(-null- )tprint}readonly def/filetype{pop(-filestream- )tprint}readonly def
+/savetype{pop(-savelevel- )tprint}readonly def/fonttype{pop(-fontid- )tprint}
+readonly def/nametype{dup xcheck not{(/)tprint}if cvsprint}readonly def
+/stringtype{dup rcheck{(\()tprint tprint(\))tprint}{pop(-string- )tprint}
+ifelse}readonly def/arraytype{dup rcheck{dup xcheck{({)tprint{typeprint}forall
+(})tprint}{([)tprint{typeprint}forall(])tprint}ifelse}{pop(-array- )tprint}
+ifelse}readonly def/packedarraytype{dup rcheck{dup xcheck{({)tprint{typeprint}
+forall(})tprint}{([)tprint{typeprint}forall(])tprint}ifelse}{pop
+(-packedarray- )tprint}ifelse}readonly def/courier/Courier findfont 10
+scalefont def end errordict/handleerror{systemdict begin $error begin $brkpage
+begin newerror{/newerror false store vmstatus pop pop 0 ne{grestoreall}if
+showpage initgraphics courier setfont lmargin 720 moveto(ERROR: )prnt
+errorname prnt nl(OFFENDING COMMAND: )prnt/command load prnt $error/ostack
+known{nl nl(STACK:)prnt nl nl $error/ostack get aload length{==}repeat}if
+systemdict/showpage get exec(%%[ Error: )print errorname =print
+(; OffendingCommand: )print/command load =print( ]%%)= flush}if end end end}
+dup 0 systemdict put dup 4 $brkpage put bind readonly put/currentpacking where
+{pop/setpacking where{pop oldpack setpacking}if}if
+%%EndProcSet
+userdict /Pscript_Win_Driver_Incr 200 dict dup begin put
+%%BeginResource: file Pscript_FatalError 2.0 0
+/FatalErrorIf{{initgraphics findfont exch scalefont setfont counttomark 3 div
+cvi{moveto show}repeat showpage quit}{cleartomark}ifelse}bind def
+%%EndResource
+/VM? {vmstatus exch sub exch pop gt { [
+(Ce travail nécessite une mémoire plus grande que celle dont l'imprimante dispose.) 100 500
+(Essayez d'effectuer une ou plusieurs des opérations suivantes et imprimez à nouveau :) 100 485
+(Dans la boîte de dialogue PostScript, cliquez sur Optimiser la portabilité.) 115 470
+(Dans la boîte de dialogue Options du périphérique, vérifiez que la mémoire disponible de l'imprimante est correcte.) 115 455
+(Diminuez le nombre de polices dans le document.) 115 440
+(Imprimez le document par parties.) 115 425
+12 /Times-Roman showpage
+(%%[ PrinterError: Low Printer VM ]%%) =
+true FatalErrorIf}if} bind def
+30000  VM?
+%%BeginResource: file Pscript_Win_Utils 2.0 0
+/|/def load def/,/load load |/~/exch , |/?/ifelse , |/!/pop , |/`/begin , |/^
+/index , |/@/dup , |/+/translate , |/$/roll , |/U/userdict , |/M/moveto , |/-
+/rlineto , |/&/currentdict , |/:/gsave , |/;/grestore , |/F/false , |/T/true ,
+|/N/newpath , |/E/end , |/Ac/arc , |/An/arcn , |/A/ashow , |/D/awidthshow , |
+/C/closepath , |/V/div , |/O/eofill , |/L/fill , |/I/lineto , |/-C/rcurveto ,
+|/-M/rmoveto , |/+S/scale , |/Ji/setfont , |/Lc/setlinecap , |/Lj/setlinejoin
+, |/Lw/setlinewidth , |/S/show , |/LH/showpage , |/K/stroke , |/W/widthshow ,
+|/R/rotate , |/b{bind |}bind |/bd{bind |}bind |/xd{~ |}bd/ld{, |}bd/lw/Lw ld
+/lc/Lc ld/lj/Lj ld/sg/setgray ld/L2? F/languagelevel where{! languagelevel 2
+ge{! T}if}if |/g{@ not{U/DefIf_save save put}if U/DefIf_bool 2 ^ put}b
+/DefIf_El{if U/DefIf_bool get not @{U/DefIf_save get restore}if}b/e{DefIf_El !
+}b/self & |/reinitialize{[/TextInit/GraphInit/UtilsInit counttomark{@ where{
+self eq}{F}?{cvx exec}{!}?}repeat cleartomark}b/initialize{`{/ADO_mxRot ~ |
+/TextInitialised? F | reinitialize E}{U/Pscript_Win_Data 200 dict @ ` put
+/ADO_mxRot ~ |/TextInitialised? F | reinitialize}?}b/terminate{!{& self eq{
+exit}{E}?}loop E}b/suspend/terminate , |/resume{` Pscript_Win_Data `}b/snap{
+transform 0.25 sub round 0.25 add ~ 0.25 sub round 0.25 add ~ itransform}b
+/dsnap{dtransform round ~ round ~ idtransform}b<04>cvn{}|/setjn{{statusdict
+/jobname known{statusdict/jobname 3 -1 $ put}if}stopped cleartomark}b/solid{[]
+0 setdash}b/setdsh{0 setdash}b/colspRefresh{}b/rp{4 2 $ M 1 ^ 0 - 0 ~ - neg 0
+-}b/rr{1 ^ 0 - 0 ~ - neg 0 - C}b
+%%EndResource
+%%BeginResource: file Pscript_Win_Utils_L1 2.0 0
+L2? not g{/rf{N rp L}b/fx{1 1 dtransform @ 0 ge{1 sub 1}{1 add -0.25}? 3 -1 $
+@ 0 ge{1 sub 1}{1 add -0.25}? 3 1 $ 4 1 $ idtransform 4 -2 $ idtransform}b/BZ{
+4 -2 $ snap + +S fx rf}b/rs{N rp C K}b/rc{N rp clip N}b/sg{setgray}b/sco{
+setrgbcolor}b/sgco{{sg}{sco}?}b}e
+%%EndResource
+%%BeginResource: file Pscript_Win_Utils_L2 2.0 0
+L2? g{/colspA/DeviceGray |/colspABC/DeviceRGB |/setAorABC{{colspA}{colspABC}?
+setcolorspace}b/rf/rectfill , |/fx{1 1 dtransform @ 0 ge{1 sub 0.5}{1 add -0.5
+}? 3 -1 $ @ 0 ge{1 sub 0.5}{1 add -0.5}? 3 1 $ 4 1 $ idtransform 4 -2 $
+idtransform}b/BZ{4 -2 $ snap + +S fx rf}b/rs/rectstroke , |/rc/rectclip , |/sg
+{@ @ setcolor}b/sco{setcolor}b/colspRefresh{colspABC setcolorspace}b/sgco{{sg
+}{sco}?}b/UtilsInit{F setglobal}b/definecolorrendering{/ColorRendering
+defineresource !}b/findcolorrendering{@/ColorRendering resourcestatus{! !
+/ColorRendering findresource T}{! F}?}b/selectcolorrendering{@/ColorRendering
+resourcestatus{! !/ColorRendering}{!/DefaultColorRendering/ColorRendering}?
+findresource setcolorrendering}b}e
+%%EndResource
+end
+%%EndProlog
+
+%%BeginSetup 
+[ 0 1.000 -1.000 0 0 0 ] false Pscript_Win_Driver_Incr dup /initialize get exec
+
+[{0 
+/languagelevel where{pop languagelevel}{1}ifelse 2 ge{1 dict dup/JobTimeout  4 -1 roll put setuserparams}{statusdict/setjobtimeout get exec}ifelse 
+} stopped cleartomark
+[{240 
+/languagelevel where{pop languagelevel}{1}ifelse 2 ge{1 dict dup/WaitTimeout 4 -1 roll put setuserparams}{statusdict/waittimeout 3 -1 roll put}ifelse 
+} stopped cleartomark
+[{
+%%BeginFeature: *Levels of Gray Printer’s Current Setting
+
+%%EndFeature
+} stopped cleartomark
+[{
+
+             <</ManualFeed false>> setpagedevice
+} stopped cleartomark
+[{
+%%BeginFeature: *InputSlot AutoSelect Tray
+
+%%EndFeature
+} stopped cleartomark
+[{
+%%BeginFeature: *Resolution Enhancement Printer’s Current Setting
+
+%%EndFeature
+} stopped cleartomark
+[{
+%%BeginFeature: *PageSize A4
+
+             <</DeferredMediaSelection true /PageSize [595 842] /ImagingBBox null>> setpagedevice
+%%EndFeature
+} stopped cleartomark
+[{
+%%BeginFeature: *Duplex Off (1-Sided)
+
+    <</Duplex false>> setpagedevice
+%%EndFeature
+} stopped cleartomark
+1 setlinecap 1 setlinejoin 
+/mysetup [ 0 0.120 0.120 0 14.000 13.000 ] | 
+%%EndSetup
+
+userdict begin /savelevel0 save def end
+%%Page: 1 1
+%%BeginPageSetup
+[{
+%%BeginFeature: *Duplex Unit Not Installed
+
+%%EndFeature
+} stopped cleartomark
+[{
+%%BeginFeature: *Envelope Feeder Not Installed
+
+%%EndFeature
+} stopped cleartomark
+[{
+%%BeginFeature: *500-Sheet Tray 3 Not Installed
+
+%%EndFeature
+} stopped cleartomark
+[{
+%%BeginFeature: *VMOption 4MB
+
+%%EndFeature
+} stopped cleartomark
+userdict begin /pagesave save def end mysetup concat colspRefresh : 1.000 1.000 1.000 sco 0 0 7016 4958 rf ; 
+%%EndPageSetup
+
+30000  VM?
+pagesave restore
+mysetup concat 
+Pscript_Win_Driver_Incr begin
+%%BeginResource: file Pscript_Win_Encoding 2.0 0
+/bullets{{/bullet}repeat}b/ANSIEncoding[/grave/acute/circumflex/tilde/macron
+/breve/dotaccent/dieresis/ring/cedilla/hungarumlaut/ogonek/caron/dotlessi 18
+bullets StandardEncoding 32 95 getinterval aload ! 3 bullets/quotesinglbase
+/florin/quotedblbase/ellipsis/dagger/daggerdbl/circumflex/perthousand/Scaron
+/guilsinglleft/OE 4 bullets/quoteleft/quoteright/quotedblleft/quotedblright
+/bullet/endash/emdash/tilde/trademark/scaron/guilsinglright/oe 2 bullets
+/Ydieresis/space/exclamdown/cent/sterling/currency/yen/brokenbar/section
+/dieresis/copyright/ordfeminine/guillemotleft/logicalnot/hyphen/registered
+/macron/degree/plusminus/twosuperior/threesuperior/acute/mu/paragraph
+/periodcentered/cedilla/onesuperior/ordmasculine/guillemotright/onequarter
+/onehalf/threequarters/questiondown/Agrave/Aacute/Acircumflex/Atilde/Adieresis
+/Aring/AE/Ccedilla/Egrave/Eacute/Ecircumflex/Edieresis/Igrave/Iacute
+/Icircumflex/Idieresis/Eth/Ntilde/Ograve/Oacute/Ocircumflex/Otilde/Odieresis
+/multiply/Oslash/Ugrave/Uacute/Ucircumflex/Udieresis/Yacute/Thorn/germandbls
+/agrave/aacute/acircumflex/atilde/adieresis/aring/ae/ccedilla/egrave/eacute
+/ecircumflex/edieresis/igrave/iacute/icircumflex/idieresis/eth/ntilde/ograve
+/oacute/ocircumflex/otilde/odieresis/divide/oslash/ugrave/uacute/ucircumflex
+/udieresis/yacute/thorn/ydieresis]| ANSIEncoding @ 39/quotesingle put 96/grave
+put/ANSIEncodingOld ANSIEncoding 256 array copy | ANSIEncodingOld @[138 153
+154 169 172 174 177 178 179 181 185 188 189 190 208 215 221 222 240 247 253
+254]{/bullet put @}forall 166/bar put 176/ring put
+%%EndResource
+
+%%BeginResource: file Pscript_Win_Text 2.0 0
+/TextInit{TextInitialised? not{/Pscript_Windows_Font & |/TextInitialised? T |
+/fM[1 0 0 -1 0 0]|/mFM matrix |/iMat[1 0 0.212557 neg 1 0 0]|}if}b/xUP null |
+/yUP null |/uW null |/xSP null |/ySP null |/sW null |/copyfont{1 ^ length add
+dict `{1 ^/FID ne{|}{! !}?}forall & E}b/rF{3 copyfont @ `/Encoding
+ANSIEncoding &/CharStrings known{CharStrings/Eth known not{! ANSIEncodingOld}
+if}if | E}b/mF{findfont ~{@/Encoding get @ StandardEncoding eq{! T}{{
+ISOLatin1Encoding}stopped{! F}{eq}?{T}{@ ` T 32 1 127{Encoding 1 ^ get
+StandardEncoding 3 -1 $ get eq and}for E}?}?}{F}?{rF}{3 copyfont}? `
+/OrigFontType ~ |/OrigFontName ~ | & E 2 ^ ~ definefont fM 5 4 -1 $ put fM 4 0
+put fM makefont Pscript_Windows_Font 3 1 $ put}b/xF{scalefont
+Pscript_Windows_Font 3 1 $ put}b/xMF{mFM astore makefont Pscript_Windows_Font
+3 1 $ put}b/xF2/scalefont , |/xMF2{mFM astore makefont}b/sLT{: Lw -M
+currentpoint snap M 0 - 0 Lc K ;}b/sSU{N/uW ~ |/yUP ~ |/xUP ~ |}b/sU{xUP yUP
+uW sLT}b/sST{N/sW ~ |/ySP ~ |/xSP ~ |}b/sT{xSP ySP sW sLT}b/sR{: + R 0 0 M}b
+/sRxy{: matrix astore concat 0 0 M}b/eR/; , |
+%%EndResource
+
+%%BeginResource: file Pscript_Win_Text_Bold 2.0 0
+/mBF{@ 4 copyfont `/FontName ~ |/OrigFontType ~ |/OrigFontName ~ | 0
+FontMatrix idtransform ! &/PaintType known{PaintType 0 eq{/PaintType 2 |
+/StrokeWidth ~ |}{PaintType 1 eq PaintType 2 eq or PaintType 3 eq or &
+/StrokeWidth known and{StrokeWidth add/StrokeWidth ~ |}{!}?}?}{!}? @ & E
+definefont Pscript_Windows_Font 3 1 $ put}b/xBF{Pscript_Windows_Font ` 1 ^
+/FontName get 1 ^ scalefont 3 1 $ scalefont 2 copy ~ | ~ ! | E}b/xMBF{mFM
+astore Pscript_Windows_Font ` 1 ^/FontName get 1 ^ makefont 3 1 $ makefont 2
+copy ~ | ~ ! | E}b/xBF2{/sB0 ~ mBF/sB1 sB0 3 -1 $ xBF sB1}b/xMBF2{/sB0 ~ mBF
+mFM astore/sB1 sB0 3 -1 $ xMBF sB1}b/sB{: Pscript_Windows_Font currentfont get
+Ji @ S ; S}b/asB{: Pscript_Windows_Font currentfont get Ji 3 copy A ; A}b/wsB{
+: Pscript_Windows_Font currentfont get Ji 4 copy W ; W}b/awsB{:
+Pscript_Windows_Font currentfont get Ji 6 copy D ; D}b/sBT3{: @ S ; 1 1 -M S}b
+/asBT3{: 3 copy A ; 1 1 -M A}b/wsBT3{: 4 copy W ; 1 1 -M W}b/awsBT3{: 6 copy D
+; 1 1 -M D}b/mIF{iMat 4 3 -1 $ put 2 copyfont `/OrigFontType ~ |/OrigFontName
+~ | @ & E definefont iMat makefont Pscript_Windows_Font 3 1 $ put}b
+%%EndResource
+
+%%BeginResource: file Pscript_Win_Graphics 2.0 0
+/SavedCTM null |/CTMsave{/SavedCTM SavedCTM currentmatrix |}b/CTMrestore{
+SavedCTM setmatrix}b/mp null |/ADO_mxRot null |/GDIHMatrix null |
+/GDIHPatternDict 22 dict | GDIHPatternDict `/PatternType 1 |/PaintType 2 |
+/Reps L2?{1}{5}? |/XStep 8 Reps mul |/YStep XStep |/BBox[0 0 XStep YStep]|
+/TilingType 1 |/PaintProc{` 1 Lw[]0 setdash PaintData , exec E}b/FGnd null |
+/BGnd null |/HS_Horizontal{horiz}b/HS_Vertical{vert}b/HS_FDiagonal{fdiag}b
+/HS_BDiagonal{biag}b/HS_Cross{horiz vert}b/HS_DiagCross{fdiag biag}b/MaxXYStep
+XStep YStep gt{XStep}{YStep}? |/horiz{Reps{0 4 M XStep 0 - 0 8 +}repeat 0 -8
+Reps mul + K}b/vert{Reps{4 0 M 0 YStep - 8 0 +}repeat 0 -8 Reps mul + K}b/biag
+{Reps{0 0 M MaxXYStep @ - 0 YStep neg M MaxXYStep @ - 0 8 +}repeat 0 -8 Reps
+mul + 0 YStep M 8 8 - K}b/fdiag{Reps{0 0 M MaxXYStep @ neg - 0 YStep M
+MaxXYStep @ neg - 0 8 +}repeat 0 -8 Reps mul + MaxXYStep @ M 8 -8 - K}b E
+/makehatch{GDIHPatternDict/PaintData 3 -1 $ put CTMsave GDIHMatrix setmatrix
+GDIHPatternDict matrix mp CTMrestore ~ U ~ 2 ^ put}b/h0{/h0/HS_Horizontal
+makehatch}b/h1{/h1/HS_Vertical makehatch}b/h2{/h2/HS_FDiagonal makehatch}b/h3{
+/h3/HS_BDiagonal makehatch}b/h4{/h4/HS_Cross makehatch}b/h5{/h5/HS_DiagCross
+makehatch}b/GDIBWPatternDict 17 dict @ `/PatternType 1 |/PaintType L2?{1}{2}?
+|/RepsV L2?{1}{6}? |/RepsH L2?{1}{5}? |/BBox[0 0 RepsH 1]|/TilingType 1 |
+/XStep 1 |/YStep 1 |/Height 8 RepsV mul |/Width 8 |/mx[Width 0 0 Height neg 0
+Height]|/FGnd null |/BGnd null |/SetBGndFGnd L2?{{BGnd null ne{BGnd aload !
+sgco BBox aload ! 2 ^ sub ~ 3 ^ sub ~ rf}if FGnd null ne{FGnd aload ! sgco}if}
+}{{}}? b/PaintProc{` SetBGndFGnd RepsH{Width Height F mx PaintData imagemask
+Width 0 +}repeat E}b E |/GDIBWPatternMx null |/pfprep{save 4 1 $
+/PatternOfTheDay 4 1 $ GDIBWPatternDict `/PaintData ~ |/BGnd ~ |/FGnd ~ | E
+CTMsave GDIBWPatternMx setmatrix GDIBWPatternDict matrix mp CTMrestore ~ !}b
+/hrf null |/prf{pfprep ~ 6 1 $ 5 hrf restore}b/GraphInit{GDIHMatrix null eq{
+/SavedCTM matrix | : ADO_mxRot concat 0 0 snap + : 0.48 @ GDIHPatternDict `
+YStep mul ~ XStep mul ~ dsnap YStep V ~ XStep V ~ E +S/GDIHMatrix matrix
+currentmatrix readonly | ; : 0.24 -0.24 +S GDIBWPatternDict ` Width Height E
+dsnap +S/GDIBWPatternMx matrix currentmatrix readonly | ; ;}if}b/cirp{360 0 An
+C}b/ellp{CTMsave + +S 0.5 0 M 0 0 0.5 360 0 An C CTMrestore}b/rrp{/rad ~ |/y2
+~ |/x2 ~ |/y1 ~ |/x1 ~ | x2 x1 add 2 V y1 M x1 y1 x1 y2 rad arct x1 y2 x2 y2
+rad arct x2 y2 x2 y1 rad arct x2 y1 x1 y1 rad arct C}b/RRp{CTMsave + +S/dyS ~
+|/dxS ~ | dxS 2 V 0 M 0 0 0 dyS 0.5 arct 0 dyS dxS dyS 0.5 arct dxS dyS dxS 0
+0.5 arct dxS 0 0 0 0.5 arct C CTMrestore}b
+%%EndResource
+
+%%BeginResource: file Pscript_Win_Graphics_L1 2.0 0
+L2? not g{/arct{arcto ! ! ! !}b/GDIpattfill{@ ` BGnd null ne PaintType 2 eq
+and{: BGnd aload ! sgco fEOFill{O}{L}? ; FGnd aload ! U/fGray 2 ^ put{2}{4}?
+-1 $}if E @ patterncalc : 4 ^/PaintType get 2 eq{fGray{6 -1 $ sg}{8 -3 $ sco}?
+}if fEOFill{eoclip}{clip}? N patternfill ; N}b/hrf{/fGray 1 ^ 6 eq | -4 $ N rp
+C/fEOFill F | GDIpattfill}b/hfMain{/fEOFill ~ |/fGray ~ | GDIpattfill}b/hf{T
+hfMain}b/hfW{F hfMain}b/hs{currentpoint strokepath M hfW}b/pfMain{/fEOFill ~ |
+pfprep GDIpattfill restore N}b/pf{T pfMain}b/pfW{F pfMain}b/ps{currentpoint
+strokepath M pfW}b/mpstr 1 string |/mp{~ @ length 12 add dict copy `
+/PatternCTM matrix currentmatrix |/PatternMatrix ~ |/PatWidth XStep mpstr
+length mul |/PatHeight YStep |/FontType 3 |/Encoding 256 array | 3 string 0 1
+255{Encoding ~ @ 3 ^ cvs cvn put}for !/FontMatrix matrix |/FontBBox BBox |
+/BuildChar{! @ ` XStep 0 FontBBox aload ! setcachedevice/PaintProc , E : exec
+;}b & E ~ @ 3 -1 $ definefont}b/patterncalc{` : PatternCTM setmatrix
+PatternMatrix concat BBox aload ! ! ! + pathbbox ; PatHeight V ceiling 4 1 $
+PatWidth V ceiling 4 1 $ PatHeight V floor 4 1 $ PatWidth V floor 4 1 $ 2 ^
+sub cvi abs ~ 3 ^ sub cvi abs ~ 4 2 $ PatHeight mul ~ PatWidth mul ~ E}b
+/patternfill{5 -1 $ @ ` Ji PatternCTM setmatrix PatternMatrix concat 0 2 ^ 2 ^
+M 0 1 mpstr length 1 sub{1 ^ mpstr 3 1 $ put}for ! 2 ^{currentpoint 5 ^{mpstr
+S}repeat YStep add M}repeat ! ! ! ! E}b}e
+%%EndResource
+
+%%BeginResource: file Pscript_Win_Graphics_L2 2.0 0
+L2? g{/mp/makepattern , |/hrf{6 eq setAorABC setpattern rectfill}b/hf{
+setAorABC setpattern O}b/hfW{setAorABC setpattern L}b/hs{setAorABC setpattern
+K}b/pf{pfprep setpattern O restore N}b/pfW{pfprep setpattern L restore N}b/ps{
+pfprep setpattern K restore N}b}e
+%%EndResource
+
+%%BeginResource: file Pscript_Win_BW_Images 2.0 0
+/iw 0 |/ih 0 |/im_save 0 |/s 0 |/polarity 0 |/smoothflag 0 |/mystring 0 |/bpc
+0 |/setup1asciiproc{[currentfile mystring/readhexstring cvx/! cvx]cvx bind}b
+/setup1binaryproc{[currentfile mystring/readstring cvx/! cvx]cvx bind}b
+/setup2asciiproc{currentfile/ASCII85Decode filter/RunLengthDecode filter}b
+/setup2binaryproc{currentfile/RunLengthDecode filter}b/mycolorspace{colspABC}|
+/myimagedict{/myimagedict 10 dict | myimagedict @ `/ImageType 1 |
+/MultipleDataSource F | E}b/imageprocarray[/setup1binaryproc/setup1asciiproc
+/setup2binaryproc/setup2asciiproc/setup1binarydecodeproc/setup1asciidecodeproc
+]|/L2Polarity{{[1 0]}{[0 1]}?}b/Q{/im_save save | imageprocarray ~ get/s ~ , |
+L2Polarity/polarity ~ |/smoothflag ~ | snap +/dx 2 ^ |/dy 1 ^ | +S/mystring ~
+string |/bpc ~ |/ih ~ |/iw ~ |}b/X{/im_save save | imageprocarray ~ get/s ~ ,
+| L2Polarity/polarity ~ |/smoothflag ~ | snap +/dx 2 ^ |/dy 1 ^ | +S/mystring
+~ string |/bpc ~ |/ih ~ |/iw ~ |}b/Z{im_save restore}b/Y{sgco myimagedict @ `
+/Width iw |/Height ih |/Decode polarity |/ImageMatrix[iw 0 0 ih 0 0]|
+/DataSource s |/BitsPerComponent 1 |/Interpolate smoothflag | E imagemask}b
+%%EndResource
+
+%%BeginResource: file Pscript_Win_BW_Images_L1 2.0 0
+L2? not g{/setup2asciiproc{[/Level2ImagesError , aload ! T FatalErrorIf}b
+/setup2binaryproc/setup2asciiproc , |/L2Polarity{}|/Y{sgco iw ih polarity[iw 0
+0 ih 0 0]s imagemask}b}e
+%%EndResource
+
+userdict /Level2ImagesError [
+(Ce travail comprend une image bitmap qui ne peut être imprimée que sur) 100 500
+(les imprimantes PostScript(R) Level 2. Envoyez ce fichier vers une imprimante PostScript) 100 485
+(imprimante Level 2, ou imprimez à nouveau votre document après avoir sélectionné une) 100 470
+(imprimante appropriée.) 100 455
+12 /Times-Roman
+] put
+
+%%BeginResource: file Pscript_Win_Co_Images_L1 2.0 0
+L2? not g{/testsystemdict{where{systemdict eq{T}{F}?}{F}?}b/c 1 |/colorimage
+where{! T}{F}?{/c 0 statusdict `/processcolors where{! ! processcolors}{
+/deviceinfo where{! deviceinfo/Colors known{!{deviceinfo/Colors get}}if}if}? E
+| c 0 ne{/colorimage testsystemdict/setcolortransfer testsystemdict
+/currentcolortransfer testsystemdict/currentcmykcolor testsystemdict and and
+and not{/c 0 |}if}if}if c @ 1 ne ~ @ 3 ne ~ 4 ne and and{/c 0 |}if c 1 eq g{
+/expandbw{expandfactor mul round cvi bwclut ~ get 255 V}b/doclutimage{!/bwclut
+~ | bpc @ 8 eq{! 255}{4 eq{15}{3}?}?/expandfactor ~ |[/expandbw ,/exec , @
+currenttransfer ~]cvx bind settransfer iw ih bpc[iw 0 0 ih 0 0]s image}b}e c @
+3 eq ~ 4 eq or g{/nullproc{{}}|/concatutil{/exec , 7 -1 $/exec ,}b/defsubclut{
+1 add getinterval |}b/spconcattransfer{/Dclut ~ |/Cclut ~ |/Bclut ~ |/Aclut ~
+|/ncompute ~ , | currentcolortransfer[{Aclut ncompute}concatutil]cvx[{Bclut
+ncompute}concatutil]cvx[{Cclut ncompute}concatutil]cvx[{Dclut ncompute}
+concatutil]cvx setcolortransfer}b/setuprgbcluts{/bit3x rgbclut length 3 sub |
+/bit1x bit3x 3 idiv |/rclut rgbclut |/gclut rclut 1 bit3x defsubclut/bclut
+rclut 2 bit3x defsubclut}b}e c 3 eq g{/3compute{~ bit3x mul round cvi get 255
+V}b/doclutimage{/rgbclut ~ | ! setuprgbcluts/3compute rclut gclut bclut @
+spconcattransfer iw ih bpc[iw 0 0 ih 0 0][s/exec ,/@ , @]cvx nullproc nullproc
+T 3 colorimage}b}e c 4 eq g{/ftoint{1 ~ sub 255 mul round cvi}b/stuffclut{
+cmykindex 3 -1 $ put}b/4compute{~ bit4x mul round cvi get 255 V}b
+/invalidcolortable? T |/computecmykclut{setuprgbcluts/bit4x rgbclut length 3
+idiv 4 mul 4 sub |/cmykclut bit4x 4 add string |/cclut cmykclut |/mclut cclut
+1 bit4x defsubclut/yclut cclut 2 bit4x defsubclut/kclut cclut 3 bit4x
+defsubclut/cmykindex 0 | 0 1 bit1x{@/cmykindex ~ bit1x ~ sub 4 mul | 3 mul @
+rclut ~ get 255 V ~ @ gclut ~ get 255 V ~ bclut ~ get 255 V setrgbcolor
+currentcmykcolor ftoint kclut stuffclut ftoint yclut stuffclut ftoint mclut
+stuffclut ftoint cclut stuffclut}for}b/doclutimage{/rgbclut ~ | !
+invalidcolortable?{computecmykclut}if/4compute cclut mclut yclut kclut
+spconcattransfer iw ih bpc[iw 0 0 ih 0 0][s/exec ,/@ , @ @]cvx nullproc
+nullproc nullproc T 4 colorimage}b}e c 0 eq g{/a{3 mul 3 getinterval
+putinterval ~ 3 add ~ 3 copy}b/8lookup/a , |/4lookup{/byte 1 ^ | -4 bitshift a
+byte 15 and a}b/2lookup{/byte 1 ^ | -6 bitshift a byte -4 bitshift 3 and a
+byte -2 bitshift 3 and a byte 3 and a}b/colorexpand{mystringexp 0 rgbclut 3
+copy 7 -1 $/mylookup , forall ! ! ! ! !}b/createexpandstr{/mystringexp ~
+mystring length mul string |}b/doclutimage{/rgbclut ~ | !/mylookup bpc 8 eq{3
+createexpandstr/8lookup}{bpc 4 eq{6 createexpandstr/4lookup}{12
+createexpandstr/2lookup}?}? , | iw ih bpc[iw 0 0 ih 0 0][s/exec ,/colorexpand
+,/exec ,]cvx F 3 colorimage}b}e/colorimage where{! T}{F}? g{/do24image{iw ih 8
+[iw 0 0 ih 0 0]s F 3 colorimage}b}DefIf_El{/rgbtogray{/str ~ |/len str length
+|/smlen len 3 idiv |/rstr str |/gstr str 1 len 1 sub getinterval |/bstr str 2
+len 2 sub getinterval | str @ 0 1 smlen 1 sub{@ 3 mul rstr 1 ^ get 0.3 mul
+gstr 2 ^ get 0.59 mul add bstr 3 -1 $ get 0.11 mul add round cvi put @}for ! 0
+smlen getinterval}b/do24image{iw ih 8[iw 0 0 ih 0 0][s/exec ,/rgbtogray ,/exec
+,]cvx bind image}b}e/doNimage{bpc 24 eq{do24image}{iw ih bpc[iw 0 0 ih 0 0]s
+image}?}b}e
+%%EndResource
+
+%%BeginResource: file Pscript_Win_Co_Images_L2 2.0 0
+L2? g{/doclutimage{/rgbclut ~ | ! bpc @ 8 eq{! 255}{4 eq{15}{3}?}?/hival ~ |[
+/Indexed colspABC hival rgbclut]setcolorspace myimagedict @ `/Width iw |
+/Height ih |/Decode[0 hival]|/ImageMatrix[iw 0 0 ih 0 0]|/DataSource s |
+/BitsPerComponent bpc |/Interpolate smoothflag | E image}b/doCMYKclutimage{
+/CMYKclut ~ | ! bpc @ 8 eq{! 255}{4 eq{15}{3}?}?/hival ~ |[/Indexed/DeviceCMYK
+hival CMYKclut]setcolorspace myimagedict @ `/Width iw |/Height ih |/Decode[0
+hival]|/ImageMatrix[iw 0 0 ih 0 0]|/DataSource s |/BitsPerComponent bpc |
+/Interpolate smoothflag | E image}b/doNimage{bpc 24 eq{colspABC}{colspA}?
+setcolorspace myimagedict @ `/Width iw |/Height ih |/Decode bpc 24 eq{[0 1 0 1
+0 1]}{[0 1]}? |/ImageMatrix[iw 0 0 ih 0 0]|/DataSource s |/BitsPerComponent
+bpc 24 eq{8}{bpc}? |/Interpolate smoothflag | E image}b/doCMYKimage{
+/DeviceCMYK setcolorspace myimagedict @ `/Width iw |/Height ih |/Decode[0 1 0
+1 0 1 0 1]|/ImageMatrix[iw 0 0 ih 0 0]|/DataSource s |/BitsPerComponent 8 |
+/Interpolate smoothflag | E image}b}e
+%%EndResource
+
+%%BeginResource: file Pscript_Win_Type1_Hdr 2.0 0
+/FEbuf 2 string |/FEglyph 3 string |/FE{(G00)FEglyph copy ! 1 ~{@ 16 lt{
+/offset 2 store}{/offset 1 store}? @ 16 FEbuf cvrs FEglyph ~ offset ~
+putinterval 1 ^ ~ FEglyph cvn put}for}bind |/Type1Hdr{11 dict `/FontName ~ |
+/PaintType ~ |/FontType 1 |/FontMatrix[1 3 ^ V 0 0 1 6 ^ V 0 0]| !/Encoding
+256 array 0 1 255{1 ^ ~/.notdef put}for 3 ^ 3 ^ FE | ! !/FontBBox{0 0 0 0}| &
+E currentfile eexec}bind |
+%%EndResource
+
+%%BeginResource: file Pscript_Win_Type3_Hdr 2.0 0
+/GreNewFont{10 dict @ 3 1 $ | @ ` 4 1 $/FontType 3 |/FontMatrix ~ |/FontBBox ~
+|/Encoding 256 array | 0 1 255{Encoding ~/.notdef put}for/CharProcs 257 dict |
+CharProcs/.notdef{}put/Metrics 257 dict | Metrics/.notdef 3 -1 $ put/BuildChar
+{/char ~ |/fontdict ~ |/charname fontdict/Encoding get char get | fontdict
+/Metrics get charname get aload ! setcachedevice fontdict ` Encoding char get
+CharProcs ~ get E exec}| E definefont !}|/AddChar{` Encoding 3 1 $ put
+CharProcs 3 1 $ put Metrics 3 1 $ put E}|
+%%EndResource
+
+%%BeginResource: file Pscript_Win_Compat 2.0 0
+userdict/Pscript_Win_Compat 13 dict dup begin/bd{bind def}bind def/ld{load def
+}bd/CB{pop pop pop pop}bind def/B{pop pop pop pop}bind def/$x matrix def/SS{
+/pagesave save def}bind def/RS{/pagesave where{pop pagesave restore}{$x matrix
+invertmatrix concat}ifelse}bind def/ANSIVec[0/grave 1/acute 2/circumflex 3
+/tilde 4/macron 5/breve 6/dotaccent 7/dieresis 8/ring 9/cedilla 10
+/hungarumlaut 11/ogonek 12/caron 13/dotlessi 39/quotesingle 96/grave 124/bar
+130/quotesinglbase 131/florin 132/quotedblbase 133/ellipsis 134/dagger 135
+/daggerdbl 136/circumflex 137/perthousand 138/Scaron 139/guilsinglleft 140/OE
+145/quoteleft 146/quoteright 147/quotedblleft 148/quotedblright 149/bullet 150
+/endash 151/emdash 152/tilde 153/trademark 154/scaron 155/guilsinglright 156
+/oe 159/Ydieresis 160/space 161/exclamdown 164/currency 165/yen 166/brokenbar
+167/section 168/dieresis 169/copyright 170/ordfeminine 171/guillemotleft 172
+/logicalnot 173/hyphen 174/registered 175/macron 176/degree 177/plusminus 178
+/twosuperior 179/threesuperior 180/acute 181/mu 182/paragraph 183
+/periodcentered 184/cedilla 185/onesuperior 186/ordmasculine 187
+/guillemotright 188/onequarter 189/onehalf 190/threequarters 191/questiondown
+192/Agrave 193/Aacute 194/Acircumflex 195/Atilde 196/Adieresis 197/Aring 198
+/AE 199/Ccedilla 200/Egrave 201/Eacute 202/Ecircumflex 203/Edieresis 204
+/Igrave 205/Iacute 206/Icircumflex 207/Idieresis 208/Eth 209/Ntilde 210/Ograve
+211/Oacute 212/Ocircumflex 213/Otilde 214/Odieresis 215/multiply 216/Oslash
+217/Ugrave 218/Uacute 219/Ucircumflex 220/Udieresis 221/Yacute 222/Thorn 223
+/germandbls 224/agrave 225/aacute 226/acircumflex 227/atilde 228/adieresis 229
+/aring 230/ae 231/ccedilla 232/egrave 233/eacute 234/ecircumflex 235/edieresis
+236/igrave 237/iacute 238/icircumflex 239/idieresis 240/eth 241/ntilde 242
+/ograve 243/oacute 244/ocircumflex 245/otilde 246/odieresis 247/divide 248
+/oslash 249/ugrave 250/uacute 251/ucircumflex 252/udieresis 253/yacute 254
+/thorn 255/ydieresis]def currentdict{dup type/operatortype eq{[exch]cvx def}{
+pop pop}ifelse}forall/initialize{currentdict exch begin begin}bind def
+/terminate{/@FL where not{pop end end}{pop}ifelse}bind def/suspend/terminate
+load def/resume/initialize load def/M/moveto load def end put/Courier findfont
+10 scalefont setfont
+%%EndResource
+
+end reinitialize
+Pscript_Win_Compat begin /$x mysetup def end
+Pscript_Win_Driver_Incr dup /suspend get exec
+Pscript_Win_Compat dup /initialize get exec
+%%BeginDocument: Pscript_Win_PassThrough
+ 1 setlinecap 1 setlinejoin 
+%%EndDocument
+Pscript_Win_Compat dup /suspend get exec
+Pscript_Win_Driver_Incr dup /resume get exec
+colspRefresh
+
+
+527 3465 N M 240 55 rr : 0 0 0 sco O ; 1 Lw 0 Lc 0 Lj 0 0 0 sco K 
+N 11 12 646 3492 ellp : 1.000 1.000 1.000 sco O ; 1 Lc 1 Lj 0 0 0 sco K 
+N 11 12 646 3492 ellp : 1.000 1.000 1.000 sco O ; 0 0 0 sco K 
+851 3186 N M -42 -42 - 42 -42 - 43 42 - -43 42 - C : 0 0 0 sco L ; 
+N 850 3144 6.000 360 0 An C : 1.000 1.000 1.000 sco O ; 
+1199 3060 N M 48 0 - 7 Lw solid : 1.000 1.000 1.000 sco solid K ; 0 0 0 sco K 
+479 3552 N M -46 -47 - : 1.000 1.000 1.000 sco solid K ; 0 0 0 sco K 
+433 3505 N M 0 -87 - : 1.000 1.000 1.000 sco solid K ; 0 0 0 sco K 
+433 3418 N M 34 -34 - : 1.000 1.000 1.000 sco solid K ; 0 0 0 sco K 
+467 3384 N M 84 0 - : 1.000 1.000 1.000 sco solid K ; 0 0 0 sco K 
+551 3384 N M 187 -186 - : 1.000 1.000 1.000 sco solid K ; 0 0 0 sco K 
+738 3198 N M 24 0 - : 1.000 1.000 1.000 sco solid K ; 0 0 0 sco K 
+762 3198 N M 29 -30 - : 1.000 1.000 1.000 sco solid K ; 0 0 0 sco K 
+791 3168 N M 0 -60 - : 1.000 1.000 1.000 sco solid K ; 0 0 0 sco K 
+791 3108 N M 48 -48 - : 1.000 1.000 1.000 sco solid K ; 0 0 0 sco K 
+839 3060 N M 120 0 - : 1.000 1.000 1.000 sco solid K ; 0 0 0 sco K 
+1019 3120 N M -60 -60 - : 1.000 1.000 1.000 sco solid K ; 0 0 0 sco K 
+1019 3120 N M 120 0 - : 1.000 1.000 1.000 sco solid K ; 0 0 0 sco K 
+1139 3120 N M 60 -60 - : 1.000 1.000 1.000 sco solid K ; 0 0 0 sco K 
+959 3924 N M -216 -216 - : 1.000 1.000 1.000 sco solid K ; 0 0 0 sco K 
+959 3924 N M 372 0 - : 1.000 1.000 1.000 sco solid K ; 0 0 0 sco K 
+1331 3924 N M 60 -60 - : 1.000 1.000 1.000 sco solid K ; 0 0 0 sco K 
+1391 3864 N M 324 0 - : 1.000 1.000 1.000 sco solid K ; 0 0 0 sco K 
+1715 3864 N M 36 -36 - : 1.000 1.000 1.000 sco solid K ; 0 0 0 sco K 
+1751 3828 N M 0 -12 - : 1.000 1.000 1.000 sco solid K ; 0 0 0 sco K 
+887 3948 N M 132 132 - : 1.000 1.000 1.000 sco solid K ; 0 0 0 sco K 
+803 3948 N M 84 0 - : 1.000 1.000 1.000 sco solid K ; 0 0 0 sco K 
+803 3948 N M -96 -96 - : 1.000 1.000 1.000 sco solid K ; 0 0 0 sco K 
+707 3852 N M 0 -300 - : 1.000 1.000 1.000 sco solid K ; 0 0 0 sco K 
+755 2976 N M 228 0 - : 1.000 1.000 1.000 sco solid K ; 0 0 0 sco K 
+1067 3060 N M -84 -84 - : 1.000 1.000 1.000 sco solid K ; 0 0 0 sco K 
+1067 3060 N M 12 0 - : 1.000 1.000 1.000 sco solid K ; 0 0 0 sco K 
+551 3492 N M -60 -60 - : 1.000 1.000 1.000 sco solid K ; 0 0 0 sco K 
+551 3492 N M 108 0 - : 1.000 1.000 1.000 sco solid K ; 0 0 0 sco K 
+923 3216 N M 0 -24 - : 1.000 1.000 1.000 sco solid K ; 0 0 0 sco K 
+791 3348 N M 132 -132 - : 1.000 1.000 1.000 sco solid K ; 0 0 0 sco K 
+719 3348 N M 72 0 - : 1.000 1.000 1.000 sco solid K ; 0 0 0 sco K 
+851 3228 N M 0 -84 - : 1.000 1.000 1.000 sco solid K ; 0 0 0 sco K 
+791 3288 N M 60 -60 - : 1.000 1.000 1.000 sco solid K ; 0 0 0 sco K 
+743 3288 N M 48 0 - : 1.000 1.000 1.000 sco solid K ; 0 0 0 sco K 
+743 3828 N M 84 0 - : 1.000 1.000 1.000 sco solid K ; 0 0 0 sco K 
+827 3828 N M 192 192 - : 1.000 1.000 1.000 sco solid K ; 0 0 0 sco K 
+1019 4020 N M 60 0 - : 1.000 1.000 1.000 sco solid K ; 0 0 0 sco K 
+1379 3156 N M -60 -60 - : 1.000 1.000 1.000 sco solid K ; 0 0 0 sco K 
+1319 3096 N M 0 -36 - : 1.000 1.000 1.000 sco solid K ; 0 0 0 sco K 
+1463 3276 N M -216 -216 - : 1.000 1.000 1.000 sco solid K ; 0 0 0 sco K 
+1463 3276 N M 60 0 - : 1.000 1.000 1.000 sco solid K ; 0 0 0 sco K 
+1750 3600 N M 49 48 - : 1.000 1.000 1.000 sco solid K ; 0 0 0 sco K 
+1750 3600 N M 0 -131 - : 1.000 1.000 1.000 sco solid K ; 0 0 0 sco K 
+1750 3469 N M 37 -37 - : 1.000 1.000 1.000 sco solid K ; 0 0 0 sco K 
+1787 3432 N M 12 0 - : 1.000 1.000 1.000 sco solid K ; 0 0 0 sco K 
+1319 3060 N M -60 -60 - : 1.000 1.000 1.000 sco solid K ; 0 0 0 sco K 
+1127 3000 N M 132 0 - : 1.000 1.000 1.000 sco solid K ; 0 0 0 sco K 
+1079 3048 N M 48 -48 - : 1.000 1.000 1.000 sco solid K ; 0 0 0 sco K 
+1019 4080 N M 132 0 - : 1.000 1.000 1.000 sco solid K ; 0 0 0 sco K 
+1151 4080 N M 48 -48 - : 1.000 1.000 1.000 sco solid K ; 0 0 0 sco K 
+1199 4032 N M 0 -12 - : 1.000 1.000 1.000 sco solid K ; 0 0 0 sco K 
+1031 3720 N M 24 0 - 6 Lw solid : 1.000 1.000 1.000 sco solid K ; 0 0 0 sco K 
+1031 3756 N M 0 -36 - : 1.000 1.000 1.000 sco solid K ; 0 0 0 sco K 
+1031 3756 N M 24 0 - : 1.000 1.000 1.000 sco solid K ; 0 0 0 sco K 
+1031 3738 N M 12 0 - : 1.000 1.000 1.000 sco solid K ; 0 0 0 sco K 
+1067 3720 N M 12 0 - : 1.000 1.000 1.000 sco solid K ; 0 0 0 sco K 
+1073 3720 N M 6 0 - : 1.000 1.000 1.000 sco solid K ; 0 0 0 sco K 
+1073 3756 N M 0 -36 - : 1.000 1.000 1.000 sco solid K ; 0 0 0 sco K 
+1067 3756 N M 6 0 - : 1.000 1.000 1.000 sco solid K ; 0 0 0 sco K 
+1067 3756 N M 12 0 - : 1.000 1.000 1.000 sco solid K ; 0 0 0 sco K 
+1097 3756 N M 0 -36 - : 1.000 1.000 1.000 sco solid K ; 0 0 0 sco K 
+1097 3720 N M 18 0 - : 1.000 1.000 1.000 sco solid K ; 0 0 0 sco K 
+1115 3720 N M 6 6 - : 1.000 1.000 1.000 sco solid K ; 0 0 0 sco K 
+1121 3738 N M 0 -12 - : 1.000 1.000 1.000 sco solid K ; 0 0 0 sco K 
+1115 3744 N M 6 -6 - : 1.000 1.000 1.000 sco solid K ; 0 0 0 sco K 
+1097 3744 N M 18 0 - : 1.000 1.000 1.000 sco solid K ; 0 0 0 sco K 
+1109 3744 N M 12 12 - : 1.000 1.000 1.000 sco solid K ; 0 0 0 sco K 
+1133 3756 N M 0 -36 - : 1.000 1.000 1.000 sco solid K ; 0 0 0 sco K 
+1133 3756 N M 18 0 - : 1.000 1.000 1.000 sco solid K ; 0 0 0 sco K 
+1151 3756 N M 6 -6 - : 1.000 1.000 1.000 sco solid K ; 0 0 0 sco K 
+1157 3750 N M 0 -6 - : 1.000 1.000 1.000 sco solid K ; 0 0 0 sco K 
+1151 3738 N M 6 6 - : 1.000 1.000 1.000 sco solid K ; 0 0 0 sco K 
+1133 3738 N M 18 0 - : 1.000 1.000 1.000 sco solid K ; 0 0 0 sco K 
+1133 3738 N M 0 0 - : 1.000 1.000 1.000 sco solid K ; 0 0 0 sco K 
+1133 3738 N M 0 0 - : 1.000 1.000 1.000 sco solid K ; 0 0 0 sco K 
+1133 3738 N M 0 0 - : 1.000 1.000 1.000 sco solid K ; 0 0 0 sco K 
+1133 3738 N M 18 0 - : 1.000 1.000 1.000 sco solid K ; 0 0 0 sco K 
+1151 3738 N M 6 -6 - : 1.000 1.000 1.000 sco solid K ; 0 0 0 sco K 
+1157 3732 N M 0 -6 - : 1.000 1.000 1.000 sco solid K ; 0 0 0 sco K 
+1151 3720 N M 6 6 - : 1.000 1.000 1.000 sco solid K ; 0 0 0 sco K 
+1133 3720 N M 18 0 - : 1.000 1.000 1.000 sco solid K ; 0 0 0 sco K 
+1175 3720 N M 12 0 - : 1.000 1.000 1.000 sco solid K ; 0 0 0 sco K 
+1169 3726 N M 6 -6 - : 1.000 1.000 1.000 sco solid K ; 0 0 0 sco K 
+1169 3750 N M 0 -24 - : 1.000 1.000 1.000 sco solid K ; 0 0 0 sco K 
+1169 3750 N M 6 6 - : 1.000 1.000 1.000 sco solid K ; 0 0 0 sco K 
+1175 3756 N M 12 0 - : 1.000 1.000 1.000 sco solid K ; 0 0 0 sco K 
+1187 3756 N M 6 -6 - : 1.000 1.000 1.000 sco solid K ; 0 0 0 sco K 
+1193 3750 N M 0 -24 - : 1.000 1.000 1.000 sco solid K ; 0 0 0 sco K 
+1187 3720 N M 6 6 - : 1.000 1.000 1.000 sco solid K ; 0 0 0 sco K 
+1205 3720 N M 24 0 - : 1.000 1.000 1.000 sco solid K ; 0 0 0 sco K 
+1217 3720 N M 12 0 - : 1.000 1.000 1.000 sco solid K ; 0 0 0 sco K 
+1217 3756 N M 0 -36 - : 1.000 1.000 1.000 sco solid K ; 0 0 0 sco K 
+1025 3288 N M 0 -6 - : 1.000 1.000 1.000 sco solid K ; 0 0 0 sco K 
+1019 3288 N M 6 0 - : 1.000 1.000 1.000 sco solid K ; 0 0 0 sco K 
+1019 3288 N M 12 0 - : 1.000 1.000 1.000 sco solid K ; 0 0 0 sco K 
+1025 3288 N M 6 0 - : 1.000 1.000 1.000 sco solid K ; 0 0 0 sco K 
+1025 3306 N M 0 -18 - : 1.000 1.000 1.000 sco solid K ; 0 0 0 sco K 
+1031 3312 N M -6 -6 - : 1.000 1.000 1.000 sco solid K ; 0 0 0 sco K 
+1055 3312 N M 12 0 - : 1.000 1.000 1.000 sco solid K ; 0 0 0 sco K 
+1067 3312 N M 6 -6 - : 1.000 1.000 1.000 sco solid K ; 0 0 0 sco K 
+1073 3306 N M 0 -12 - : 1.000 1.000 1.000 sco solid K ; 0 0 0 sco K 
+1073 3294 N M -6 -6 - : 1.000 1.000 1.000 sco solid K ; 0 0 0 sco K 
+1055 3288 N M 12 0 - : 1.000 1.000 1.000 sco solid K ; 0 0 0 sco K 
+1049 3294 N M 6 -6 - : 1.000 1.000 1.000 sco solid K ; 0 0 0 sco K 
+1049 3306 N M 0 -12 - : 1.000 1.000 1.000 sco solid K ; 0 0 0 sco K 
+1055 3312 N M -6 -6 - : 1.000 1.000 1.000 sco solid K ; 0 0 0 sco K 
+1085 3306 N M 0 -18 - : 1.000 1.000 1.000 sco solid K ; 0 0 0 sco K 
+1091 3312 N M -6 -6 - : 1.000 1.000 1.000 sco solid K ; 0 0 0 sco K 
+1091 3312 N M 18 0 - : 1.000 1.000 1.000 sco solid K ; 0 0 0 sco K 
+1109 3312 N M 0 -24 - : 1.000 1.000 1.000 sco solid K ; 0 0 0 sco K 
+1121 3312 N M 0 -24 - : 1.000 1.000 1.000 sco solid K ; 0 0 0 sco K 
+1121 3312 N M 0 -12 - : 1.000 1.000 1.000 sco solid K ; 0 0 0 sco K 
+1121 3300 N M 6 -6 - : 1.000 1.000 1.000 sco solid K ; 0 0 0 sco K 
+1127 3294 N M 6 -6 - : 1.000 1.000 1.000 sco solid K ; 0 0 0 sco K 
+1133 3288 N M 6 0 - : 1.000 1.000 1.000 sco solid K ; 0 0 0 sco K 
+1163 3312 N M 12 0 - : 1.000 1.000 1.000 sco solid K ; 0 0 0 sco K 
+1163 3312 N M -6 -6 - : 1.000 1.000 1.000 sco solid K ; 0 0 0 sco K 
+1157 3306 N M 0 -12 - : 1.000 1.000 1.000 sco solid K ; 0 0 0 sco K 
+1157 3294 N M 6 -6 - : 1.000 1.000 1.000 sco solid K ; 0 0 0 sco K 
+1163 3288 N M 12 0 - : 1.000 1.000 1.000 sco solid K ; 0 0 0 sco K 
+1181 3294 N M -6 -6 - : 1.000 1.000 1.000 sco solid K ; 0 0 0 sco K 
+1181 3300 N M 0 -6 - : 1.000 1.000 1.000 sco solid K ; 0 0 0 sco K 
+1157 3300 N M 24 0 - : 1.000 1.000 1.000 sco solid K ; 0 0 0 sco K 
+1193 3312 N M 12 0 - : 1.000 1.000 1.000 sco solid K ; 0 0 0 sco K 
+1199 3312 N M 6 0 - : 1.000 1.000 1.000 sco solid K ; 0 0 0 sco K 
+1199 3312 N M 0 -36 - : 1.000 1.000 1.000 sco solid K ; 0 0 0 sco K 
+1193 3276 N M 6 0 - : 1.000 1.000 1.000 sco solid K ; 0 0 0 sco K 
+1223 3312 N M 12 0 - : 1.000 1.000 1.000 sco solid K ; 0 0 0 sco K 
+1229 3312 N M 6 0 - : 1.000 1.000 1.000 sco solid K ; 0 0 0 sco K 
+1229 3312 N M 0 -36 - : 1.000 1.000 1.000 sco solid K ; 0 0 0 sco K 
+1223 3276 N M 6 0 - : 1.000 1.000 1.000 sco solid K ; 0 0 0 sco K 
+1259 3312 N M 12 0 - : 1.000 1.000 1.000 sco solid K ; 0 0 0 sco K 
+1259 3312 N M -6 -6 - : 1.000 1.000 1.000 sco solid K ; 0 0 0 sco K 
+1253 3306 N M 0 -12 - : 1.000 1.000 1.000 sco solid K ; 0 0 0 sco K 
+1253 3294 N M 6 -6 - : 1.000 1.000 1.000 sco solid K ; 0 0 0 sco K 
+1259 3288 N M 12 0 - : 1.000 1.000 1.000 sco solid K ; 0 0 0 sco K 
+1277 3294 N M -6 -6 - : 1.000 1.000 1.000 sco solid K ; 0 0 0 sco K 
+1277 3300 N M 0 -6 - : 1.000 1.000 1.000 sco solid K ; 0 0 0 sco K 
+1253 3300 N M 24 0 - : 1.000 1.000 1.000 sco solid K ; 0 0 0 sco K 
+1241 3528 N M 0 -6 - : 1.000 1.000 1.000 sco solid K ; 0 0 0 sco K 
+1235 3528 N M 6 0 - : 1.000 1.000 1.000 sco solid K ; 0 0 0 sco K 
+1235 3528 N M 12 0 - : 1.000 1.000 1.000 sco solid K ; 0 0 0 sco K 
+1241 3528 N M 6 0 - : 1.000 1.000 1.000 sco solid K ; 0 0 0 sco K 
+1241 3546 N M 0 -18 - : 1.000 1.000 1.000 sco solid K ; 0 0 0 sco K 
+1241 3546 N M 6 6 - : 1.000 1.000 1.000 sco solid K ; 0 0 0 sco K 
+1271 3552 N M 12 0 - : 1.000 1.000 1.000 sco solid K ; 0 0 0 sco K 
+1283 3552 N M 6 -6 - : 1.000 1.000 1.000 sco solid K ; 0 0 0 sco K 
+1289 3546 N M 0 -12 - : 1.000 1.000 1.000 sco solid K ; 0 0 0 sco K 
+1283 3528 N M 6 6 - : 1.000 1.000 1.000 sco solid K ; 0 0 0 sco K 
+1271 3528 N M 12 0 - : 1.000 1.000 1.000 sco solid K ; 0 0 0 sco K 
+1265 3534 N M 6 -6 - : 1.000 1.000 1.000 sco solid K ; 0 0 0 sco K 
+1265 3546 N M 0 -12 - : 1.000 1.000 1.000 sco solid K ; 0 0 0 sco K 
+1265 3546 N M 6 6 - : 1.000 1.000 1.000 sco solid K ; 0 0 0 sco K 
+1301 3564 N M 0 -36 - : 1.000 1.000 1.000 sco solid K ; 0 0 0 sco K 
+1301 3528 N M 18 0 - : 1.000 1.000 1.000 sco solid K ; 0 0 0 sco K 
+1319 3528 N M 6 6 - : 1.000 1.000 1.000 sco solid K ; 0 0 0 sco K 
+1325 3546 N M 0 -12 - : 1.000 1.000 1.000 sco solid K ; 0 0 0 sco K 
+1319 3552 N M 6 -6 - : 1.000 1.000 1.000 sco solid K ; 0 0 0 sco K 
+1301 3552 N M 18 0 - : 1.000 1.000 1.000 sco solid K ; 0 0 0 sco K 
+N 15 16 706 3552 ellp 15 Lw solid : 1.000 1.000 1.000 sco solid K ; 0 0 0 sco K 
+N 11 12 706 3552 ellp : 1.000 1.000 1.000 sco O ; 
+N 754 2976 8.000 360 0 An C : 1.000 1.000 1.000 sco solid K ; 0 0 0 sco K 
+N 754 2976 6.000 360 0 An C : 1.000 1.000 1.000 sco O ; 
+N 1378 3156 8.000 360 0 An C : 1.000 1.000 1.000 sco solid K ; 0 0 0 sco K 
+N 1378 3156 6.000 360 0 An C : 1.000 1.000 1.000 sco O ; 
+464 3405 N M 54 55 rr : 0 0 0 sco O ; 
+N 11 12 490 3432 ellp : 1.000 1.000 1.000 sco O ; 
+N 11 12 490 3432 ellp : 1.000 1.000 1.000 sco O ; 
+464 3525 N M 54 55 rr : 0 0 0 sco O ; 
+N 11 12 490 3552 ellp : 1.000 1.000 1.000 sco O ; 
+N 11 12 490 3552 ellp : 1.000 1.000 1.000 sco O ; 
+722 3267 N M 42 43 rr : 0 0 0 sco O ; 
+N 742 3288 6.000 360 0 An C : 1.000 1.000 1.000 sco O ; 
+N 742 3288 6.000 360 0 An C : 1.000 1.000 1.000 sco O ; 
+757 3207 N M 43 43 rr : 0 0 0 sco O ; 
+N 778 3228 6.000 360 0 An C : 1.000 1.000 1.000 sco O ; 
+N 778 3228 6.000 360 0 An C : 1.000 1.000 1.000 sco O ; 
+587 3198 N M -42 -42 - 42 -42 - 43 42 - -43 42 - C : 0 0 0 sco L ; 
+N 11 12 586 3156 ellp : 1.000 1.000 1.000 sco O ; 
+518 3207 N M 42 43 rr : 0 0 0 sco O ; 
+N 11 12 538 3228 ellp : 1.000 1.000 1.000 sco O ; 
+N 11 12 538 3228 ellp : 1.000 1.000 1.000 sco O ; 
+482 3267 N M 42 43 rr : 0 0 0 sco O ; 
+N 11 12 502 3288 ellp : 1.000 1.000 1.000 sco O ; 
+N 11 12 502 3288 ellp : 1.000 1.000 1.000 sco O ; 
+458 3327 N M 42 43 rr : 0 0 0 sco O ; 
+N 11 12 478 3348 ellp : 1.000 1.000 1.000 sco O ; 
+N 11 12 478 3348 ellp : 1.000 1.000 1.000 sco O ; 
+698 3327 N M 42 43 rr : 0 0 0 sco O ; 
+N 11 12 718 3348 ellp : 1.000 1.000 1.000 sco O ; 
+N 11 12 718 3348 ellp : 1.000 1.000 1.000 sco O ; 
+923 3234 N M -42 -42 - 42 -42 - 43 42 - -43 42 - C : 0 0 0 sco L ; 
+N 922 3192 6.000 360 0 An C : 1.000 1.000 1.000 sco O ; 
+1408 3810 N M 61 61 rr : 0 0 0 sco O ; 
+N 1438 3840 6.000 360 0 An C : 1.000 1.000 1.000 sco O ; 
+N 1438 3840 6.000 360 0 An C : 1.000 1.000 1.000 sco O ; 
+1492 3810 N M 61 61 rr : 0 0 0 sco O ; 
+N 1522 3840 6.000 360 0 An C : 1.000 1.000 1.000 sco O ; 
+N 1522 3840 6.000 360 0 An C : 1.000 1.000 1.000 sco O ; 
+1408 3894 N M 61 61 rr : 0 0 0 sco O ; 
+N 1438 3924 6.000 360 0 An C : 1.000 1.000 1.000 sco O ; 
+N 1438 3924 6.000 360 0 An C : 1.000 1.000 1.000 sco O ; 
+1660 3858 N M 61 61 rr : 0 0 0 sco O ; 
+N 1690 3888 6.000 360 0 An C : 1.000 1.000 1.000 sco O ; 
+N 1690 3888 6.000 360 0 An C : 1.000 1.000 1.000 sco O ; 
+1468 4074 N M 61 61 rr : 0 0 0 sco O ; 
+N 1498 4104 6.000 360 0 An C : 1.000 1.000 1.000 sco O ; 
+N 1498 4104 6.000 360 0 An C : 1.000 1.000 1.000 sco O ; 
+1153 2907 N M 43 43 rr : 0 0 0 sco O ; 
+N 1174 2928 6.000 360 0 An C : 1.000 1.000 1.000 sco O ; 
+N 1174 2928 6.000 360 0 An C : 1.000 1.000 1.000 sco O ; 
+985 2907 N M 43 43 rr : 0 0 0 sco O ; 
+N 1006 2928 6.000 360 0 An C : 1.000 1.000 1.000 sco O ; 
+N 1006 2928 6.000 360 0 An C : 1.000 1.000 1.000 sco O ; 
+1081 4131 N M 43 43 rr : 0 0 0 sco O ; 
+N 1102 4152 6.000 360 0 An C : 1.000 1.000 1.000 sco O ; 
+N 1102 4152 6.000 360 0 An C : 1.000 1.000 1.000 sco O ; 
+1249 4131 N M 43 43 rr : 0 0 0 sco O ; 
+N 1270 4152 6.000 360 0 An C : 1.000 1.000 1.000 sco O ; 
+N 1270 4152 6.000 360 0 An C : 1.000 1.000 1.000 sco O ; 
+1033 2859 N M 43 43 rr : 0 0 0 sco O ; 
+N 1054 2880 6.000 360 0 An C : 1.000 1.000 1.000 sco O ; 
+N 1054 2880 6.000 360 0 An C : 1.000 1.000 1.000 sco O ; 
+1201 4179 N M 43 43 rr : 0 0 0 sco O ; 
+N 1222 4200 6.000 360 0 An C : 1.000 1.000 1.000 sco O ; 
+N 1222 4200 6.000 360 0 An C : 1.000 1.000 1.000 sco O ; 
+1201 2859 N M 43 43 rr : 0 0 0 sco O ; 
+N 1222 2880 6.000 360 0 An C : 1.000 1.000 1.000 sco O ; 
+N 1222 2880 6.000 360 0 An C : 1.000 1.000 1.000 sco O ; 
+1033 4179 N M 43 43 rr : 0 0 0 sco O ; 
+N 1054 4200 6.000 360 0 An C : 1.000 1.000 1.000 sco O ; 
+N 1054 4200 6.000 360 0 An C : 1.000 1.000 1.000 sco O ; 
+1081 2907 N M 43 43 rr : 0 0 0 sco O ; 
+N 1102 2928 6.000 360 0 An C : 1.000 1.000 1.000 sco O ; 
+N 1102 2928 6.000 360 0 An C : 1.000 1.000 1.000 sco O ; 
+1153 4131 N M 43 43 rr : 0 0 0 sco O ; 
+N 1174 4152 6.000 360 0 An C : 1.000 1.000 1.000 sco O ; 
+N 1174 4152 6.000 360 0 An C : 1.000 1.000 1.000 sco O ; 
+1249 2907 N M 43 43 rr : 0 0 0 sco O ; 
+N 1270 2928 6.000 360 0 An C : 1.000 1.000 1.000 sco O ; 
+N 1270 2928 6.000 360 0 An C : 1.000 1.000 1.000 sco O ; 
+985 4131 N M 43 43 rr : 0 0 0 sco O ; 
+N 1006 4152 6.000 360 0 An C : 1.000 1.000 1.000 sco O ; 
+N 1006 4152 6.000 360 0 An C : 1.000 1.000 1.000 sco O ; 
+N 1572 3973 12.500 360 0 An C 23 Lw solid : 1.000 1.000 1.000 sco solid K ; 0 0 0 sco K 
+N 11 12 1572 3974 ellp : 1.000 1.000 1.000 sco O ; 
+N 1138 3539 12.500 360 0 An C : 1.000 1.000 1.000 sco solid K ; 0 0 0 sco K 
+N 1138 3540 6.000 360 0 An C : 1.000 1.000 1.000 sco O ; 
+N 704 3973 12.500 360 0 An C : 1.000 1.000 1.000 sco solid K ; 0 0 0 sco K 
+N 11 12 704 3974 ellp : 1.000 1.000 1.000 sco O ; 
+N 1572 3105 12.500 360 0 An C : 1.000 1.000 1.000 sco solid K ; 0 0 0 sco K 
+N 1572 3105 5.500 360 0 An C : 1.000 1.000 1.000 sco O ; 
+N 704 3105 12.500 360 0 An C : 1.000 1.000 1.000 sco solid K ; 0 0 0 sco K 
+N 704 3105 5.500 360 0 An C : 1.000 1.000 1.000 sco O ; 
+1501 3255 N M 43 43 rr : 0 0 0 sco O ; 
+N 1522 3276 6.000 360 0 An C : 1.000 1.000 1.000 sco O ; 
+N 1522 3276 6.000 360 0 An C : 1.000 1.000 1.000 sco O ; 
+1621 3255 N M 43 43 rr : 0 0 0 sco O ; 
+N 1642 3276 6.000 360 0 An C : 1.000 1.000 1.000 sco O ; 
+N 1642 3276 6.000 360 0 An C : 1.000 1.000 1.000 sco O ; 
+1753 3711 N M 43 43 rr : 0 0 0 sco O ; 
+N 1774 3732 6.000 360 0 An C : 1.000 1.000 1.000 sco O ; 
+N 1774 3732 6.000 360 0 An C : 1.000 1.000 1.000 sco O ; 
+1633 3711 N M 43 43 rr : 0 0 0 sco O ; 
+N 1654 3732 6.000 360 0 An C : 1.000 1.000 1.000 sco O ; 
+N 1654 3732 6.000 360 0 An C : 1.000 1.000 1.000 sco O ; 
+1480 3330 N M 61 61 rr : 0 0 0 sco O ; 
+N 1510 3360 6.000 360 0 An C : 1.000 1.000 1.000 sco O ; 
+N 1510 3360 6.000 360 0 An C : 1.000 1.000 1.000 sco O ; 
+1492 3702 N M 61 61 rr : 0 0 0 sco O ; 
+N 1522 3732 6.000 360 0 An C : 1.000 1.000 1.000 sco O ; 
+N 1522 3732 6.000 360 0 An C : 1.000 1.000 1.000 sco O ; 
+1777 3339 N M 43 43 rr : 0 0 0 sco O ; 
+N 1798 3360 6.000 360 0 An C : 1.000 1.000 1.000 sco O ; 
+N 1798 3360 6.000 360 0 An C : 1.000 1.000 1.000 sco O ; 
+1681 3339 N M 43 43 rr : 0 0 0 sco O ; 
+N 1702 3360 6.000 360 0 An C : 1.000 1.000 1.000 sco O ; 
+N 1702 3360 6.000 360 0 An C : 1.000 1.000 1.000 sco O ; 
+1729 3291 N M 43 43 rr : 0 0 0 sco O ; 
+N 1750 3312 6.000 360 0 An C : 1.000 1.000 1.000 sco O ; 
+N 1750 3312 6.000 360 0 An C : 1.000 1.000 1.000 sco O ; 
+449 3642 N M 60 61 rr : 0 0 0 sco O ; 
+N 11 12 478 3672 ellp : 1.000 1.000 1.000 sco O ; 
+N 11 12 478 3672 ellp : 1.000 1.000 1.000 sco O ; 
+557 3882 N M 60 61 rr : 0 0 0 sco O ; 
+N 11 12 586 3912 ellp : 1.000 1.000 1.000 sco O ; 
+N 11 12 586 3912 ellp : 1.000 1.000 1.000 sco O ; 
+838 4116 N M 49 49 rr : 0 0 0 sco O ; 
+N 862 4140 6.000 360 0 An C : 1.000 1.000 1.000 sco O ; 
+N 862 4140 6.000 360 0 An C : 1.000 1.000 1.000 sco O ; 
+838 4056 N M 49 49 rr : 0 0 0 sco O ; 
+N 862 4080 6.000 360 0 An C : 1.000 1.000 1.000 sco O ; 
+N 862 4080 6.000 360 0 An C : 1.000 1.000 1.000 sco O ; 
+838 3996 N M 49 49 rr : 0 0 0 sco O ; 
+N 862 4020 6.000 360 0 An C : 1.000 1.000 1.000 sco O ; 
+N 862 4020 6.000 360 0 An C : 1.000 1.000 1.000 sco O ; 
+1390 2916 N M 49 49 rr : 0 0 0 sco O ; 
+N 1414 2940 6.000 360 0 An C : 1.000 1.000 1.000 sco O ; 
+N 1414 2940 6.000 360 0 An C : 1.000 1.000 1.000 sco O ; 
+1390 2976 N M 49 49 rr : 0 0 0 sco O ; 
+N 1414 3000 6.000 360 0 An C : 1.000 1.000 1.000 sco O ; 
+N 1414 3000 6.000 360 0 An C : 1.000 1.000 1.000 sco O ; 
+1390 3036 N M 49 49 rr : 0 0 0 sco O ; 
+N 1414 3060 6.000 360 0 An C : 1.000 1.000 1.000 sco O ; 
+N 1414 3060 6.000 360 0 An C : 1.000 1.000 1.000 sco O ; 
+1777 3411 N M 43 43 rr : 0 0 0 sco O ; 
+N 1798 3432 6.000 360 0 An C : 1.000 1.000 1.000 sco O ; 
+N 1798 3432 6.000 360 0 An C : 1.000 1.000 1.000 sco O ; 
+1537 3411 N M 43 43 rr : 0 0 0 sco O ; 
+N 1558 3432 6.000 360 0 An C : 1.000 1.000 1.000 sco O ; 
+N 1558 3432 6.000 360 0 An C : 1.000 1.000 1.000 sco O ; 
+1561 3483 N M 43 43 rr : 0 0 0 sco O ; 
+N 1582 3504 6.000 360 0 An C : 1.000 1.000 1.000 sco O ; 
+N 1582 3504 6.000 360 0 An C : 1.000 1.000 1.000 sco O ; 
+1801 3483 N M 43 43 rr : 0 0 0 sco O ; 
+N 1822 3504 6.000 360 0 An C : 1.000 1.000 1.000 sco O ; 
+N 1822 3504 6.000 360 0 An C : 1.000 1.000 1.000 sco O ; 
+1777 3627 N M 43 43 rr : 0 0 0 sco O ; 
+N 1798 3648 6.000 360 0 An C : 1.000 1.000 1.000 sco O ; 
+N 1798 3648 6.000 360 0 An C : 1.000 1.000 1.000 sco O ; 
+1537 3627 N M 43 43 rr : 0 0 0 sco O ; 
+N 1558 3648 6.000 360 0 An C : 1.000 1.000 1.000 sco O ; 
+N 1558 3648 6.000 360 0 An C : 1.000 1.000 1.000 sco O ; 
+1561 3555 N M 43 43 rr : 0 0 0 sco O ; 
+N 1582 3576 6.000 360 0 An C : 1.000 1.000 1.000 sco O ; 
+N 1582 3576 6.000 360 0 An C : 1.000 1.000 1.000 sco O ; 
+1801 3555 N M 43 43 rr : 0 0 0 sco O ; 
+N 1822 3576 6.000 360 0 An C : 1.000 1.000 1.000 sco O ; 
+N 1822 3576 6.000 360 0 An C : 1.000 1.000 1.000 sco O ; 
+1297 3999 N M 43 43 rr : 0 0 0 sco O ; 
+N 1318 4020 6.000 360 0 An C : 1.000 1.000 1.000 sco O ; 
+N 1318 4020 6.000 360 0 An C : 1.000 1.000 1.000 sco O ; 
+1177 3999 N M 43 43 rr : 0 0 0 sco O ; 
+N 1198 4020 6.000 360 0 An C : 1.000 1.000 1.000 sco O ; 
+N 1198 4020 6.000 360 0 An C : 1.000 1.000 1.000 sco O ; 
+1177 3039 N M 43 43 rr : 0 0 0 sco O ; 
+N 1198 3060 6.000 360 0 An C : 1.000 1.000 1.000 sco O ; 
+N 1198 3060 6.000 360 0 An C : 1.000 1.000 1.000 sco O ; 
+1297 3039 N M 43 43 rr : 0 0 0 sco O ; 
+N 1318 3060 6.000 360 0 An C : 1.000 1.000 1.000 sco O ; 
+N 1318 3060 6.000 360 0 An C : 1.000 1.000 1.000 sco O ; 
+1057 3999 N M 43 43 rr : 0 0 0 sco O ; 
+N 1078 4020 6.000 360 0 An C : 1.000 1.000 1.000 sco O ; 
+N 1078 4020 6.000 360 0 An C : 1.000 1.000 1.000 sco O ; 
+937 3999 N M 43 43 rr : 0 0 0 sco O ; 
+N 958 4020 6.000 360 0 An C : 1.000 1.000 1.000 sco O ; 
+N 958 4020 6.000 360 0 An C : 1.000 1.000 1.000 sco O ; 
+937 3039 N M 43 43 rr : 0 0 0 sco O ; 
+N 958 3060 6.000 360 0 An C : 1.000 1.000 1.000 sco O ; 
+N 958 3060 6.000 360 0 An C : 1.000 1.000 1.000 sco O ; 
+1057 3039 N M 43 43 rr : 0 0 0 sco O ; 
+N 1078 3060 6.000 360 0 An C : 1.000 1.000 1.000 sco O ; 
+N 1078 3060 6.000 360 0 An C : 1.000 1.000 1.000 sco O ; 
+724 3689 N M 38 38 rr : 0 0 0 sco O ; 
+N 742 3708 6.000 360 0 An C : 1.000 1.000 1.000 sco O ; 
+N 742 3708 6.000 360 0 An C : 1.000 1.000 1.000 sco O ; 
+724 3809 N M 38 38 rr : 0 0 0 sco O ; 
+N 742 3828 6.000 360 0 An C : 1.000 1.000 1.000 sco O ; 
+N 742 3828 6.000 360 0 An C : 1.000 1.000 1.000 sco O ; 
+1609 3795 N M 43 43 rr : 0 0 0 sco O ; 
+N 1630 3816 6.000 360 0 An C : 1.000 1.000 1.000 sco O ; 
+N 1630 3816 6.000 360 0 An C : 1.000 1.000 1.000 sco O ; 
+1729 3795 N M 43 43 rr : 0 0 0 sco O ; 
+N 1750 3816 6.000 360 0 An C : 1.000 1.000 1.000 sco O ; 
+N 1750 3816 6.000 360 0 An C : 1.000 1.000 1.000 sco O ; 
+N 1138.500 3539.500 353.500 0.079 -44.888 An 
+12 Lw solid : 1.000 1.000 1.000 sco solid K ; 0 0 0 sco K 
+N 1138.500 3539.500 353.500 -44.888 -89.920 An 
+: 1.000 1.000 1.000 sco solid K ; 0 0 0 sco K 
+N 1138.500 3539.500 353.500 -89.920 -134.887 An 
+: 1.000 1.000 1.000 sco solid K ; 0 0 0 sco K 
+N 1138.500 3539.500 353.500 -134.887 179.920 An 
+: 1.000 1.000 1.000 sco solid K ; 0 0 0 sco K 
+N 1138.500 3539.500 353.500 179.920 134.887 An 
+: 1.000 1.000 1.000 sco solid K ; 0 0 0 sco K 
+N 1138.500 3539.500 353.500 134.887 89.921 An 
+: 1.000 1.000 1.000 sco solid K ; 0 0 0 sco K 
+N 1138.500 3539.500 353.500 89.921 44.888 An 
+: 1.000 1.000 1.000 sco solid K ; 0 0 0 sco K 
+N 1138.500 3539.500 353.500 44.888 0.079 An 
+: 1.000 1.000 1.000 sco solid K ; 0 0 0 sco K 
+N 1138.500 3539.500 731.500 0.039 -44.945 An 
+: 1.000 1.000 1.000 sco solid K ; 0 0 0 sco K 
+N 1138.500 3539.500 731.500 -44.945 -89.961 An 
+: 1.000 1.000 1.000 sco solid K ; 0 0 0 sco K 
+N 1138.500 3539.500 731.500 -89.961 -135.000 An 
+: 1.000 1.000 1.000 sco solid K ; 0 0 0 sco K 
+N 1138.500 3539.500 731.500 -135.000 179.961 An 
+: 1.000 1.000 1.000 sco solid K ; 0 0 0 sco K 
+N 1138.500 3539.500 731.500 179.961 134.945 An 
+: 1.000 1.000 1.000 sco solid K ; 0 0 0 sco K 
+N 1138.500 3539.500 731.500 134.945 89.961 An 
+: 1.000 1.000 1.000 sco solid K ; 0 0 0 sco K 
+N 1138.500 3539.500 731.500 89.961 45.000 An 
+: 1.000 1.000 1.000 sco solid K ; 0 0 0 sco K 
+N 1138.500 3539.500 731.500 45.000 0.039 An 
+: 1.000 1.000 1.000 sco solid K ; 0 0 0 sco K 
+2930 3804 N M 15 49 rr : 0 0 0 sco O ; 
+N 2937 3828 0 360 0 An C : 1.000 1.000 1.000 sco O ; 
+N 2937 3828 0 360 0 An C : 1.000 1.000 1.000 sco O ; 
+2900 3804 N M 15 49 rr : 0 0 0 sco O ; 
+N 2907 3828 0 360 0 An C : 1.000 1.000 1.000 sco O ; 
+N 2907 3828 0 360 0 An C : 1.000 1.000 1.000 sco O ; 
+2870 3804 N M 15 49 rr : 0 0 0 sco O ; 
+N 2877 3828 0 360 0 An C : 1.000 1.000 1.000 sco O ; 
+N 2877 3828 0 360 0 An C : 1.000 1.000 1.000 sco O ; 
+2840 3804 N M 15 49 rr : 0 0 0 sco O ; 
+N 2847 3828 0 360 0 An C : 1.000 1.000 1.000 sco O ; 
+N 2847 3828 0 360 0 An C : 1.000 1.000 1.000 sco O ; 
+2840 3672 N M 15 49 rr : 0 0 0 sco O ; 
+N 2847 3696 0 360 0 An C : 1.000 1.000 1.000 sco O ; 
+N 2847 3696 0 360 0 An C : 1.000 1.000 1.000 sco O ; 
+2870 3672 N M 15 49 rr : 0 0 0 sco O ; 
+N 2877 3696 0 360 0 An C : 1.000 1.000 1.000 sco O ; 
+N 2877 3696 0 360 0 An C : 1.000 1.000 1.000 sco O ; 
+2900 3672 N M 15 49 rr : 0 0 0 sco O ; 
+N 2907 3696 0 360 0 An C : 1.000 1.000 1.000 sco O ; 
+N 2907 3696 0 360 0 An C : 1.000 1.000 1.000 sco O ; 
+2930 3672 N M 15 49 rr : 0 0 0 sco O ; 
+N 2937 3696 0 360 0 An C : 1.000 1.000 1.000 sco O ; 
+N 2937 3696 0 360 0 An C : 1.000 1.000 1.000 sco O ; 
+2805 3609 N M 37 31 rr : 0 0 0 sco O ; 
+N 2823 3624 0 360 0 An C : 1.000 1.000 1.000 sco O ; 
+N 2823 3624 0 360 0 An C : 1.000 1.000 1.000 sco O ; 
+2859 3609 N M 37 31 rr : 0 0 0 sco O ; 
+N 2877 3624 0 360 0 An C : 1.000 1.000 1.000 sco O ; 
+N 2877 3624 0 360 0 An C : 1.000 1.000 1.000 sco O ; 
+2766 3792 N M 31 37 rr : 0 0 0 sco O ; 
+N 2781 3810 0 360 0 An C : 1.000 1.000 1.000 sco O ; 
+N 2781 3810 0 360 0 An C : 1.000 1.000 1.000 sco O ; 
+2766 3738 N M 31 37 rr : 0 0 0 sco O ; 
+N 2781 3756 0 360 0 An C : 1.000 1.000 1.000 sco O ; 
+N 2781 3756 0 360 0 An C : 1.000 1.000 1.000 sco O ; 
+3138 2976 N M 30 37 rr : 0 0 0 sco O ; 
+N 3153 2994 0 360 0 An C : 1.000 1.000 1.000 sco O ; 
+N 3153 2994 0 360 0 An C : 1.000 1.000 1.000 sco O ; 
+3138 2922 N M 30 37 rr : 0 0 0 sco O ; 
+N 3153 2940 0 360 0 An C : 1.000 1.000 1.000 sco O ; 
+N 3153 2940 0 360 0 An C : 1.000 1.000 1.000 sco O ; 
+3594 4080 N M 30 37 rr : 0 0 0 sco O ; 
+3594 4134 N M 30 37 rr : 0 0 0 sco O ; 
+3727 3156 N M -22 21 - -25 -25 - 21 -22 - 26 26 - C : 0 0 0 sco L ; 
+3765 3194 N M -21 22 - -26 -26 - 21 -21 - 26 25 - C : 0 0 0 sco L ; 
+3198 4128 N M 30 37 rr : 0 0 0 sco O ; 
+3198 4074 N M 30 37 rr : 0 0 0 sco O ; 
+3594 2964 N M 30 37 rr : 0 0 0 sco O ; 
+3594 2910 N M 30 37 rr : 0 0 0 sco O ; 
+2984 3469 N M 59 -58 - 7 Lw solid : 1.000 1.000 1.000 sco solid K ; 0 0 0 sco K 
+2974 3552 N M 10 -11 - : 1.000 1.000 1.000 sco solid K ; 0 0 0 sco K 
+2984 3541 N M 0 -72 - : 1.000 1.000 1.000 sco solid K ; 0 0 0 sco K 
+3022 3636 N M 40 40 - : 1.000 1.000 1.000 sco solid K ; 0 0 0 sco K 
+3022 3451 N M 36 -36 - : 1.000 1.000 1.000 sco solid K ; 0 0 0 sco K 
+3022 3636 N M 0 -185 - : 1.000 1.000 1.000 sco solid K ; 0 0 0 sco K 
+2758 3552 N M 120 0 - : 1.000 1.000 1.000 sco solid K ; 0 0 0 sco K 
+2878 3552 N M 51 51 - : 1.000 1.000 1.000 sco solid K ; 0 0 0 sco K 
+2929 3603 N M 36 0 - : 1.000 1.000 1.000 sco solid K ; 0 0 0 sco K 
+3043 3411 N M 0 -27 - : 1.000 1.000 1.000 sco solid K ; 0 0 0 sco K 
+3043 3384 N M 3 -3 - : 1.000 1.000 1.000 sco solid K ; 0 0 0 sco K 
+3046 3381 N M 0 -8 - : 1.000 1.000 1.000 sco solid K ; 0 0 0 sco K 
+3046 3373 N M 19 -18 - : 1.000 1.000 1.000 sco solid K ; 0 0 0 sco K 
+3065 3355 N M 0 -31 - : 1.000 1.000 1.000 sco solid K ; 0 0 0 sco K 
+3065 3324 N M 5 -5 - : 1.000 1.000 1.000 sco solid K ; 0 0 0 sco K 
+3070 3319 N M 0 -1 - : 1.000 1.000 1.000 sco solid K ; 0 0 0 sco K 
+3070 3318 N M 36 -36 - : 1.000 1.000 1.000 sco solid K ; 0 0 0 sco K 
+3106 3282 N M 0 -174 - : 1.000 1.000 1.000 sco solid K ; 0 0 0 sco K 
+3058 3060 N M 48 48 - : 1.000 1.000 1.000 sco solid K ; 0 0 0 sco K 
+3058 3415 N M 0 -29 - : 1.000 1.000 1.000 sco solid K ; 0 0 0 sco K 
+3058 3386 N M 24 -24 - : 1.000 1.000 1.000 sco solid K ; 0 0 0 sco K 
+3082 3362 N M 0 -38 - : 1.000 1.000 1.000 sco solid K ; 0 0 0 sco K 
+3082 3324 N M 48 -48 - : 1.000 1.000 1.000 sco solid K ; 0 0 0 sco K 
+3130 3276 N M 0 -168 - : 1.000 1.000 1.000 sco solid K ; 0 0 0 sco K 
+3075 3054 N M 55 54 - : 1.000 1.000 1.000 sco solid K ; 0 0 0 sco K 
+3075 3054 N M 0 -131 - : 1.000 1.000 1.000 sco solid K ; 0 0 0 sco K 
+3058 3060 N M 0 -48 - : 1.000 1.000 1.000 sco solid K ; 0 0 0 sco K 
+3022 2976 N M 36 36 - : 1.000 1.000 1.000 sco solid K ; 0 0 0 sco K 
+3035 3875 N M 35 -35 - : 1.000 1.000 1.000 sco solid K ; 0 0 0 sco K 
+3070 3840 N M 0 -132 - : 1.000 1.000 1.000 sco solid K ; 0 0 0 sco K 
+3062 3700 N M 8 8 - : 1.000 1.000 1.000 sco solid K ; 0 0 0 sco K 
+3062 3700 N M 0 -24 - : 1.000 1.000 1.000 sco solid K ; 0 0 0 sco K 
+3046 3792 N M 0 -108 - : 1.000 1.000 1.000 sco solid K ; 0 0 0 sco K 
+2965 3603 N M 81 81 - : 1.000 1.000 1.000 sco solid K ; 0 0 0 sco K 
+3075 2923 N M 31 -31 - : 1.000 1.000 1.000 sco solid K ; 0 0 0 sco K 
+3106 2892 N M 27 0 - : 1.000 1.000 1.000 sco solid K ; 0 0 0 sco K 
+3133 2892 N M 24 -24 - : 1.000 1.000 1.000 sco solid K ; 0 0 0 sco K 
+3157 2868 N M 116 0 - : 1.000 1.000 1.000 sco solid K ; 0 0 0 sco K 
+3273 2868 N M 35 -35 - : 1.000 1.000 1.000 sco solid K ; 0 0 0 sco K 
+3308 2833 N M 219 0 - : 1.000 1.000 1.000 sco solid K ; 0 0 0 sco K 
+3527 2833 N M 53 53 - : 1.000 1.000 1.000 sco solid K ; 0 0 0 sco K 
+3580 2886 N M 120 0 - : 1.000 1.000 1.000 sco solid K ; 0 0 0 sco K 
+3700 2886 N M 29 30 - : 1.000 1.000 1.000 sco solid K ; 0 0 0 sco K 
+3729 2976 N M 0 -60 - : 1.000 1.000 1.000 sco solid K ; 0 0 0 sco K 
+3705 3000 N M 24 -24 - : 1.000 1.000 1.000 sco solid K ; 0 0 0 sco K 
+3681 3000 N M 24 0 - : 1.000 1.000 1.000 sco solid K ; 0 0 0 sco K 
+3957 3888 N M 60 -60 - : 1.000 1.000 1.000 sco solid K ; 0 0 0 sco K 
+4017 3828 N M 0 -12 - : 1.000 1.000 1.000 sco solid K ; 0 0 0 sco K 
+3813 3864 N M 120 0 - : 1.000 1.000 1.000 sco solid K ; 0 0 0 sco K 
+3789 3840 N M 24 24 - : 1.000 1.000 1.000 sco solid K ; 0 0 0 sco K 
+3705 3840 N M 84 0 - : 1.000 1.000 1.000 sco solid K ; 0 0 0 sco K 
+3705 4020 N M 0 -180 - : 1.000 1.000 1.000 sco solid K ; 0 0 0 sco K 
+3705 4020 N M 60 60 - : 1.000 1.000 1.000 sco solid K ; 0 0 0 sco K 
+3765 4116 N M 0 -36 - : 1.000 1.000 1.000 sco solid K ; 0 0 0 sco K 
+2767 3267 N M 39 -39 - : 1.000 1.000 1.000 sco solid K ; 0 0 0 sco K 
+2767 3441 N M 0 -174 - : 1.000 1.000 1.000 sco solid K ; 0 0 0 sco K 
+3189 3204 N M 0 -12 - : 1.000 1.000 1.000 sco solid K ; 0 0 0 sco K 
+2854 3156 N M 72 72 - : 1.000 1.000 1.000 sco solid K ; 0 0 0 sco K 
+2926 3228 N M 120 0 - : 1.000 1.000 1.000 sco solid K ; 0 0 0 sco K 
+3645 3156 N M 60 0 - : 1.000 1.000 1.000 sco solid K ; 0 0 0 sco K 
+4017 3480 N M 0 -156 - : 1.000 1.000 1.000 sco solid K ; 0 0 0 sco K 
+3945 3420 N M 72 0 - : 1.000 1.000 1.000 sco solid K ; 0 0 0 sco K 
+3802 3276 N M 143 144 - : 1.000 1.000 1.000 sco solid K ; 0 0 0 sco K 
+3789 3276 N M 13 0 - : 1.000 1.000 1.000 sco solid K ; 0 0 0 sco K 
+3741 3192 N M 24 24 - : 1.000 1.000 1.000 sco solid K ; 0 0 0 sco K 
+3765 3216 N M 60 0 - : 1.000 1.000 1.000 sco solid K ; 0 0 0 sco K 
+3825 3216 N M 61 60 - : 1.000 1.000 1.000 sco solid K ; 0 0 0 sco K 
+3969 3360 N M 0 -36 - : 1.000 1.000 1.000 sco solid K ; 0 0 0 sco K 
+3921 3276 N M 48 48 - : 1.000 1.000 1.000 sco solid K ; 0 0 0 sco K 
+4042 3504 N M 47 0 - : 1.000 1.000 1.000 sco solid K ; 0 0 0 sco K 
+4017 3480 N M 25 24 - : 1.000 1.000 1.000 sco solid K ; 0 0 0 sco K 
+4089 3576 N M 0 -72 - : 1.000 1.000 1.000 sco solid K ; 0 0 0 sco K 
+4041 3576 N M 48 0 - : 1.000 1.000 1.000 sco solid K ; 0 0 0 sco K 
+3897 3720 N M 144 -144 - : 1.000 1.000 1.000 sco solid K ; 0 0 0 sco K 
+3897 3816 N M 0 -96 - : 1.000 1.000 1.000 sco solid K ; 0 0 0 sco K 
+4017 3816 N M 24 -24 - : 1.000 1.000 1.000 sco solid K ; 0 0 0 sco K 
+4041 3792 N M 0 -60 - : 1.000 1.000 1.000 sco solid K ; 0 0 0 sco K 
+4041 3732 N M 24 -24 - : 1.000 1.000 1.000 sco solid K ; 0 0 0 sco K 
+4065 3708 N M 0 -60 - : 1.000 1.000 1.000 sco solid K ; 0 0 0 sco K 
+4065 3360 N M 0 0 - : 1.000 1.000 1.000 sco solid K ; 0 0 0 sco K 
+4065 3432 N M 0 -72 - : 1.000 1.000 1.000 sco solid K ; 0 0 0 sco K 
+3777 3360 N M 48 48 - : 1.000 1.000 1.000 sco solid K ; 0 0 0 sco K 
+3825 3420 N M 0 -12 - : 1.000 1.000 1.000 sco solid K ; 0 0 0 sco K 
+3825 3420 N M 24 24 - : 1.000 1.000 1.000 sco solid K ; 0 0 0 sco K 
+3849 3504 N M 0 -60 - : 1.000 1.000 1.000 sco solid K ; 0 0 0 sco K 
+3825 3600 N M 24 -24 - : 1.000 1.000 1.000 sco solid K ; 0 0 0 sco K 
+3825 3648 N M 0 -48 - : 1.000 1.000 1.000 sco solid K ; 0 0 0 sco K 
+3789 3684 N M 36 -36 - : 1.000 1.000 1.000 sco solid K ; 0 0 0 sco K 
+3789 3744 N M 0 -60 - : 1.000 1.000 1.000 sco solid K ; 0 0 0 sco K 
+3010 3828 N M 36 -36 - : 1.000 1.000 1.000 sco solid K ; 0 0 0 sco K 
+2925 3875 N M 110 0 - : 1.000 1.000 1.000 sco solid K ; 0 0 0 sco K 
+2908 3858 N M 17 17 - : 1.000 1.000 1.000 sco solid K ; 0 0 0 sco K 
+2908 3858 N M 0 -30 - : 1.000 1.000 1.000 sco solid K ; 0 0 0 sco K 
+2854 3864 N M 36 0 - : 1.000 1.000 1.000 sco solid K ; 0 0 0 sco K 
+2890 3864 N M 24 24 - : 1.000 1.000 1.000 sco solid K ; 0 0 0 sco K 
+3082 4056 N M 0 -108 - : 1.000 1.000 1.000 sco solid K ; 0 0 0 sco K 
+3022 3888 N M 60 60 - : 1.000 1.000 1.000 sco solid K ; 0 0 0 sco K 
+2914 3888 N M 108 0 - : 1.000 1.000 1.000 sco solid K ; 0 0 0 sco K 
+2848 3858 N M 0 -30 - : 1.000 1.000 1.000 sco solid K ; 0 0 0 sco K 
+2848 3858 N M 6 6 - : 1.000 1.000 1.000 sco solid K ; 0 0 0 sco K 
+3082 4056 N M 24 24 - : 1.000 1.000 1.000 sco solid K ; 0 0 0 sco K 
+3106 4080 N M 24 0 - : 1.000 1.000 1.000 sco solid K ; 0 0 0 sco K 
+2878 3828 N M 0 -36 - : 1.000 1.000 1.000 sco solid K ; 0 0 0 sco K 
+2878 3792 N M 12 -12 - : 1.000 1.000 1.000 sco solid K ; 0 0 0 sco K 
+2890 3780 N M 72 0 - : 1.000 1.000 1.000 sco solid K ; 0 0 0 sco K 
+2962 3780 N M 48 48 - : 1.000 1.000 1.000 sco solid K ; 0 0 0 sco K 
+2878 3696 N M 0 -24 - : 1.000 1.000 1.000 sco solid K ; 0 0 0 sco K 
+2878 3672 N M 24 -24 - : 1.000 1.000 1.000 sco solid K ; 0 0 0 sco K 
+2902 3648 N M 72 0 - : 1.000 1.000 1.000 sco solid K ; 0 0 0 sco K 
+2974 3648 N M 36 36 - : 1.000 1.000 1.000 sco solid K ; 0 0 0 sco K 
+3010 3708 N M 0 -24 - : 1.000 1.000 1.000 sco solid K ; 0 0 0 sco K 
+2746 3672 N M 48 -48 - : 1.000 1.000 1.000 sco solid K ; 0 0 0 sco K 
+2794 3624 N M 36 0 - : 1.000 1.000 1.000 sco solid K ; 0 0 0 sco K 
+2848 3654 N M 30 -30 - : 1.000 1.000 1.000 sco solid K ; 0 0 0 sco K 
+2848 3696 N M 0 -42 - : 1.000 1.000 1.000 sco solid K ; 0 0 0 sco K 
+2908 3726 N M 0 -30 - : 1.000 1.000 1.000 sco solid K ; 0 0 0 sco K 
+2878 3756 N M 30 -30 - : 1.000 1.000 1.000 sco solid K ; 0 0 0 sco K 
+2782 3756 N M 96 0 - : 1.000 1.000 1.000 sco solid K ; 0 0 0 sco K 
+2782 3852 N M 0 -36 - : 1.000 1.000 1.000 sco solid K ; 0 0 0 sco K 
+2782 3852 N M 60 60 - : 1.000 1.000 1.000 sco solid K ; 0 0 0 sco K 
+2842 3912 N M 12 0 - : 1.000 1.000 1.000 sco solid K ; 0 0 0 sco K 
+3609 2928 N M 36 0 - : 1.000 1.000 1.000 sco solid K ; 0 0 0 sco K 
+3645 3072 N M 0 -144 - : 1.000 1.000 1.000 sco solid K ; 0 0 0 sco K 
+3645 2940 N M 36 0 - : 1.000 1.000 1.000 sco solid K ; 0 0 0 sco K 
+3609 3108 N M 36 -36 - : 1.000 1.000 1.000 sco solid K ; 0 0 0 sco K 
+3441 3108 N M 168 0 - : 1.000 1.000 1.000 sco solid K ; 0 0 0 sco K 
+3417 3084 N M 24 24 - : 1.000 1.000 1.000 sco solid K ; 0 0 0 sco K 
+3417 3084 N M 0 -60 - : 1.000 1.000 1.000 sco solid K ; 0 0 0 sco K 
+3417 3024 N M 24 -24 - : 1.000 1.000 1.000 sco solid K ; 0 0 0 sco K 
+3441 3000 N M 0 -72 - : 1.000 1.000 1.000 sco solid K ; 0 0 0 sco K 
+3681 3084 N M 0 -24 - : 1.000 1.000 1.000 sco solid K ; 0 0 0 sco K 
+3633 3132 N M 48 -48 - : 1.000 1.000 1.000 sco solid K ; 0 0 0 sco K 
+3189 3132 N M 444 0 - : 1.000 1.000 1.000 sco solid K ; 0 0 0 sco K 
+3094 3036 N M 95 96 - : 1.000 1.000 1.000 sco solid K ; 0 0 0 sco K 
+3094 3036 N M 0 -60 - : 1.000 1.000 1.000 sco solid K ; 0 0 0 sco K 
+3094 2976 N M 36 -36 - : 1.000 1.000 1.000 sco solid K ; 0 0 0 sco K 
+3130 2940 N M 131 0 - : 1.000 1.000 1.000 sco solid K ; 0 0 0 sco K 
+3261 2940 N M 12 -12 - : 1.000 1.000 1.000 sco solid K ; 0 0 0 sco K 
+3154 3072 N M 0 -78 - : 1.000 1.000 1.000 sco solid K ; 0 0 0 sco K 
+3154 3072 N M 35 36 - : 1.000 1.000 1.000 sco solid K ; 0 0 0 sco K 
+3189 3108 N M 120 0 - : 1.000 1.000 1.000 sco solid K ; 0 0 0 sco K 
+3309 3108 N M 36 -36 - : 1.000 1.000 1.000 sco solid K ; 0 0 0 sco K 
+3537 2940 N M 48 48 - : 1.000 1.000 1.000 sco solid K ; 0 0 0 sco K 
+3579 2982 N M 30 0 - : 1.000 1.000 1.000 sco solid K ; 0 0 0 sco K 
+3489 3024 N M 0 -144 - : 1.000 1.000 1.000 sco solid K ; 0 0 0 sco K 
+3321 2880 N M 168 0 - : 1.000 1.000 1.000 sco solid K ; 0 0 0 sco K 
+3369 2964 N M 0 -36 - : 1.000 1.000 1.000 sco solid K ; 0 0 0 sco K 
+3345 2988 N M 24 -24 - : 1.000 1.000 1.000 sco solid K ; 0 0 0 sco K 
+3345 3060 N M 0 -72 - : 1.000 1.000 1.000 sco solid K ; 0 0 0 sco K 
+3225 3060 N M 12 0 - : 1.000 1.000 1.000 sco solid K ; 0 0 0 sco K 
+3237 3060 N M 84 -84 - : 1.000 1.000 1.000 sco solid K ; 0 0 0 sco K 
+3321 2976 N M 0 -96 - : 1.000 1.000 1.000 sco solid K ; 0 0 0 sco K 
+3465 3048 N M 24 -24 - : 1.000 1.000 1.000 sco solid K ; 0 0 0 sco K 
+3585 3060 N M 0 -72 - : 1.000 1.000 1.000 sco solid K ; 0 0 0 sco K 
+3537 2940 N M 0 -12 - : 1.000 1.000 1.000 sco solid K ; 0 0 0 sco K 
+3213 3960 N M 168 0 - : 1.000 1.000 1.000 sco solid K ; 0 0 0 sco K 
+3177 3996 N M 36 -36 - : 1.000 1.000 1.000 sco solid K ; 0 0 0 sco K 
+3177 4056 N M 0 -60 - : 1.000 1.000 1.000 sco solid K ; 0 0 0 sco K 
+3177 4056 N M 36 36 - : 1.000 1.000 1.000 sco solid K ; 0 0 0 sco K 
+3537 4152 N M 120 0 - : 1.000 1.000 1.000 sco solid K ; 0 0 0 sco K 
+3633 3936 N M 30 29 - : 1.000 1.000 1.000 sco solid K ; 0 0 0 sco K 
+3177 3936 N M 456 0 - : 1.000 1.000 1.000 sco solid K ; 0 0 0 sco K 
+3130 3984 N M 47 -48 - : 1.000 1.000 1.000 sco solid K ; 0 0 0 sco K 
+3130 4020 N M 0 -36 - : 1.000 1.000 1.000 sco solid K ; 0 0 0 sco K 
+3130 4140 N M 24 0 - : 1.000 1.000 1.000 sco solid K ; 0 0 0 sco K 
+3154 4140 N M 47 -48 - : 1.000 1.000 1.000 sco solid K ; 0 0 0 sco K 
+3213 4152 N M 60 0 - : 1.000 1.000 1.000 sco solid K ; 0 0 0 sco K 
+3657 4152 N M 6 -5 - : 1.000 1.000 1.000 sco solid K ; 0 0 0 sco K 
+3663 4147 N M 0 -182 - : 1.000 1.000 1.000 sco solid K ; 0 0 0 sco K 
+3381 3960 N M 24 24 - : 1.000 1.000 1.000 sco solid K ; 0 0 0 sco K 
+3405 4056 N M 0 -72 - : 1.000 1.000 1.000 sco solid K ; 0 0 0 sco K 
+3381 4080 N M 24 -24 - : 1.000 1.000 1.000 sco solid K ; 0 0 0 sco K 
+3381 4140 N M 0 -60 - : 1.000 1.000 1.000 sco solid K ; 0 0 0 sco K 
+3609 4104 N M 24 -24 - : 1.000 1.000 1.000 sco solid K ; 0 0 0 sco K 
+3633 4080 N M 0 -108 - : 1.000 1.000 1.000 sco solid K ; 0 0 0 sco K 
+3513 3972 N M 120 0 - : 1.000 1.000 1.000 sco solid K ; 0 0 0 sco K 
+3441 4044 N M 72 -72 - : 1.000 1.000 1.000 sco solid K ; 0 0 0 sco K 
+3207 4038 N M 18 -18 - : 1.000 1.000 1.000 sco solid K ; 0 0 0 sco K 
+3489 4200 N M 0 -96 - : 1.000 1.000 1.000 sco solid K ; 0 0 0 sco K 
+3321 4200 N M 168 0 - : 1.000 1.000 1.000 sco solid K ; 0 0 0 sco K 
+3489 4104 N M 84 -84 - : 1.000 1.000 1.000 sco solid K ; 0 0 0 sco K 
+3573 4020 N M 12 0 - : 1.000 1.000 1.000 sco solid K ; 0 0 0 sco K 
+3441 4152 N M 0 -108 - : 1.000 1.000 1.000 sco solid K ; 0 0 0 sco K 
+3321 4044 N M 24 -24 - : 1.000 1.000 1.000 sco solid K ; 0 0 0 sco K 
+3321 4200 N M 0 -156 - : 1.000 1.000 1.000 sco solid K ; 0 0 0 sco K 
+3225 4020 N M 48 48 - : 1.000 1.000 1.000 sco solid K ; 0 0 0 sco K 
+3273 4152 N M 0 -84 - : 1.000 1.000 1.000 sco solid K ; 0 0 0 sco K 
+3213 3540 N M 0 -36 - 6 Lw solid : 1.000 1.000 1.000 sco solid K ; 0 0 0 sco K 
+3195 3540 N M 18 0 - : 1.000 1.000 1.000 sco solid K ; 0 0 0 sco K 
+3189 3534 N M 6 6 - : 1.000 1.000 1.000 sco solid K ; 0 0 0 sco K 
+3189 3534 N M 0 -6 - : 1.000 1.000 1.000 sco solid K ; 0 0 0 sco K 
+3189 3528 N M 6 -6 - : 1.000 1.000 1.000 sco solid K ; 0 0 0 sco K 
+3195 3522 N M 18 0 - : 1.000 1.000 1.000 sco solid K ; 0 0 0 sco K 
+3213 3522 N M 0 0 - : 1.000 1.000 1.000 sco solid K ; 0 0 0 sco K 
+3213 3522 N M 0 0 - : 1.000 1.000 1.000 sco solid K ; 0 0 0 sco K 
+3213 3522 N M 0 0 - : 1.000 1.000 1.000 sco solid K ; 0 0 0 sco K 
+3195 3522 N M 18 0 - : 1.000 1.000 1.000 sco solid K ; 0 0 0 sco K 
+3189 3516 N M 6 6 - : 1.000 1.000 1.000 sco solid K ; 0 0 0 sco K 
+3189 3516 N M 0 -6 - : 1.000 1.000 1.000 sco solid K ; 0 0 0 sco K 
+3189 3510 N M 6 -6 - : 1.000 1.000 1.000 sco solid K ; 0 0 0 sco K 
+3195 3504 N M 18 0 - : 1.000 1.000 1.000 sco solid K ; 0 0 0 sco K 
+3159 3504 N M 12 0 - : 1.000 1.000 1.000 sco solid K ; 0 0 0 sco K 
+3171 3504 N M 6 6 - : 1.000 1.000 1.000 sco solid K ; 0 0 0 sco K 
+3177 3534 N M 0 -24 - : 1.000 1.000 1.000 sco solid K ; 0 0 0 sco K 
+3171 3540 N M 6 -6 - : 1.000 1.000 1.000 sco solid K ; 0 0 0 sco K 
+3159 3540 N M 12 0 - : 1.000 1.000 1.000 sco solid K ; 0 0 0 sco K 
+3154 3534 N M 5 6 - : 1.000 1.000 1.000 sco solid K ; 0 0 0 sco K 
+3154 3534 N M 0 -24 - : 1.000 1.000 1.000 sco solid K ; 0 0 0 sco K 
+3154 3510 N M 5 -6 - : 1.000 1.000 1.000 sco solid K ; 0 0 0 sco K 
+3118 3504 N M 24 0 - : 1.000 1.000 1.000 sco solid K ; 0 0 0 sco K 
+3118 3504 N M 12 0 - : 1.000 1.000 1.000 sco solid K ; 0 0 0 sco K 
+3130 3540 N M 0 -36 - : 1.000 1.000 1.000 sco solid K ; 0 0 0 sco K 
+N 2973 3552 8.000 360 0 An C 15 Lw solid : 1.000 1.000 1.000 sco solid K ; 0 0 0 sco K 
+N 2973 3552 6.000 360 0 An C : 1.000 1.000 1.000 sco O ; 
+N 3021 2976 8.000 360 0 An C : 1.000 1.000 1.000 sco solid K ; 0 0 0 sco K 
+N 3021 2976 6.000 360 0 An C : 1.000 1.000 1.000 sco O ; 
+N 15 16 3644 3156 ellp : 1.000 1.000 1.000 sco solid K ; 0 0 0 sco K 
+N 11 12 3644 3156 ellp : 1.000 1.000 1.000 sco O ; 
+2730 3405 N M 55 55 rr : 0 0 0 sco O ; 
+N 2757 3432 6.000 360 0 An C : 1.000 1.000 1.000 sco O ; 
+N 2757 3432 6.000 360 0 An C : 1.000 1.000 1.000 sco O ; 
+2730 3525 N M 55 55 rr : 0 0 0 sco O ; 
+N 2757 3552 6.000 360 0 An C : 1.000 1.000 1.000 sco O ; 
+N 2757 3552 6.000 360 0 An C : 1.000 1.000 1.000 sco O ; 
+2988 3267 N M 43 43 rr : 0 0 0 sco O ; 
+N 3009 3288 6.000 360 0 An C : 1.000 1.000 1.000 sco O ; 
+N 3009 3288 6.000 360 0 An C : 1.000 1.000 1.000 sco O ; 
+3024 3207 N M 43 43 rr : 0 0 0 sco O ; 
+N 3045 3228 6.000 360 0 An C : 1.000 1.000 1.000 sco O ; 
+N 3045 3228 6.000 360 0 An C : 1.000 1.000 1.000 sco O ; 
+2854 3198 N M -42 -42 - 42 -42 - 42 42 - -42 42 - C : 0 0 0 sco L ; 
+N 2853 3156 6.000 360 0 An C : 1.000 1.000 1.000 sco O ; 
+2784 3207 N M 43 43 rr : 0 0 0 sco O ; 
+N 2805 3228 6.000 360 0 An C : 1.000 1.000 1.000 sco O ; 
+N 2805 3228 6.000 360 0 An C : 1.000 1.000 1.000 sco O ; 
+2748 3267 N M 43 43 rr : 0 0 0 sco O ; 
+N 2769 3288 6.000 360 0 An C : 1.000 1.000 1.000 sco O ; 
+N 2769 3288 6.000 360 0 An C : 1.000 1.000 1.000 sco O ; 
+2724 3327 N M 43 43 rr : 0 0 0 sco O ; 
+N 2745 3348 6.000 360 0 An C : 1.000 1.000 1.000 sco O ; 
+N 2745 3348 6.000 360 0 An C : 1.000 1.000 1.000 sco O ; 
+2964 3327 N M 43 43 rr : 0 0 0 sco O ; 
+N 2985 3348 6.000 360 0 An C : 1.000 1.000 1.000 sco O ; 
+N 2985 3348 6.000 360 0 An C : 1.000 1.000 1.000 sco O ; 
+3189 3234 N M -41 -42 - 41 -42 - 43 42 - -43 42 - C : 0 0 0 sco L ; 
+N 11 12 3188 3192 ellp : 1.000 1.000 1.000 sco O ; 
+3675 3810 N M 60 61 rr : 0 0 0 sco O ; 
+N 11 12 3704 3840 ellp : 1.000 1.000 1.000 sco O ; 
+N 11 12 3704 3840 ellp : 1.000 1.000 1.000 sco O ; 
+3759 3810 N M 60 61 rr : 0 0 0 sco O ; 
+N 11 12 3788 3840 ellp : 1.000 1.000 1.000 sco O ; 
+N 11 12 3788 3840 ellp : 1.000 1.000 1.000 sco O ; 
+3675 3894 N M 60 61 rr : 0 0 0 sco O ; 
+N 11 12 3704 3924 ellp : 1.000 1.000 1.000 sco O ; 
+N 11 12 3704 3924 ellp : 1.000 1.000 1.000 sco O ; 
+3927 3858 N M 60 61 rr : 0 0 0 sco O ; 
+N 11 12 3956 3888 ellp : 1.000 1.000 1.000 sco O ; 
+N 11 12 3956 3888 ellp : 1.000 1.000 1.000 sco O ; 
+3735 4074 N M 60 61 rr : 0 0 0 sco O ; 
+N 11 12 3764 4104 ellp : 1.000 1.000 1.000 sco O ; 
+N 11 12 3764 4104 ellp : 1.000 1.000 1.000 sco O ; 
+3420 2907 N M 42 43 rr : 0 0 0 sco O ; 
+N 11 12 3440 2928 ellp : 1.000 1.000 1.000 sco O ; 
+N 11 12 3440 2928 ellp : 1.000 1.000 1.000 sco O ; 
+3252 2907 N M 42 43 rr : 0 0 0 sco O ; 
+N 11 12 3272 2928 ellp : 1.000 1.000 1.000 sco O ; 
+N 11 12 3272 2928 ellp : 1.000 1.000 1.000 sco O ; 
+3348 4131 N M 42 43 rr : 0 0 0 sco O ; 
+N 11 12 3368 4152 ellp : 1.000 1.000 1.000 sco O ; 
+N 11 12 3368 4152 ellp : 1.000 1.000 1.000 sco O ; 
+3516 4131 N M 42 43 rr : 0 0 0 sco O ; 
+N 11 12 3536 4152 ellp : 1.000 1.000 1.000 sco O ; 
+N 11 12 3536 4152 ellp : 1.000 1.000 1.000 sco O ; 
+3300 2859 N M 42 43 rr : 0 0 0 sco O ; 
+N 11 12 3320 2880 ellp : 1.000 1.000 1.000 sco O ; 
+N 11 12 3320 2880 ellp : 1.000 1.000 1.000 sco O ; 
+3468 4179 N M 42 43 rr : 0 0 0 sco O ; 
+N 11 12 3488 4200 ellp : 1.000 1.000 1.000 sco O ; 
+N 11 12 3488 4200 ellp : 1.000 1.000 1.000 sco O ; 
+3468 2859 N M 42 43 rr : 0 0 0 sco O ; 
+N 11 12 3488 2880 ellp : 1.000 1.000 1.000 sco O ; 
+N 11 12 3488 2880 ellp : 1.000 1.000 1.000 sco O ; 
+3300 4179 N M 42 43 rr : 0 0 0 sco O ; 
+N 11 12 3320 4200 ellp : 1.000 1.000 1.000 sco O ; 
+N 11 12 3320 4200 ellp : 1.000 1.000 1.000 sco O ; 
+3348 2907 N M 42 43 rr : 0 0 0 sco O ; 
+N 11 12 3368 2928 ellp : 1.000 1.000 1.000 sco O ; 
+N 11 12 3368 2928 ellp : 1.000 1.000 1.000 sco O ; 
+3420 4131 N M 42 43 rr : 0 0 0 sco O ; 
+N 11 12 3440 4152 ellp : 1.000 1.000 1.000 sco O ; 
+N 11 12 3440 4152 ellp : 1.000 1.000 1.000 sco O ; 
+3516 2907 N M 42 43 rr : 0 0 0 sco O ; 
+N 11 12 3536 2928 ellp : 1.000 1.000 1.000 sco O ; 
+N 11 12 3536 2928 ellp : 1.000 1.000 1.000 sco O ; 
+3252 4131 N M 42 43 rr : 0 0 0 sco O ; 
+N 11 12 3272 4152 ellp : 1.000 1.000 1.000 sco O ; 
+N 11 12 3272 4152 ellp : 1.000 1.000 1.000 sco O ; 
+N 3839 3973 12.500 360 0 An C 23 Lw solid : 1.000 1.000 1.000 sco solid K ; 0 0 0 sco K 
+N 3839 3974 6.000 360 0 An C : 1.000 1.000 1.000 sco O ; 
+N 3404 3539 12.500 360 0 An C : 1.000 1.000 1.000 sco solid K ; 0 0 0 sco K 
+N 11 12 3404 3540 ellp : 1.000 1.000 1.000 sco O ; 
+N 2970 3973 12.500 360 0 An C : 1.000 1.000 1.000 sco solid K ; 0 0 0 sco K 
+N 2971 3974 6.000 360 0 An C : 1.000 1.000 1.000 sco O ; 
+N 3839 3105 12.500 360 0 An C : 1.000 1.000 1.000 sco solid K ; 0 0 0 sco K 
+N 12 11 3839 3105 ellp : 1.000 1.000 1.000 sco O ; 
+N 2970 3105 12.500 360 0 An C : 1.000 1.000 1.000 sco solid K ; 0 0 0 sco K 
+N 12 11 2971 3105 ellp : 1.000 1.000 1.000 sco O ; 
+3768 3255 N M 42 43 rr : 0 0 0 sco O ; 
+N 11 12 3788 3276 ellp : 1.000 1.000 1.000 sco O ; 
+N 11 12 3788 3276 ellp : 1.000 1.000 1.000 sco O ; 
+3888 3255 N M 42 43 rr : 0 0 0 sco O ; 
+N 11 12 3908 3276 ellp : 1.000 1.000 1.000 sco O ; 
+N 11 12 3908 3276 ellp : 1.000 1.000 1.000 sco O ; 
+4020 3711 N M 42 43 rr : 0 0 0 sco O ; 
+N 11 12 4040 3732 ellp : 1.000 1.000 1.000 sco O ; 
+N 11 12 4040 3732 ellp : 1.000 1.000 1.000 sco O ; 
+3900 3711 N M 42 43 rr : 0 0 0 sco O ; 
+N 11 12 3920 3732 ellp : 1.000 1.000 1.000 sco O ; 
+N 11 12 3920 3732 ellp : 1.000 1.000 1.000 sco O ; 
+3747 3330 N M 60 61 rr : 0 0 0 sco O ; 
+N 11 12 3776 3360 ellp : 1.000 1.000 1.000 sco O ; 
+N 11 12 3776 3360 ellp : 1.000 1.000 1.000 sco O ; 
+3759 3702 N M 60 61 rr : 0 0 0 sco O ; 
+N 11 12 3788 3732 ellp : 1.000 1.000 1.000 sco O ; 
+N 11 12 3788 3732 ellp : 1.000 1.000 1.000 sco O ; 
+4044 3339 N M 42 43 rr : 0 0 0 sco O ; 
+N 11 12 4064 3360 ellp : 1.000 1.000 1.000 sco O ; 
+N 11 12 4064 3360 ellp : 1.000 1.000 1.000 sco O ; 
+3948 3339 N M 42 43 rr : 0 0 0 sco O ; 
+N 11 12 3968 3360 ellp : 1.000 1.000 1.000 sco O ; 
+N 11 12 3968 3360 ellp : 1.000 1.000 1.000 sco O ; 
+3996 3291 N M 42 43 rr : 0 0 0 sco O ; 
+N 11 12 4016 3312 ellp : 1.000 1.000 1.000 sco O ; 
+N 11 12 4016 3312 ellp : 1.000 1.000 1.000 sco O ; 
+2715 3642 N M 61 61 rr : 0 0 0 sco O ; 
+N 2745 3672 6.000 360 0 An C : 1.000 1.000 1.000 sco O ; 
+N 2745 3672 6.000 360 0 An C : 1.000 1.000 1.000 sco O ; 
+2823 3882 N M 61 61 rr : 0 0 0 sco O ; 
+N 2853 3912 6.000 360 0 An C : 1.000 1.000 1.000 sco O ; 
+N 2853 3912 6.000 360 0 An C : 1.000 1.000 1.000 sco O ; 
+3105 4116 N M 49 49 rr : 0 0 0 sco O ; 
+N 3129 4140 6.000 360 0 An C : 1.000 1.000 1.000 sco O ; 
+N 3129 4140 6.000 360 0 An C : 1.000 1.000 1.000 sco O ; 
+3105 4056 N M 49 49 rr : 0 0 0 sco O ; 
+N 3129 4080 6.000 360 0 An C : 1.000 1.000 1.000 sco O ; 
+N 3129 4080 6.000 360 0 An C : 1.000 1.000 1.000 sco O ; 
+3105 3996 N M 49 49 rr : 0 0 0 sco O ; 
+N 3129 4020 6.000 360 0 An C : 1.000 1.000 1.000 sco O ; 
+N 3129 4020 6.000 360 0 An C : 1.000 1.000 1.000 sco O ; 
+3657 2916 N M 48 49 rr : 0 0 0 sco O ; 
+N 11 12 3680 2940 ellp : 1.000 1.000 1.000 sco O ; 
+N 11 12 3680 2940 ellp : 1.000 1.000 1.000 sco O ; 
+3657 2976 N M 48 49 rr : 0 0 0 sco O ; 
+N 11 12 3680 3000 ellp : 1.000 1.000 1.000 sco O ; 
+N 11 12 3680 3000 ellp : 1.000 1.000 1.000 sco O ; 
+3657 3036 N M 48 49 rr : 0 0 0 sco O ; 
+N 11 12 3680 3060 ellp : 1.000 1.000 1.000 sco O ; 
+N 11 12 3680 3060 ellp : 1.000 1.000 1.000 sco O ; 
+4044 3411 N M 42 43 rr : 0 0 0 sco O ; 
+N 11 12 4064 3432 ellp : 1.000 1.000 1.000 sco O ; 
+N 11 12 4064 3432 ellp : 1.000 1.000 1.000 sco O ; 
+3804 3411 N M 42 43 rr : 0 0 0 sco O ; 
+N 11 12 3824 3432 ellp : 1.000 1.000 1.000 sco O ; 
+N 11 12 3824 3432 ellp : 1.000 1.000 1.000 sco O ; 
+3828 3483 N M 42 43 rr : 0 0 0 sco O ; 
+N 11 12 3848 3504 ellp : 1.000 1.000 1.000 sco O ; 
+N 11 12 3848 3504 ellp : 1.000 1.000 1.000 sco O ; 
+4068 3483 N M 42 43 rr : 0 0 0 sco O ; 
+N 11 12 4088 3504 ellp : 1.000 1.000 1.000 sco O ; 
+N 11 12 4088 3504 ellp : 1.000 1.000 1.000 sco O ; 
+4044 3627 N M 42 43 rr : 0 0 0 sco O ; 
+N 11 12 4064 3648 ellp : 1.000 1.000 1.000 sco O ; 
+N 11 12 4064 3648 ellp : 1.000 1.000 1.000 sco O ; 
+3804 3627 N M 42 43 rr : 0 0 0 sco O ; 
+N 11 12 3824 3648 ellp : 1.000 1.000 1.000 sco O ; 
+N 11 12 3824 3648 ellp : 1.000 1.000 1.000 sco O ; 
+3828 3555 N M 42 43 rr : 0 0 0 sco O ; 
+N 11 12 3848 3576 ellp : 1.000 1.000 1.000 sco O ; 
+N 11 12 3848 3576 ellp : 1.000 1.000 1.000 sco O ; 
+4068 3555 N M 42 43 rr : 0 0 0 sco O ; 
+N 11 12 4088 3576 ellp : 1.000 1.000 1.000 sco O ; 
+N 11 12 4088 3576 ellp : 1.000 1.000 1.000 sco O ; 
+3564 3999 N M 42 43 rr : 0 0 0 sco O ; 
+N 11 12 3584 4020 ellp : 1.000 1.000 1.000 sco O ; 
+N 11 12 3584 4020 ellp : 1.000 1.000 1.000 sco O ; 
+3444 3999 N M 42 43 rr : 0 0 0 sco O ; 
+N 11 12 3464 4020 ellp : 1.000 1.000 1.000 sco O ; 
+N 11 12 3464 4020 ellp : 1.000 1.000 1.000 sco O ; 
+3444 3039 N M 42 43 rr : 0 0 0 sco O ; 
+N 11 12 3464 3060 ellp : 1.000 1.000 1.000 sco O ; 
+N 11 12 3464 3060 ellp : 1.000 1.000 1.000 sco O ; 
+3564 3039 N M 42 43 rr : 0 0 0 sco O ; 
+N 11 12 3584 3060 ellp : 1.000 1.000 1.000 sco O ; 
+N 11 12 3584 3060 ellp : 1.000 1.000 1.000 sco O ; 
+3324 3999 N M 42 43 rr : 0 0 0 sco O ; 
+N 11 12 3344 4020 ellp : 1.000 1.000 1.000 sco O ; 
+N 11 12 3344 4020 ellp : 1.000 1.000 1.000 sco O ; 
+3204 3999 N M 42 43 rr : 0 0 0 sco O ; 
+N 11 12 3224 4020 ellp : 1.000 1.000 1.000 sco O ; 
+N 11 12 3224 4020 ellp : 1.000 1.000 1.000 sco O ; 
+3204 3039 N M 42 43 rr : 0 0 0 sco O ; 
+N 11 12 3224 3060 ellp : 1.000 1.000 1.000 sco O ; 
+N 11 12 3224 3060 ellp : 1.000 1.000 1.000 sco O ; 
+3324 3039 N M 42 43 rr : 0 0 0 sco O ; 
+N 11 12 3344 3060 ellp : 1.000 1.000 1.000 sco O ; 
+N 11 12 3344 3060 ellp : 1.000 1.000 1.000 sco O ; 
+2990 3689 N M 38 38 rr : 0 0 0 sco O ; 
+N 3009 3708 6.000 360 0 An C : 1.000 1.000 1.000 sco O ; 
+N 3009 3708 6.000 360 0 An C : 1.000 1.000 1.000 sco O ; 
+2990 3809 N M 38 38 rr : 0 0 0 sco O ; 
+N 3009 3828 6.000 360 0 An C : 1.000 1.000 1.000 sco O ; 
+N 3009 3828 6.000 360 0 An C : 1.000 1.000 1.000 sco O ; 
+3876 3795 N M 42 43 rr : 0 0 0 sco O ; 
+N 11 12 3896 3816 ellp : 1.000 1.000 1.000 sco O ; 
+N 11 12 3896 3816 ellp : 1.000 1.000 1.000 sco O ; 
+3996 3795 N M 42 43 rr : 0 0 0 sco O ; 
+N 11 12 4016 3816 ellp : 1.000 1.000 1.000 sco O ; 
+N 11 12 4016 3816 ellp : 1.000 1.000 1.000 sco O ; 
+N 3405.500 3539.500 353.500 0.079 -45.000 An 
+12 Lw solid : 1.000 1.000 1.000 sco solid K ; 0 0 0 sco K 
+N 3405.500 3539.500 353.500 -45.000 -90.080 An 
+: 1.000 1.000 1.000 sco solid K ; 0 0 0 sco K 
+N 3405.500 3539.500 353.500 -90.080 -135.000 An 
+: 1.000 1.000 1.000 sco solid K ; 0 0 0 sco K 
+N 3405.500 3539.500 353.500 -135.000 179.920 An 
+: 1.000 1.000 1.000 sco solid K ; 0 0 0 sco K 
+N 3405.500 3539.500 353.500 179.920 135.000 An 
+: 1.000 1.000 1.000 sco solid K ; 0 0 0 sco K 
+N 3405.500 3539.500 353.500 135.000 90.079 An 
+: 1.000 1.000 1.000 sco solid K ; 0 0 0 sco K 
+N 3405.500 3539.500 353.500 90.079 45.000 An 
+: 1.000 1.000 1.000 sco solid K ; 0 0 0 sco K 
+N 3405.500 3539.500 353.500 45.000 0.079 An 
+: 1.000 1.000 1.000 sco solid K ; 0 0 0 sco K 
+N 3405.500 3539.500 731.500 0.039 -45.000 An 
+: 1.000 1.000 1.000 sco solid K ; 0 0 0 sco K 
+N 3405.500 3539.500 731.500 -45.000 -90.039 An 
+: 1.000 1.000 1.000 sco solid K ; 0 0 0 sco K 
+N 3405.500 3539.500 731.500 -90.039 -135.000 An 
+: 1.000 1.000 1.000 sco solid K ; 0 0 0 sco K 
+N 3405.500 3539.500 731.500 -135.000 179.961 An 
+: 1.000 1.000 1.000 sco solid K ; 0 0 0 sco K 
+N 3405.500 3539.500 731.500 179.961 134.945 An 
+: 1.000 1.000 1.000 sco solid K ; 0 0 0 sco K 
+N 3405.500 3539.500 731.500 134.945 90.039 An 
+: 1.000 1.000 1.000 sco solid K ; 0 0 0 sco K 
+N 3405.500 3539.500 731.500 90.039 45.055 An 
+: 1.000 1.000 1.000 sco solid K ; 0 0 0 sco K 
+N 3405.500 3539.500 731.500 45.055 0.039 An 
+: 1.000 1.000 1.000 sco solid K ; 0 0 0 sco K 
+LH 
+
+(%%[ Page: 1 ]%%)  =
+%%PageTrailer
+
+%%Trailer
+savelevel0 restore 
+%%DocumentNeededFonts: 
+%%DocumentSuppliedFonts: 
+Pscript_Win_Driver_Incr dup /terminate get exec
+%%Pages: 1
+(%%[ LastPage ]%%)  =
+%%EOF
+%-12345X@PJL EOJ
+%-12345X

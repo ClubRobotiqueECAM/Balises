@@ -1,0 +1,3788 @@
+%-12345X@PJL JOB
+@PJL SET RESOLUTION = 600
+@PJL ENTER LANGUAGE = POSTSCRIPT 
+
+%!PS-Adobe-3.0
+%%Title: Protel Document
+%%Creator: PSCRIPT.DRV Version 4.0
+%%CreationDate: 05/16/03 18:42:54
+%%BoundingBox: 14 13 581 829 
+%%Pages: (atend)
+%%PageOrder: Special
+%%Requirements: 
+%%DocumentNeededFonts: (atend)
+%%DocumentSuppliedFonts: (atend)
+%%DocumentData: Clean7Bit
+%%LanguageLevel: 2
+%%EndComments
+
+%%BeginProlog 
+%%BeginProcSet: Pscript_Win_ErrorHandler 1.0 1
+/currentpacking where{pop/oldpack currentpacking def/setpacking where{pop
+false setpacking}if}if/$brkpage 64 dict def $brkpage begin/prnt{dup type
+/stringtype ne{=string cvs}if dup length 6 mul/tx exch def/ty 10 def
+currentpoint/toy exch def/tox exch def 1 setgray newpath tox toy 2 sub moveto
+0 ty rlineto tx 0 rlineto 0 ty neg rlineto closepath fill tox toy moveto 0
+setgray show}bind def/nl{currentpoint exch pop lmargin exch moveto 0 -10
+rmoveto}def/=={/cp 0 def typeprint nl}def/typeprint{dup type exec}readonly def
+/lmargin 72 def/rmargin 72 def/tprint{dup length cp add rmargin gt{nl/cp 0 def
+}if dup length cp add/cp exch def prnt}readonly def/cvsprint{=string cvs
+tprint( )tprint}readonly def/integertype{cvsprint}readonly def/realtype{
+cvsprint}readonly def/booleantype{cvsprint}readonly def/operatortype{(--)
+tprint =string cvs tprint(-- )tprint}readonly def/marktype{pop(-mark- )tprint}
+readonly def/dicttype{pop(-dictionary- )tprint}readonly def/nulltype{pop
+(-null- )tprint}readonly def/filetype{pop(-filestream- )tprint}readonly def
+/savetype{pop(-savelevel- )tprint}readonly def/fonttype{pop(-fontid- )tprint}
+readonly def/nametype{dup xcheck not{(/)tprint}if cvsprint}readonly def
+/stringtype{dup rcheck{(\()tprint tprint(\))tprint}{pop(-string- )tprint}
+ifelse}readonly def/arraytype{dup rcheck{dup xcheck{({)tprint{typeprint}forall
+(})tprint}{([)tprint{typeprint}forall(])tprint}ifelse}{pop(-array- )tprint}
+ifelse}readonly def/packedarraytype{dup rcheck{dup xcheck{({)tprint{typeprint}
+forall(})tprint}{([)tprint{typeprint}forall(])tprint}ifelse}{pop
+(-packedarray- )tprint}ifelse}readonly def/courier/Courier findfont 10
+scalefont def end errordict/handleerror{systemdict begin $error begin $brkpage
+begin newerror{/newerror false store vmstatus pop pop 0 ne{grestoreall}if
+showpage initgraphics courier setfont lmargin 720 moveto(ERROR: )prnt
+errorname prnt nl(OFFENDING COMMAND: )prnt/command load prnt $error/ostack
+known{nl nl(STACK:)prnt nl nl $error/ostack get aload length{==}repeat}if
+systemdict/showpage get exec(%%[ Error: )print errorname =print
+(; OffendingCommand: )print/command load =print( ]%%)= flush}if end end end}
+dup 0 systemdict put dup 4 $brkpage put bind readonly put/currentpacking where
+{pop/setpacking where{pop oldpack setpacking}if}if
+%%EndProcSet
+userdict /Pscript_Win_Driver_Incr 200 dict dup begin put
+%%BeginResource: file Pscript_FatalError 2.0 0
+/FatalErrorIf{{initgraphics findfont exch scalefont setfont counttomark 3 div
+cvi{moveto show}repeat showpage quit}{cleartomark}ifelse}bind def
+%%EndResource
+/VM? {vmstatus exch sub exch pop gt { [
+(Ce travail nécessite une mémoire plus grande que celle dont l'imprimante dispose.) 100 500
+(Essayez d'effectuer une ou plusieurs des opérations suivantes et imprimez à nouveau :) 100 485
+(Dans la boîte de dialogue PostScript, cliquez sur Optimiser la portabilité.) 115 470
+(Dans la boîte de dialogue Options du périphérique, vérifiez que la mémoire disponible de l'imprimante est correcte.) 115 455
+(Diminuez le nombre de polices dans le document.) 115 440
+(Imprimez le document par parties.) 115 425
+12 /Times-Roman showpage
+(%%[ PrinterError: Low Printer VM ]%%) =
+true FatalErrorIf}if} bind def
+30000  VM?
+%%BeginResource: file Pscript_Win_Utils 2.0 0
+/|/def load def/,/load load |/~/exch , |/?/ifelse , |/!/pop , |/`/begin , |/^
+/index , |/@/dup , |/+/translate , |/$/roll , |/U/userdict , |/M/moveto , |/-
+/rlineto , |/&/currentdict , |/:/gsave , |/;/grestore , |/F/false , |/T/true ,
+|/N/newpath , |/E/end , |/Ac/arc , |/An/arcn , |/A/ashow , |/D/awidthshow , |
+/C/closepath , |/V/div , |/O/eofill , |/L/fill , |/I/lineto , |/-C/rcurveto ,
+|/-M/rmoveto , |/+S/scale , |/Ji/setfont , |/Lc/setlinecap , |/Lj/setlinejoin
+, |/Lw/setlinewidth , |/S/show , |/LH/showpage , |/K/stroke , |/W/widthshow ,
+|/R/rotate , |/b{bind |}bind |/bd{bind |}bind |/xd{~ |}bd/ld{, |}bd/lw/Lw ld
+/lc/Lc ld/lj/Lj ld/sg/setgray ld/L2? F/languagelevel where{! languagelevel 2
+ge{! T}if}if |/g{@ not{U/DefIf_save save put}if U/DefIf_bool 2 ^ put}b
+/DefIf_El{if U/DefIf_bool get not @{U/DefIf_save get restore}if}b/e{DefIf_El !
+}b/self & |/reinitialize{[/TextInit/GraphInit/UtilsInit counttomark{@ where{
+self eq}{F}?{cvx exec}{!}?}repeat cleartomark}b/initialize{`{/ADO_mxRot ~ |
+/TextInitialised? F | reinitialize E}{U/Pscript_Win_Data 200 dict @ ` put
+/ADO_mxRot ~ |/TextInitialised? F | reinitialize}?}b/terminate{!{& self eq{
+exit}{E}?}loop E}b/suspend/terminate , |/resume{` Pscript_Win_Data `}b/snap{
+transform 0.25 sub round 0.25 add ~ 0.25 sub round 0.25 add ~ itransform}b
+/dsnap{dtransform round ~ round ~ idtransform}b<04>cvn{}|/setjn{{statusdict
+/jobname known{statusdict/jobname 3 -1 $ put}if}stopped cleartomark}b/solid{[]
+0 setdash}b/setdsh{0 setdash}b/colspRefresh{}b/rp{4 2 $ M 1 ^ 0 - 0 ~ - neg 0
+-}b/rr{1 ^ 0 - 0 ~ - neg 0 - C}b
+%%EndResource
+%%BeginResource: file Pscript_Win_Utils_L1 2.0 0
+L2? not g{/rf{N rp L}b/fx{1 1 dtransform @ 0 ge{1 sub 1}{1 add -0.25}? 3 -1 $
+@ 0 ge{1 sub 1}{1 add -0.25}? 3 1 $ 4 1 $ idtransform 4 -2 $ idtransform}b/BZ{
+4 -2 $ snap + +S fx rf}b/rs{N rp C K}b/rc{N rp clip N}b/sg{setgray}b/sco{
+setrgbcolor}b/sgco{{sg}{sco}?}b}e
+%%EndResource
+%%BeginResource: file Pscript_Win_Utils_L2 2.0 0
+L2? g{/colspA/DeviceGray |/colspABC/DeviceRGB |/setAorABC{{colspA}{colspABC}?
+setcolorspace}b/rf/rectfill , |/fx{1 1 dtransform @ 0 ge{1 sub 0.5}{1 add -0.5
+}? 3 -1 $ @ 0 ge{1 sub 0.5}{1 add -0.5}? 3 1 $ 4 1 $ idtransform 4 -2 $
+idtransform}b/BZ{4 -2 $ snap + +S fx rf}b/rs/rectstroke , |/rc/rectclip , |/sg
+{@ @ setcolor}b/sco{setcolor}b/colspRefresh{colspABC setcolorspace}b/sgco{{sg
+}{sco}?}b/UtilsInit{F setglobal}b/definecolorrendering{/ColorRendering
+defineresource !}b/findcolorrendering{@/ColorRendering resourcestatus{! !
+/ColorRendering findresource T}{! F}?}b/selectcolorrendering{@/ColorRendering
+resourcestatus{! !/ColorRendering}{!/DefaultColorRendering/ColorRendering}?
+findresource setcolorrendering}b}e
+%%EndResource
+end
+%%EndProlog
+
+%%BeginSetup 
+[ 0 1.000 -1.000 0 0 0 ] false Pscript_Win_Driver_Incr dup /initialize get exec
+
+[{0 
+/languagelevel where{pop languagelevel}{1}ifelse 2 ge{1 dict dup/JobTimeout  4 -1 roll put setuserparams}{statusdict/setjobtimeout get exec}ifelse 
+} stopped cleartomark
+[{240 
+/languagelevel where{pop languagelevel}{1}ifelse 2 ge{1 dict dup/WaitTimeout 4 -1 roll put setuserparams}{statusdict/waittimeout 3 -1 roll put}ifelse 
+} stopped cleartomark
+[{
+%%BeginFeature: *Levels of Gray Printer’s Current Setting
+
+%%EndFeature
+} stopped cleartomark
+[{
+
+             <</ManualFeed false>> setpagedevice
+} stopped cleartomark
+[{
+%%BeginFeature: *InputSlot AutoSelect Tray
+
+%%EndFeature
+} stopped cleartomark
+[{
+%%BeginFeature: *Resolution Enhancement Printer’s Current Setting
+
+%%EndFeature
+} stopped cleartomark
+[{
+%%BeginFeature: *PageSize A4
+
+             <</DeferredMediaSelection true /PageSize [595 842] /ImagingBBox null>> setpagedevice
+%%EndFeature
+} stopped cleartomark
+[{
+%%BeginFeature: *Duplex Off (1-Sided)
+
+    <</Duplex false>> setpagedevice
+%%EndFeature
+} stopped cleartomark
+1 setlinecap 1 setlinejoin 
+/mysetup [ 0 0.120 0.120 0 14.000 13.000 ] | 
+%%EndSetup
+
+userdict begin /savelevel0 save def end
+%%Page: 1 1
+%%BeginPageSetup
+[{
+%%BeginFeature: *Duplex Unit Not Installed
+
+%%EndFeature
+} stopped cleartomark
+[{
+%%BeginFeature: *Envelope Feeder Not Installed
+
+%%EndFeature
+} stopped cleartomark
+[{
+%%BeginFeature: *500-Sheet Tray 3 Not Installed
+
+%%EndFeature
+} stopped cleartomark
+[{
+%%BeginFeature: *VMOption 4MB
+
+%%EndFeature
+} stopped cleartomark
+userdict begin /pagesave save def end mysetup concat colspRefresh : 1.000 1.000 1.000 sco 0 0 7016 4958 rf ; 
+%%EndPageSetup
+
+: 0 0 6800 4725 rc pagesave restore
+Pscript_Win_Driver_Incr begin
+%%BeginResource: file Pscript_Win_Graphics 2.0 0
+/SavedCTM null |/CTMsave{/SavedCTM SavedCTM currentmatrix |}b/CTMrestore{
+SavedCTM setmatrix}b/mp null |/ADO_mxRot null |/GDIHMatrix null |
+/GDIHPatternDict 22 dict | GDIHPatternDict `/PatternType 1 |/PaintType 2 |
+/Reps L2?{1}{5}? |/XStep 8 Reps mul |/YStep XStep |/BBox[0 0 XStep YStep]|
+/TilingType 1 |/PaintProc{` 1 Lw[]0 setdash PaintData , exec E}b/FGnd null |
+/BGnd null |/HS_Horizontal{horiz}b/HS_Vertical{vert}b/HS_FDiagonal{fdiag}b
+/HS_BDiagonal{biag}b/HS_Cross{horiz vert}b/HS_DiagCross{fdiag biag}b/MaxXYStep
+XStep YStep gt{XStep}{YStep}? |/horiz{Reps{0 4 M XStep 0 - 0 8 +}repeat 0 -8
+Reps mul + K}b/vert{Reps{4 0 M 0 YStep - 8 0 +}repeat 0 -8 Reps mul + K}b/biag
+{Reps{0 0 M MaxXYStep @ - 0 YStep neg M MaxXYStep @ - 0 8 +}repeat 0 -8 Reps
+mul + 0 YStep M 8 8 - K}b/fdiag{Reps{0 0 M MaxXYStep @ neg - 0 YStep M
+MaxXYStep @ neg - 0 8 +}repeat 0 -8 Reps mul + MaxXYStep @ M 8 -8 - K}b E
+/makehatch{GDIHPatternDict/PaintData 3 -1 $ put CTMsave GDIHMatrix setmatrix
+GDIHPatternDict matrix mp CTMrestore ~ U ~ 2 ^ put}b/h0{/h0/HS_Horizontal
+makehatch}b/h1{/h1/HS_Vertical makehatch}b/h2{/h2/HS_FDiagonal makehatch}b/h3{
+/h3/HS_BDiagonal makehatch}b/h4{/h4/HS_Cross makehatch}b/h5{/h5/HS_DiagCross
+makehatch}b/GDIBWPatternDict 17 dict @ `/PatternType 1 |/PaintType L2?{1}{2}?
+|/RepsV L2?{1}{6}? |/RepsH L2?{1}{5}? |/BBox[0 0 RepsH 1]|/TilingType 1 |
+/XStep 1 |/YStep 1 |/Height 8 RepsV mul |/Width 8 |/mx[Width 0 0 Height neg 0
+Height]|/FGnd null |/BGnd null |/SetBGndFGnd L2?{{BGnd null ne{BGnd aload !
+sgco BBox aload ! 2 ^ sub ~ 3 ^ sub ~ rf}if FGnd null ne{FGnd aload ! sgco}if}
+}{{}}? b/PaintProc{` SetBGndFGnd RepsH{Width Height F mx PaintData imagemask
+Width 0 +}repeat E}b E |/GDIBWPatternMx null |/pfprep{save 4 1 $
+/PatternOfTheDay 4 1 $ GDIBWPatternDict `/PaintData ~ |/BGnd ~ |/FGnd ~ | E
+CTMsave GDIBWPatternMx setmatrix GDIBWPatternDict matrix mp CTMrestore ~ !}b
+/hrf null |/prf{pfprep ~ 6 1 $ 5 hrf restore}b/GraphInit{GDIHMatrix null eq{
+/SavedCTM matrix | : ADO_mxRot concat 0 0 snap + : 0.48 @ GDIHPatternDict `
+YStep mul ~ XStep mul ~ dsnap YStep V ~ XStep V ~ E +S/GDIHMatrix matrix
+currentmatrix readonly | ; : 0.24 -0.24 +S GDIBWPatternDict ` Width Height E
+dsnap +S/GDIBWPatternMx matrix currentmatrix readonly | ; ;}if}b/cirp{360 0 An
+C}b/ellp{CTMsave + +S 0.5 0 M 0 0 0.5 360 0 An C CTMrestore}b/rrp{/rad ~ |/y2
+~ |/x2 ~ |/y1 ~ |/x1 ~ | x2 x1 add 2 V y1 M x1 y1 x1 y2 rad arct x1 y2 x2 y2
+rad arct x2 y2 x2 y1 rad arct x2 y1 x1 y1 rad arct C}b/RRp{CTMsave + +S/dyS ~
+|/dxS ~ | dxS 2 V 0 M 0 0 0 dyS 0.5 arct 0 dyS dxS dyS 0.5 arct dxS dyS dxS 0
+0.5 arct dxS 0 0 0 0.5 arct C CTMrestore}b
+%%EndResource
+
+%%BeginResource: file Pscript_Win_Graphics_L1 2.0 0
+L2? not g{/arct{arcto ! ! ! !}b/GDIpattfill{@ ` BGnd null ne PaintType 2 eq
+and{: BGnd aload ! sgco fEOFill{O}{L}? ; FGnd aload ! U/fGray 2 ^ put{2}{4}?
+-1 $}if E @ patterncalc : 4 ^/PaintType get 2 eq{fGray{6 -1 $ sg}{8 -3 $ sco}?
+}if fEOFill{eoclip}{clip}? N patternfill ; N}b/hrf{/fGray 1 ^ 6 eq | -4 $ N rp
+C/fEOFill F | GDIpattfill}b/hfMain{/fEOFill ~ |/fGray ~ | GDIpattfill}b/hf{T
+hfMain}b/hfW{F hfMain}b/hs{currentpoint strokepath M hfW}b/pfMain{/fEOFill ~ |
+pfprep GDIpattfill restore N}b/pf{T pfMain}b/pfW{F pfMain}b/ps{currentpoint
+strokepath M pfW}b/mpstr 1 string |/mp{~ @ length 12 add dict copy `
+/PatternCTM matrix currentmatrix |/PatternMatrix ~ |/PatWidth XStep mpstr
+length mul |/PatHeight YStep |/FontType 3 |/Encoding 256 array | 3 string 0 1
+255{Encoding ~ @ 3 ^ cvs cvn put}for !/FontMatrix matrix |/FontBBox BBox |
+/BuildChar{! @ ` XStep 0 FontBBox aload ! setcachedevice/PaintProc , E : exec
+;}b & E ~ @ 3 -1 $ definefont}b/patterncalc{` : PatternCTM setmatrix
+PatternMatrix concat BBox aload ! ! ! + pathbbox ; PatHeight V ceiling 4 1 $
+PatWidth V ceiling 4 1 $ PatHeight V floor 4 1 $ PatWidth V floor 4 1 $ 2 ^
+sub cvi abs ~ 3 ^ sub cvi abs ~ 4 2 $ PatHeight mul ~ PatWidth mul ~ E}b
+/patternfill{5 -1 $ @ ` Ji PatternCTM setmatrix PatternMatrix concat 0 2 ^ 2 ^
+M 0 1 mpstr length 1 sub{1 ^ mpstr 3 1 $ put}for ! 2 ^{currentpoint 5 ^{mpstr
+S}repeat YStep add M}repeat ! ! ! ! E}b}e
+%%EndResource
+
+%%BeginResource: file Pscript_Win_Graphics_L2 2.0 0
+L2? g{/mp/makepattern , |/hrf{6 eq setAorABC setpattern rectfill}b/hf{
+setAorABC setpattern O}b/hfW{setAorABC setpattern L}b/hs{setAorABC setpattern
+K}b/pf{pfprep setpattern O restore N}b/pfW{pfprep setpattern L restore N}b/ps{
+pfprep setpattern K restore N}b}e
+%%EndResource
+
+end reinitialize
+userdict begin /pagesave save def end mysetup concat colspRefresh 
+: 0 0 0 sco 1 Lc 1 Lj solid 0 0 6800 4725 rc 
+6782 -127 N M 68 5392 rr : 1.000 1.000 1.000 sco O ; ; : 0 0 6800 4725 rc 
+141 -127 N M 6709 558 rr : 1.000 1.000 1.000 sco O ; ; : 0 0 6800 4725 rc 
+141 4707 N M 6709 558 rr : 1.000 1.000 1.000 sco O ; ; 
+0 413 N M 6800 4312 rr : 1.000 1.000 1.000 sco O ; 
+0 413 N M 6800 4312 rr 1 Lw 0 Lc 0 Lj 0 0 0 sco K 
+91 504 N M 6618 4130 rr 0 0 0 sco K : 0 0 6800 4725 rc 
+1133 4634 N M 0 91 - 1 Lc 1 Lj 0 0 0 sco K ; : 457 4657 303 43 rc pagesave restore
+Pscript_Win_Driver_Incr begin
+%%BeginResource: file Pscript_Win_Encoding 2.0 0
+/bullets{{/bullet}repeat}b/ANSIEncoding[/grave/acute/circumflex/tilde/macron
+/breve/dotaccent/dieresis/ring/cedilla/hungarumlaut/ogonek/caron/dotlessi 18
+bullets StandardEncoding 32 95 getinterval aload ! 3 bullets/quotesinglbase
+/florin/quotedblbase/ellipsis/dagger/daggerdbl/circumflex/perthousand/Scaron
+/guilsinglleft/OE 4 bullets/quoteleft/quoteright/quotedblleft/quotedblright
+/bullet/endash/emdash/tilde/trademark/scaron/guilsinglright/oe 2 bullets
+/Ydieresis/space/exclamdown/cent/sterling/currency/yen/brokenbar/section
+/dieresis/copyright/ordfeminine/guillemotleft/logicalnot/hyphen/registered
+/macron/degree/plusminus/twosuperior/threesuperior/acute/mu/paragraph
+/periodcentered/cedilla/onesuperior/ordmasculine/guillemotright/onequarter
+/onehalf/threequarters/questiondown/Agrave/Aacute/Acircumflex/Atilde/Adieresis
+/Aring/AE/Ccedilla/Egrave/Eacute/Ecircumflex/Edieresis/Igrave/Iacute
+/Icircumflex/Idieresis/Eth/Ntilde/Ograve/Oacute/Ocircumflex/Otilde/Odieresis
+/multiply/Oslash/Ugrave/Uacute/Ucircumflex/Udieresis/Yacute/Thorn/germandbls
+/agrave/aacute/acircumflex/atilde/adieresis/aring/ae/ccedilla/egrave/eacute
+/ecircumflex/edieresis/igrave/iacute/icircumflex/idieresis/eth/ntilde/ograve
+/oacute/ocircumflex/otilde/odieresis/divide/oslash/ugrave/uacute/ucircumflex
+/udieresis/yacute/thorn/ydieresis]| ANSIEncoding @ 39/quotesingle put 96/grave
+put/ANSIEncodingOld ANSIEncoding 256 array copy | ANSIEncodingOld @[138 153
+154 169 172 174 177 178 179 181 185 188 189 190 208 215 221 222 240 247 253
+254]{/bullet put @}forall 166/bar put 176/ring put
+%%EndResource
+
+%%BeginResource: file Pscript_Win_Text 2.0 0
+/TextInit{TextInitialised? not{/Pscript_Windows_Font & |/TextInitialised? T |
+/fM[1 0 0 -1 0 0]|/mFM matrix |/iMat[1 0 0.212557 neg 1 0 0]|}if}b/xUP null |
+/yUP null |/uW null |/xSP null |/ySP null |/sW null |/copyfont{1 ^ length add
+dict `{1 ^/FID ne{|}{! !}?}forall & E}b/rF{3 copyfont @ `/Encoding
+ANSIEncoding &/CharStrings known{CharStrings/Eth known not{! ANSIEncodingOld}
+if}if | E}b/mF{findfont ~{@/Encoding get @ StandardEncoding eq{! T}{{
+ISOLatin1Encoding}stopped{! F}{eq}?{T}{@ ` T 32 1 127{Encoding 1 ^ get
+StandardEncoding 3 -1 $ get eq and}for E}?}?}{F}?{rF}{3 copyfont}? `
+/OrigFontType ~ |/OrigFontName ~ | & E 2 ^ ~ definefont fM 5 4 -1 $ put fM 4 0
+put fM makefont Pscript_Windows_Font 3 1 $ put}b/xF{scalefont
+Pscript_Windows_Font 3 1 $ put}b/xMF{mFM astore makefont Pscript_Windows_Font
+3 1 $ put}b/xF2/scalefont , |/xMF2{mFM astore makefont}b/sLT{: Lw -M
+currentpoint snap M 0 - 0 Lc K ;}b/sSU{N/uW ~ |/yUP ~ |/xUP ~ |}b/sU{xUP yUP
+uW sLT}b/sST{N/sW ~ |/ySP ~ |/xSP ~ |}b/sT{xSP ySP sW sLT}b/sR{: + R 0 0 M}b
+/sRxy{: matrix astore concat 0 0 M}b/eR/; , |
+%%EndResource
+
+end reinitialize
+userdict begin /pagesave save def end mysetup concat colspRefresh 
+: 0 0 0 sco 1 Lw 0 Lc 0 Lj 457 4657 303 43 rc 0 0 0 sco %%IncludeFont: Times-Roman
+(F0) cvn
+0.850 
+ (Times-Roman) cvn /Type1 
+T 
+(Times-Roman) cvn
+mF 
+(F0_40) cvn
+F0
+40 
+xF 
+F0_40
+Ji 
+558 4657 M 
+(1)S 
+; : 0 0 6800 4725 rc 
+2267 4634 N M 0 91 - 1 Lw 1 Lc 1 Lj 0 0 0 sco K ; : 1590 4657 303 43 rc 0 0 0 sco F0_40
+Ji 
+1691 4657 M 
+(2)S 
+; : 0 0 6800 4725 rc 
+3400 4634 N M 0 91 - 1 Lw 1 Lc 1 Lj 0 0 0 sco K ; : 2723 4657 303 43 rc 0 0 0 sco F0_40
+Ji 
+2824 4657 M 
+(3)S 
+; : 0 0 6800 4725 rc 
+4533 4634 N M 0 91 - 1 Lw 1 Lc 1 Lj 0 0 0 sco K ; : 3857 4657 303 43 rc 0 0 0 sco F0_40
+Ji 
+3958 4657 M 
+(4)S 
+; : 0 0 6800 4725 rc 
+5667 4634 N M 0 91 - 1 Lw 1 Lc 1 Lj 0 0 0 sco K ; : 4990 4657 303 43 rc 0 0 0 sco F0_40
+Ji 
+5091 4657 M 
+(5)S 
+; : 6123 4657 303 43 rc 0 0 0 sco F0_40
+Ji 
+6224 4657 M 
+(6)S 
+; : 0 0 6800 4725 rc 
+6709 3649 N M 91 0 - 1 Lw 1 Lc 1 Lj 0 0 0 sco K ; : 6640 4185 160 43 rc 0 0 0 sco F0_40
+Ji 
+6741 4185 M 
+-0.880 0 (A)A 
+; : 0 0 6800 4725 rc 
+6709 2574 N M 91 0 - 1 Lw 1 Lc 1 Lj 0 0 0 sco K ; : 6640 3109 160 43 rc 0 0 0 sco F0_40
+Ji 
+6741 3109 M 
+-0.680 0 (B)A 
+; : 0 0 6800 4725 rc 
+6709 1498 N M 91 0 - 1 Lw 1 Lc 1 Lj 0 0 0 sco K ; : 6640 2033 160 43 rc 0 0 0 sco F0_40
+Ji 
+6741 2033 M 
+-0.680 0 (C)A 
+; : 6640 958 160 43 rc 0 0 0 sco F0_40
+Ji 
+6741 958 M 
+-0.880 0 (D)A 
+; : 6123 436 303 43 rc 0 0 0 sco F0_40
+Ji 
+6224 436 M 
+(6)S 
+; : 0 0 6800 4725 rc 
+5667 504 N M 0 -91 - 1 Lw 1 Lc 1 Lj 0 0 0 sco K ; : 4990 436 303 43 rc 0 0 0 sco F0_40
+Ji 
+5091 436 M 
+(5)S 
+; : 0 0 6800 4725 rc 
+4533 504 N M 0 -91 - 1 Lw 1 Lc 1 Lj 0 0 0 sco K ; : 3857 436 303 43 rc 0 0 0 sco F0_40
+Ji 
+3958 436 M 
+(4)S 
+; : 0 0 6800 4725 rc 
+3400 504 N M 0 -91 - 1 Lw 1 Lc 1 Lj 0 0 0 sco K ; : 2723 436 303 43 rc 0 0 0 sco F0_40
+Ji 
+2824 436 M 
+(3)S 
+; : 0 0 6800 4725 rc 
+2267 504 N M 0 -91 - 1 Lw 1 Lc 1 Lj 0 0 0 sco K ; : 1590 436 303 43 rc 0 0 0 sco F0_40
+Ji 
+1691 436 M 
+(2)S 
+; : 0 0 6800 4725 rc 
+1133 504 N M 0 -91 - 1 Lw 1 Lc 1 Lj 0 0 0 sco K ; : 457 436 303 43 rc 0 0 0 sco F0_40
+Ji 
+558 436 M 
+(1)S 
+; : 0 958 234 43 rc 0 0 0 sco F0_40
+Ji 
+32 958 M 
+-0.880 0 (D)A 
+; : 0 0 6800 4725 rc 
+0 1498 N M 91 0 - 1 Lw 1 Lc 1 Lj 0 0 0 sco K ; : 0 2033 234 43 rc 0 0 0 sco F0_40
+Ji 
+32 2033 M 
+-0.680 0 (C)A 
+; : 0 0 6800 4725 rc 
+0 2574 N M 91 0 - 1 Lw 1 Lc 1 Lj 0 0 0 sco K ; : 0 3109 234 43 rc 0 0 0 sco F0_40
+Ji 
+32 3109 M 
+-0.680 0 (B)A 
+; : 0 0 6800 4725 rc 
+0 3649 N M 91 0 - 1 Lw 1 Lc 1 Lj 0 0 0 sco K ; : 0 4185 234 43 rc 0 0 0 sco F0_40
+Ji 
+32 4185 M 
+-0.880 0 (A)A 
+; : 0 0 6800 4725 rc 
+5123 4271 N M 1586 0 - 1 Lw 1 Lc 1 Lj 0 0 0 sco K ; : 0 0 6800 4725 rc 
+5123 4407 N M 1586 0 - 1 Lw 1 Lc 1 Lj 0 0 0 sco K ; : 0 0 6800 4725 rc 
+5123 4543 N M 1586 0 - 1 Lw 1 Lc 1 Lj 0 0 0 sco K ; : 0 0 6800 4725 rc 
+5123 4589 N M 1586 0 - 1 Lw 1 Lc 1 Lj 0 0 0 sco K ; : 0 0 6800 4725 rc 
+5123 4271 N M 0 363 - 1 Lw 1 Lc 1 Lj 0 0 0 sco K ; : 0 0 6800 4725 rc 
+6256 4407 N M 0 136 - 1 Lw 1 Lc 1 Lj 0 0 0 sco K ; : 0 0 6800 4725 rc 
+5349 4407 N M 0 136 - 1 Lw 1 Lc 1 Lj 0 0 0 sco K ; : 0 0 6800 4725 rc 
+6029 4543 N M 0 91 - 1 Lw 1 Lc 1 Lj 0 0 0 sco K ; : 5044 4271 707 43 rc 0 0 0 sco F0_40
+Ji 
+5145 4271 M 
+-0.512 0 (Title)A 
+; : 5271 4407 808 43 rc 0 0 0 sco F0_40
+Ji 
+5372 4407 M 
+-0.847 0 (Number)A 
+; : 6178 4407 622 43 rc 0 0 0 sco F0_40
+Ji 
+6279 4407 M 
+-0.655 0 (Revision)A 
+; : 5044 4407 606 43 rc 0 0 0 sco F0_40
+Ji 
+5145 4407 M 
+-0.470 0 (Size)A 
+; : 5067 4475 303 43 rc 0 0 0 sco F0_40
+Ji 
+5168 4475 M 
+-0.680 0 (B)A 
+; : 5044 4543 707 43 rc 0 0 0 sco F0_40
+Ji 
+5145 4543 M 
+-0.528 0 (Date:)A 
+; : 5248 4543 1313 43 rc 0 0 0 sco F0_40
+Ji 
+5349 4543 M 
+-0.542 0 (16-May-2003)A 
+; : 5951 4543 849 43 rc 0 0 0 sco F0_40
+Ji 
+6052 4543 M 
+-0.350 0 (Sheet    of )A 
+; : 5044 4589 707 43 rc 0 0 0 sco F0_40
+Ji 
+5145 4589 M 
+-0.272 0 (File:)A 
+; : 5248 4589 1552 43 rc 0 0 0 sco F0_40
+Ji 
+5349 4589 M 
+-0.521 0 (U:\\ROBOT2~1\\..\\RECEPROB.SCH)A 
+; : 5951 4589 849 43 rc 0 0 0 sco F0_40
+Ji 
+6052 4589 M 
+-0.627 0 (Drawn By:)A 
+; 
+5213 958 N M 635 1361 rr : 1.000 1.000 1.000 sco O ; 1 Lw 0 Lc 0 Lj 0 0 0 sco K 
+5213 1366 N M -136 0 - 5 Lw 1 Lc 1 Lj solid 0 0 0 sco K : 5140 1348 1010 43 rc 0 0 0 sco F0_40
+Ji 
+5241 1348 M 
+-0.310 0 (PB0 / T0)A 
+; : 5026 1325 303 43 rc 0 0 0 sco F0_40
+Ji 
+5127 1325 M 
+(1)S 
+; 
+5213 1412 N M -136 0 - 0 0 0 sco K : 5140 1393 1010 43 rc 0 0 0 sco F0_40
+Ji 
+5241 1393 M 
+-0.310 0 (PB1 / T1)A 
+; : 5026 1371 303 43 rc 0 0 0 sco F0_40
+Ji 
+5127 1371 M 
+(2)S 
+; 
+5213 1457 N M -136 0 - 0 0 0 sco K : 5140 1439 1212 43 rc 0 0 0 sco F0_40
+Ji 
+5241 1439 M 
+-0.512 0 (PB2 / AIN0)A 
+; : 5026 1416 303 43 rc 0 0 0 sco F0_40
+Ji 
+5127 1416 M 
+(3)S 
+; 
+5213 1502 N M -136 0 - 0 0 0 sco K : 5140 1484 1212 43 rc 0 0 0 sco F0_40
+Ji 
+5241 1484 M 
+-0.512 0 (PB3 / AIN1)A 
+; : 5026 1462 303 43 rc 0 0 0 sco F0_40
+Ji 
+5127 1462 M 
+(4)S 
+; 
+5213 1548 N M -136 0 - 0 0 0 sco K : 5140 1530 1111 43 rc 0 0 0 sco F0_40
+Ji 
+5241 1530 M 
+-0.182 0 (PB4 / /SS)A 
+; : 5026 1507 303 43 rc 0 0 0 sco F0_40
+Ji 
+5127 1507 M 
+(5)S 
+; 
+5213 1593 N M -136 0 - 0 0 0 sco K : 5140 1575 1212 43 rc 0 0 0 sco F0_40
+Ji 
+5241 1575 M 
+-0.504 0 (PB5 / MOSI)A 
+; : 5026 1552 303 43 rc 0 0 0 sco F0_40
+Ji 
+5127 1552 M 
+(6)S 
+; 
+5213 1639 N M -136 0 - 0 0 0 sco K : 5140 1620 1212 43 rc 0 0 0 sco F0_40
+Ji 
+5241 1620 M 
+-0.504 0 (PB6 / MISO)A 
+; : 5026 1598 303 43 rc 0 0 0 sco F0_40
+Ji 
+5127 1598 M 
+(7)S 
+; 
+5213 1684 N M -136 0 - 0 0 0 sco K : 5140 1666 1111 43 rc 0 0 0 sco F0_40
+Ji 
+5241 1666 M 
+-0.427 0 (PB7 / SCK)A 
+; : 5026 1643 303 43 rc 0 0 0 sco F0_40
+Ji 
+5127 1643 M 
+(8)S 
+; 
+5213 1003 N M -136 0 - 0 0 0 sco K : 5140 985 808 43 rc 0 0 0 sco F0_40
+Ji 
+5241 985 M 
+-0.560 0 (/RESET)A 
+; : 5026 962 303 43 rc 0 0 0 sco F0_40
+Ji 
+5127 962 M 
+(9)S 
+; 
+5531 958 N M 0 -136 - 0 0 0 sco K : 0 0 6800 4725 rc 0 0 0 sco F0_40
+Ji 
+270.000 5508 1067 sR 
+-0.747 0 (VCC)A 
+eR 
+; : 0 0 6800 4725 rc 0 0 0 sco F0_40
+Ji 
+270.000 5485 890 sR 
+(10)S 
+eR 
+; 
+5531 2319 N M 0 137 - 0 0 0 sco K : 0 0 6800 4725 rc 0 0 0 sco F0_40
+Ji 
+270.000 5508 2292 sR 
+-1.213 0 (GND)A 
+eR 
+; : 0 0 6800 4725 rc 0 0 0 sco F0_40
+Ji 
+270.000 5485 2428 sR 
+(11)S 
+eR 
+; 
+5213 1094 N M -136 0 - 0 0 0 sco K : 5140 1076 707 43 rc 0 0 0 sco F0_40
+Ji 
+5241 1076 M 
+-0.928 0 (XTAL2)A 
+; : 5004 1053 404 43 rc 0 0 0 sco F0_40
+Ji 
+5105 1053 M 
+(12)S 
+; 
+5213 1185 N M -136 0 - 0 0 0 sco K : 5140 1166 707 43 rc 0 0 0 sco F0_40
+Ji 
+5241 1166 M 
+-0.928 0 (XTAL1)A 
+; : 5004 1144 404 43 rc 0 0 0 sco F0_40
+Ji 
+5105 1144 M 
+(13)S 
+; 
+5213 1865 N M -136 0 - 0 0 0 sco K : 5140 1847 1111 43 rc 0 0 0 sco F0_40
+Ji 
+5241 1847 M 
+-0.409 0 (PD0 / RXD)A 
+; : 5004 1825 404 43 rc 0 0 0 sco F0_40
+Ji 
+5105 1825 M 
+(14)S 
+; 
+5213 1911 N M -136 0 - 0 0 0 sco K : 5140 1893 1111 43 rc 0 0 0 sco F0_40
+Ji 
+5241 1893 M 
+-0.493 0 (PD1 / TXD)A 
+; : 5004 1870 404 43 rc 0 0 0 sco F0_40
+Ji 
+5105 1870 M 
+(15)S 
+; 
+5213 1956 N M -136 0 - 0 0 0 sco K : 5140 1938 1212 43 rc 0 0 0 sco F0_40
+Ji 
+5241 1938 M 
+-0.588 0 (PD2 / INT0)A 
+; : 5004 1915 404 43 rc 0 0 0 sco F0_40
+Ji 
+5105 1915 M 
+(16)S 
+; 
+5213 2002 N M -136 0 - 0 0 0 sco K : 5140 1984 1212 43 rc 0 0 0 sco F0_40
+Ji 
+5241 1984 M 
+-0.588 0 (PD3 / INT1)A 
+; : 5004 1961 404 43 rc 0 0 0 sco F0_40
+Ji 
+5105 1961 M 
+(17)S 
+; 
+5213 2047 N M -136 0 - 0 0 0 sco K : 5140 2029 1212 43 rc 0 0 0 sco F0_40
+Ji 
+5241 2029 M 
+-0.348 0 (PD4 / OC1B)A 
+; : 5004 2006 404 43 rc 0 0 0 sco F0_40
+Ji 
+5105 2006 M 
+(18)S 
+; 
+5213 2092 N M -136 0 - 0 0 0 sco K : 5140 2074 1212 43 rc 0 0 0 sco F0_40
+Ji 
+5241 2074 M 
+-0.368 0 (PD5 / OC1A)A 
+; : 5004 2052 404 43 rc 0 0 0 sco F0_40
+Ji 
+5105 2052 M 
+(19)S 
+; 
+5213 2138 N M -136 0 - 0 0 0 sco K : 5140 2120 1111 43 rc 0 0 0 sco F0_40
+Ji 
+5241 2120 M 
+-0.498 0 (PD6 / ICP)A 
+; : 5004 2097 404 43 rc 0 0 0 sco F0_40
+Ji 
+5105 2097 M 
+(20)S 
+; 
+5213 2183 N M -136 0 - 0 0 0 sco K : 5140 2165 1111 43 rc 0 0 0 sco F0_40
+Ji 
+5241 2165 M 
+-0.311 0 (PD7 / OC2)A 
+; : 5004 2142 404 43 rc 0 0 0 sco F0_40
+Ji 
+5105 2142 M 
+(21)S 
+; 
+5848 2183 N M 136 0 - 0 0 0 sco K : 5502 2165 1298 43 rc 0 0 0 sco F0_40
+Ji 
+5603 2165 M 
+-0.389 0 (PC7 / TOSC2)A 
+; : 5815 2142 404 43 rc 0 0 0 sco F0_40
+Ji 
+5916 2142 M 
+(29)S 
+; 
+5848 2138 N M 136 0 - 0 0 0 sco K : 5502 2120 1298 43 rc 0 0 0 sco F0_40
+Ji 
+5603 2120 M 
+-0.389 0 (PC6 / TOSC1)A 
+; : 5815 2097 404 43 rc 0 0 0 sco F0_40
+Ji 
+5916 2097 M 
+(28)S 
+; 
+5848 2092 N M 136 0 - 0 0 0 sco K : 5652 2074 505 43 rc 0 0 0 sco F0_40
+Ji 
+5753 2074 M 
+-0.307 0 (PC5)A 
+; : 5815 2052 404 43 rc 0 0 0 sco F0_40
+Ji 
+5916 2052 M 
+(27)S 
+; 
+5848 2047 N M 136 0 - 0 0 0 sco K : 5652 2029 505 43 rc 0 0 0 sco F0_40
+Ji 
+5753 2029 M 
+-0.307 0 (PC4)A 
+; : 5815 2006 404 43 rc 0 0 0 sco F0_40
+Ji 
+5916 2006 M 
+(26)S 
+; 
+5848 2002 N M 136 0 - 0 0 0 sco K : 5652 1984 505 43 rc 0 0 0 sco F0_40
+Ji 
+5753 1984 M 
+-0.307 0 (PC3)A 
+; : 5815 1961 404 43 rc 0 0 0 sco F0_40
+Ji 
+5916 1961 M 
+(25)S 
+; 
+5848 1956 N M 136 0 - 0 0 0 sco K : 5652 1938 505 43 rc 0 0 0 sco F0_40
+Ji 
+5753 1938 M 
+-0.307 0 (PC2)A 
+; : 5815 1915 404 43 rc 0 0 0 sco F0_40
+Ji 
+5916 1915 M 
+(24)S 
+; 
+5848 1911 N M 136 0 - 0 0 0 sco K : 5543 1893 1111 43 rc 0 0 0 sco F0_40
+Ji 
+5644 1893 M 
+-0.338 0 (PC1 / SDA)A 
+; : 5815 1870 404 43 rc 0 0 0 sco F0_40
+Ji 
+5916 1870 M 
+(23)S 
+; 
+5848 1865 N M 136 0 - 0 0 0 sco K : 5548 1847 1111 43 rc 0 0 0 sco F0_40
+Ji 
+5649 1847 M 
+-0.378 0 (PC0 / SCL)A 
+; : 5815 1825 404 43 rc 0 0 0 sco F0_40
+Ji 
+5916 1825 M 
+(22)S 
+; 
+5848 1048 N M 136 0 - 0 0 0 sco K : 5611 1030 606 43 rc 0 0 0 sco F0_40
+Ji 
+5712 1030 M 
+-0.780 0 (AVCC)A 
+; : 5815 1008 404 43 rc 0 0 0 sco F0_40
+Ji 
+5916 1008 M 
+(30)S 
+; 
+5848 1639 N M 136 0 - 0 0 0 sco K : 5611 1620 606 43 rc 0 0 0 sco F0_40
+Ji 
+5712 1620 M 
+-1.130 0 (AGND)A 
+; : 5815 1598 404 43 rc 0 0 0 sco F0_40
+Ji 
+5916 1598 M 
+(31)S 
+; 
+5848 1139 N M 136 0 - 0 0 0 sco K : 5620 1121 606 43 rc 0 0 0 sco F0_40
+Ji 
+5721 1121 M 
+-0.560 0 (AREF)A 
+; : 5815 1098 404 43 rc 0 0 0 sco F0_40
+Ji 
+5916 1098 M 
+(32)S 
+; 
+5848 1548 N M 136 0 - 0 0 0 sco K : 5516 1530 1212 43 rc 0 0 0 sco F0_40
+Ji 
+5617 1530 M 
+-0.368 0 (PA7 / ADC7)A 
+; : 5815 1507 404 43 rc 0 0 0 sco F0_40
+Ji 
+5916 1507 M 
+(33)S 
+; 
+5848 1502 N M 136 0 - 0 0 0 sco K : 5516 1484 1212 43 rc 0 0 0 sco F0_40
+Ji 
+5617 1484 M 
+-0.368 0 (PA6 / ADC6)A 
+; : 5815 1462 404 43 rc 0 0 0 sco F0_40
+Ji 
+5916 1462 M 
+(34)S 
+; 
+5848 1457 N M 136 0 - 0 0 0 sco K : 5516 1439 1212 43 rc 0 0 0 sco F0_40
+Ji 
+5617 1439 M 
+-0.368 0 (PA5 / ADC5)A 
+; : 5815 1416 404 43 rc 0 0 0 sco F0_40
+Ji 
+5916 1416 M 
+(35)S 
+; 
+5848 1412 N M 136 0 - 0 0 0 sco K : 5516 1393 1212 43 rc 0 0 0 sco F0_40
+Ji 
+5617 1393 M 
+-0.368 0 (PA4 / ADC4)A 
+; : 5815 1371 404 43 rc 0 0 0 sco F0_40
+Ji 
+5916 1371 M 
+(36)S 
+; 
+5848 1366 N M 136 0 - 0 0 0 sco K : 5516 1348 1212 43 rc 0 0 0 sco F0_40
+Ji 
+5617 1348 M 
+-0.368 0 (PA3 / ADC3)A 
+; : 5815 1325 404 43 rc 0 0 0 sco F0_40
+Ji 
+5916 1325 M 
+(37)S 
+; 
+5848 1321 N M 136 0 - 0 0 0 sco K : 5516 1303 1212 43 rc 0 0 0 sco F0_40
+Ji 
+5617 1303 M 
+-0.368 0 (PA2 / ADC2)A 
+; : 5815 1280 404 43 rc 0 0 0 sco F0_40
+Ji 
+5916 1280 M 
+(38)S 
+; 
+5848 1275 N M 136 0 - 0 0 0 sco K : 5516 1257 1212 43 rc 0 0 0 sco F0_40
+Ji 
+5617 1257 M 
+-0.368 0 (PA1 / ADC1)A 
+; : 5815 1235 404 43 rc 0 0 0 sco F0_40
+Ji 
+5916 1235 M 
+(39)S 
+; 
+5848 1230 N M 136 0 - 0 0 0 sco K : 5516 1212 1212 43 rc 0 0 0 sco F0_40
+Ji 
+5617 1212 M 
+-0.368 0 (PA0 / ADC0)A 
+; : 5815 1189 404 43 rc 0 0 0 sco F0_40
+Ji 
+5916 1189 M 
+(40)S 
+; : 5294 1734 1506 43 rc 0 0 0 sco F0_40
+Ji 
+5395 1734 M 
+-0.595 0 (ATMEGA163  DIP40)A 
+; : 5747 917 404 43 rc 0 0 0 sco F0_40
+Ji 
+5848 917 M 
+-0.440 0 (U1)A 
+; : 5747 2324 1053 43 rc 0 0 0 sco F0_40
+Ji 
+5848 2324 M 
+-0.578 0 (TATMEGA163_40)A 
+; 
+5531 822 N M 0 -182 - 0 0 0 sco K 
+5531 2456 N M 0 90 - 0 0 0 sco K 
+5259 685 N M 0 -45 - 0 0 0 sco K 
+5259 731 N M 0 45 - 0 0 0 sco K 
+5259 717 N M 0 14 - 0 0 0 sco K 
+5259 685 N M 0 14 - 0 0 0 sco K 
+5218 717 N M 81 0 - 0 0 0 sco K 
+5218 699 N M 81 0 - 0 0 0 sco K : 5203 685 404 43 rc 0 0 0 sco F0_40
+Ji 
+5304 685 M 
+-0.340 0 (C9)A 
+; : 5203 731 707 43 rc 0 0 0 sco F0_40
+Ji 
+5304 731 M 
+-0.048 0 (100nF)A 
+; 
+5259 640 N M 272 0 - 0 0 0 sco K 
+5259 776 N M 0 46 - 0 0 0 sco K 
+5508 2592 N M 45 0 - 0 0 0 sco K : 5389 2592 505 43 rc 0 0 0 sco F0_40
+Ji 
+5490 2592 M 
+-1.213 0 (GND)A 
+; 
+5531 2546 N M 0 46 - 0 0 0 sco K 
+5236 867 N M 45 0 - 0 0 0 sco K : 5117 867 505 43 rc 0 0 0 sco F0_40
+Ji 
+5218 867 M 
+-1.213 0 (GND)A 
+; 
+5259 822 N M 0 45 - 0 0 0 sco K 
+5508 595 N M 45 0 - 0 0 0 sco K : 5389 554 505 43 rc 0 0 0 sco F0_40
+Ji 
+5490 554 M 
+-0.747 0 (VCC)A 
+; 
+5531 640 N M 0 -45 - 0 0 0 sco K 
+272 731 N M 136 1770 rr : 1.000 1.000 1.000 sco O ; 1 Lw 0 Lc 0 Lj solid 0 0 0 sco K 
+408 2456 N M 45 0 - 5 Lw 1 Lc 1 Lj solid 0 0 0 sco K : 230 2437 404 43 rc 0 0 0 sco F0_40
+Ji 
+331 2437 M 
+-0.440 0 (A1)A 
+; 
+408 2410 N M 45 0 - 0 0 0 sco K : 234 2392 404 43 rc 0 0 0 sco F0_40
+Ji 
+335 2392 M 
+-0.340 0 (B1)A 
+; 
+408 2365 N M 45 0 - 0 0 0 sco K : 230 2347 404 43 rc 0 0 0 sco F0_40
+Ji 
+331 2347 M 
+-0.440 0 (A2)A 
+; 
+408 2319 N M 45 0 - 0 0 0 sco K : 234 2301 404 43 rc 0 0 0 sco F0_40
+Ji 
+335 2301 M 
+-0.340 0 (B2)A 
+; 
+408 2274 N M 45 0 - 0 0 0 sco K : 230 2256 404 43 rc 0 0 0 sco F0_40
+Ji 
+331 2256 M 
+-0.440 0 (A3)A 
+; 
+408 2229 N M 45 0 - 0 0 0 sco K : 234 2210 404 43 rc 0 0 0 sco F0_40
+Ji 
+335 2210 M 
+-0.340 0 (B3)A 
+; 
+408 2183 N M 45 0 - 0 0 0 sco K : 230 2165 404 43 rc 0 0 0 sco F0_40
+Ji 
+331 2165 M 
+-0.440 0 (A4)A 
+; 
+408 2138 N M 45 0 - 0 0 0 sco K : 234 2120 404 43 rc 0 0 0 sco F0_40
+Ji 
+335 2120 M 
+-0.340 0 (B4)A 
+; 
+408 2092 N M 45 0 - 0 0 0 sco K : 230 2074 404 43 rc 0 0 0 sco F0_40
+Ji 
+331 2074 M 
+-0.440 0 (A5)A 
+; 
+408 2047 N M 45 0 - 0 0 0 sco K : 234 2029 404 43 rc 0 0 0 sco F0_40
+Ji 
+335 2029 M 
+-0.340 0 (B5)A 
+; 
+408 2002 N M 45 0 - 0 0 0 sco K : 230 1984 404 43 rc 0 0 0 sco F0_40
+Ji 
+331 1984 M 
+-0.440 0 (A6)A 
+; 
+408 1956 N M 45 0 - 0 0 0 sco K : 234 1938 404 43 rc 0 0 0 sco F0_40
+Ji 
+335 1938 M 
+-0.340 0 (B6)A 
+; 
+408 1911 N M 45 0 - 0 0 0 sco K : 230 1893 404 43 rc 0 0 0 sco F0_40
+Ji 
+331 1893 M 
+-0.440 0 (A7)A 
+; 
+408 1865 N M 45 0 - 0 0 0 sco K : 234 1847 404 43 rc 0 0 0 sco F0_40
+Ji 
+335 1847 M 
+-0.340 0 (B7)A 
+; 
+408 1820 N M 45 0 - 0 0 0 sco K : 230 1802 404 43 rc 0 0 0 sco F0_40
+Ji 
+331 1802 M 
+-0.440 0 (A8)A 
+; 
+408 1775 N M 45 0 - 0 0 0 sco K : 234 1757 404 43 rc 0 0 0 sco F0_40
+Ji 
+335 1757 M 
+-0.340 0 (B8)A 
+; 
+408 1729 N M 45 0 - 0 0 0 sco K : 230 1711 404 43 rc 0 0 0 sco F0_40
+Ji 
+331 1711 M 
+-0.440 0 (A9)A 
+; 
+408 1684 N M 45 0 - 0 0 0 sco K : 234 1666 404 43 rc 0 0 0 sco F0_40
+Ji 
+335 1666 M 
+-0.340 0 (B9)A 
+; 
+408 1639 N M 45 0 - 0 0 0 sco K : 212 1620 505 43 rc 0 0 0 sco F0_40
+Ji 
+313 1620 M 
+-0.293 0 (A10)A 
+; 
+408 1593 N M 45 0 - 0 0 0 sco K : 212 1575 505 43 rc 0 0 0 sco F0_40
+Ji 
+313 1575 M 
+-0.227 0 (B10)A 
+; 
+408 1548 N M 45 0 - 0 0 0 sco K : 212 1530 505 43 rc 0 0 0 sco F0_40
+Ji 
+313 1530 M 
+-0.293 0 (A11)A 
+; 
+408 1502 N M 45 0 - 0 0 0 sco K : 212 1484 505 43 rc 0 0 0 sco F0_40
+Ji 
+313 1484 M 
+-0.227 0 (B11)A 
+; 
+408 1457 N M 45 0 - 0 0 0 sco K : 212 1439 505 43 rc 0 0 0 sco F0_40
+Ji 
+313 1439 M 
+-0.293 0 (A12)A 
+; 
+408 1412 N M 45 0 - 0 0 0 sco K : 212 1393 505 43 rc 0 0 0 sco F0_40
+Ji 
+313 1393 M 
+-0.227 0 (B12)A 
+; 
+408 1366 N M 45 0 - 0 0 0 sco K : 212 1348 505 43 rc 0 0 0 sco F0_40
+Ji 
+313 1348 M 
+-0.293 0 (A13)A 
+; 
+408 1321 N M 45 0 - 0 0 0 sco K : 212 1303 505 43 rc 0 0 0 sco F0_40
+Ji 
+313 1303 M 
+-0.227 0 (B13)A 
+; 
+408 1275 N M 45 0 - 0 0 0 sco K : 212 1257 505 43 rc 0 0 0 sco F0_40
+Ji 
+313 1257 M 
+-0.293 0 (A14)A 
+; 
+408 1230 N M 45 0 - 0 0 0 sco K : 212 1212 505 43 rc 0 0 0 sco F0_40
+Ji 
+313 1212 M 
+-0.227 0 (B14)A 
+; 
+408 1185 N M 45 0 - 0 0 0 sco K : 212 1166 505 43 rc 0 0 0 sco F0_40
+Ji 
+313 1166 M 
+-0.293 0 (A15)A 
+; 
+408 1139 N M 45 0 - 0 0 0 sco K : 212 1121 505 43 rc 0 0 0 sco F0_40
+Ji 
+313 1121 M 
+-0.227 0 (B15)A 
+; 
+408 1094 N M 45 0 - 0 0 0 sco K : 212 1076 505 43 rc 0 0 0 sco F0_40
+Ji 
+313 1076 M 
+-0.293 0 (A16)A 
+; 
+408 1048 N M 45 0 - 0 0 0 sco K : 212 1030 505 43 rc 0 0 0 sco F0_40
+Ji 
+313 1030 M 
+-0.227 0 (B16)A 
+; 
+408 1003 N M 45 0 - 0 0 0 sco K : 212 985 505 43 rc 0 0 0 sco F0_40
+Ji 
+313 985 M 
+-0.293 0 (A17)A 
+; 
+408 958 N M 45 0 - 0 0 0 sco K : 212 940 505 43 rc 0 0 0 sco F0_40
+Ji 
+313 940 M 
+-0.227 0 (B17)A 
+; 
+408 912 N M 45 0 - 0 0 0 sco K : 212 894 505 43 rc 0 0 0 sco F0_40
+Ji 
+313 894 M 
+-0.293 0 (A18)A 
+; 
+408 867 N M 45 0 - 0 0 0 sco K : 212 849 505 43 rc 0 0 0 sco F0_40
+Ji 
+313 849 M 
+-0.227 0 (B18)A 
+; 
+408 822 N M 45 0 - 0 0 0 sco K : 212 803 505 43 rc 0 0 0 sco F0_40
+Ji 
+313 803 M 
+-0.293 0 (A19)A 
+; 
+408 776 N M 45 0 - 0 0 0 sco K : 212 758 505 43 rc 0 0 0 sco F0_40
+Ji 
+313 758 M 
+-0.227 0 (B19)A 
+; : 171 690 404 43 rc 0 0 0 sco F0_40
+Ji 
+272 690 M 
+-0.280 0 (J1)A 
+; : 171 2501 808 43 rc 0 0 0 sco F0_40
+Ji 
+272 2501 M 
+-0.647 0 (TCON38)A 
+; 
+453 776 N M 136 0 - 0 0 0 sco K 
+453 822 N M 136 0 - 0 0 0 sco K 
+453 867 N M 136 0 - 0 0 0 sco K 
+453 912 N M 136 0 - 0 0 0 sco K 
+453 958 N M 136 0 - 0 0 0 sco K 
+453 1003 N M 136 0 - 0 0 0 sco K 
+453 1094 N M 0 -46 - 136 0 - 0 0 0 sco K 
+453 1275 N M 0 -136 - 136 0 - 0 0 0 sco K 
+453 1775 N M 136 0 - 0 0 0 sco K 
+453 1865 N M 136 0 - 0 0 0 sco K 
+453 2138 N M 136 0 - 0 0 0 sco K 
+453 2183 N M 136 0 - 0 0 0 sco K 
+453 2229 N M 136 0 - 0 0 0 sco K 
+453 2274 N M 136 0 - 0 0 0 sco K 
+453 2319 N M 136 0 - 0 0 0 sco K 
+453 2365 N M 136 0 - 0 0 0 sco K 
+453 2410 N M 136 0 - 0 0 0 sco K 
+453 2456 N M 136 0 - 0 0 0 sco K : 488 735 808 43 rc 0 0 0 sco F0_40
+Ji 
+589 735 M 
+-0.667 0 (IntBal)A 
+; : 488 781 808 43 rc 0 0 0 sco F0_40
+Ji 
+589 781 M 
+-0.360 0 (/SSBal)A 
+; : 488 826 909 43 rc 0 0 0 sco F0_40
+Ji 
+589 826 M 
+-0.794 0 (MOSIBal)A 
+; : 488 871 909 43 rc 0 0 0 sco F0_40
+Ji 
+589 871 M 
+-0.794 0 (MISOBal)A 
+; : 488 917 909 43 rc 0 0 0 sco F0_40
+Ji 
+589 917 M 
+-0.640 0 (/SCKBal)A 
+; : 488 962 909 43 rc 0 0 0 sco F0_40
+Ji 
+589 962 M 
+-0.577 0 (/RSTBal)A 
+; 
+907 912 N M 0 -45 - 0 0 0 sco K 
+907 958 N M 0 45 - 0 0 0 sco K 
+907 944 N M 0 14 - 0 0 0 sco K 
+907 912 N M 0 14 - 0 0 0 sco K 
+866 944 N M 81 0 - 0 0 0 sco K 
+866 926 N M 81 0 - 0 0 0 sco K : 851 772 505 43 rc 0 0 0 sco F0_40
+Ji 
+952 772 M 
+-0.227 0 (C10)A 
+; : 851 812 707 43 rc 0 0 0 sco F0_40
+Ji 
+952 812 M 
+-0.048 0 (100nF)A 
+; 
+1088 912 N M 0 -45 - 0 0 0 sco K 
+1088 1003 N M 0 45 - 0 0 0 sco K 
+1088 976 N M 0 27 - 0 0 0 sco K 
+1043 958 N M 90 0 - 0 0 0 sco K 
+1088 912 N M 0 46 - 0 0 0 sco K 
+N CTMsave 
+1087.500 1048.000 + 145 144 +S 
+0 0 0.500 -52.553 -89.605 An 
+CTMrestore 
+0 0 0 sco K 
+N CTMsave 
+1087.500 1048.000 + 145 144 +S 
+0 0 0.500 -89.605 -126.835 An 
+CTMrestore 
+0 0 0 sco K : 1016 921 258 36 rc 0 0 0 sco %%IncludeFont: Helvetica
+(F2) cvn
+0.935 
+ (Helvetica) cvn /Type1 
+T 
+(Helvetica) cvn
+mF 
+(F2_31) cvn
+F2
+31 
+xF 
+F2_31
+Ji 
+1102 921 M 
+0.896 0 (+)A 
+; : 1037 908 505 43 rc 0 0 0 sco F0_40
+Ji 
+1138 908 M 
+-0.227 0 (C11)A 
+; : 1037 949 1414 43 rc 0 0 0 sco F0_40
+Ji 
+1138 949 M 
+-0.470 0 (TANTALE 2\265F2)A 
+; 
+907 1003 N M 0 91 - 181 0 - 0 -46 - 0 0 0 sco K 
+907 867 N M 181 0 - 0 0 0 sco K 
+907 867 N M 0 -91 - 0 0 0 sco K 
+907 1094 N M 0 91 - 0 0 0 sco K 
+635 1117 N M 0 45 - 0 0 0 sco K : 543 1121 505 43 rc 0 0 0 sco F0_40
+Ji 
+644 1121 M 
+-1.213 0 (GND)A 
+; 
+589 1139 N M 46 0 - 0 0 0 sco K 
+635 1026 N M 0 45 - 0 0 0 sco K : 543 1030 505 43 rc 0 0 0 sco F0_40
+Ji 
+644 1030 M 
+-0.747 0 (VCC)A 
+; 
+589 1048 N M 46 0 - 0 0 0 sco K 
+884 1230 N M 45 0 - 0 0 0 sco K : 765 1230 505 43 rc 0 0 0 sco F0_40
+Ji 
+866 1230 M 
+-1.213 0 (GND)A 
+; 
+907 1185 N M 0 45 - 0 0 0 sco K 
+884 731 N M 45 0 - 0 0 0 sco K : 765 690 505 43 rc 0 0 0 sco F0_40
+Ji 
+866 690 M 
+-0.747 0 (VCC)A 
+; 
+907 776 N M 0 -45 - 0 0 0 sco K 
+4488 1094 N M -45 0 - 0 0 0 sco K 
+4579 1094 N M 45 0 - 0 0 0 sco K 
+4570 1067 N M 0 54 - 0 0 0 sco K 
+4551 1053 N M 0 82 - 0 0 0 sco K 
+4515 1053 N M 0 82 - 0 0 0 sco K 
+4497 1067 N M 0 54 - 0 0 0 sco K 
+4515 1135 N M 36 0 - 0 0 0 sco K 
+4570 1094 N M 9 0 - 0 0 0 sco K 
+4488 1094 N M 9 0 - 0 0 0 sco K 
+4515 1053 N M 36 0 - 0 0 0 sco K : 4382 1008 505 43 rc 0 0 0 sco F0_40
+Ji 
+4483 1008 M 
+-0.453 0 (CB1)A 
+; : 4382 1144 808 43 rc 0 0 0 sco F0_40
+Ji 
+4483 1144 M 
+-1.033 0 (QUARTZ)A 
+; 
+4443 1185 N M 0 -91 - 0 0 0 sco K 
+4443 1094 N M 0 -136 - 0 0 0 sco K 
+4443 912 N M 0 46 - 0 0 0 sco K 
+4443 867 N M 0 -45 - 0 0 0 sco K 
+4488 912 N M -91 0 - 0 0 0 sco K 
+4443 894 N M 0 -27 - 0 0 0 sco K 
+N 4442.000 821.000 72.000 126.870 89.215 An 
+0 0 0 sco K 
+N 4442.000 821.000 72.000 89.215 52.524 An 
+0 0 0 sco K : 4392 867 404 43 rc 0 0 0 sco F0_40
+Ji 
+4493 867 M 
+-0.340 0 (C5)A 
+; : 4392 912 606 43 rc 0 0 0 sco F0_40
+Ji 
+4493 912 M 
+-0.310 0 (20pF)A 
+; 
+4760 912 N M 0 46 - 0 0 0 sco K 
+4760 867 N M 0 -45 - 0 0 0 sco K 
+4805 912 N M -90 0 - 0 0 0 sco K 
+4760 894 N M 0 -27 - 0 0 0 sco K 
+N CTMsave 
+4759.500 821.000 + 145 144 +S 
+0 0 0.500 126.374 89.610 An 
+CTMrestore 
+0 0 0 sco K 
+N CTMsave 
+4759.500 821.000 + 145 144 +S 
+0 0 0.500 89.610 53.016 An 
+CTMrestore 
+0 0 0 sco K : 4709 867 404 43 rc 0 0 0 sco F0_40
+Ji 
+4810 867 M 
+-0.340 0 (C6)A 
+; : 4709 912 606 43 rc 0 0 0 sco F0_40
+Ji 
+4810 912 M 
+-0.310 0 (20pF)A 
+; 
+4760 958 N M 0 136 - 0 0 0 sco K 
+4443 822 N M 317 0 - 0 0 0 sco K 
+4760 822 N M 0 -46 - 0 0 0 sco K 
+4624 1094 N M 453 0 - 0 0 0 sco K 
+4443 1185 N M 634 0 - 0 0 0 sco K 
+4737 731 N M 46 0 - 0 0 0 sco K : 4618 690 505 43 rc 0 0 0 sco F0_40
+Ji 
+4719 690 M 
+-1.213 0 (GND)A 
+; 
+4760 776 N M 0 -45 - 0 0 0 sco K 
+5077 1003 N M -181 0 - 0 0 0 sco K 
+5032 1003 N M 0 -45 - 0 0 0 sco K 
+5032 912 N M 0 46 - 0 0 0 sco K 
+5032 776 N M 0 -45 - 0 0 0 sco K 
+5018 776 N M 28 0 - 0 0 0 sco K 
+5018 912 N M 28 0 - 0 0 0 sco K 
+5046 912 N M 0 -136 - 0 0 0 sco K 
+5018 912 N M 0 -136 - 0 0 0 sco K : 4949 776 404 43 rc 0 0 0 sco F0_40
+Ji 
+5050 776 M 
+-0.340 0 (R6)A 
+; : 4949 822 505 43 rc 0 0 0 sco F0_40
+Ji 
+5050 822 M 
+-0.627 0 (4K7)A 
+; 
+5032 731 N M 0 -91 - 227 0 - 0 0 0 sco K : 4795 962 909 43 rc 0 0 0 sco F0_40
+Ji 
+4896 962 M 
+-0.577 0 (/RSTBal)A 
+; 
+5077 1593 N M -181 0 - 0 0 0 sco K 
+5077 1639 N M -181 0 - 0 0 0 sco K 
+5077 1684 N M -181 0 - 0 0 0 sco K 
+5077 1548 N M -181 0 - 0 0 0 sco K : 4795 1507 808 43 rc 0 0 0 sco F0_40
+Ji 
+4896 1507 M 
+-0.360 0 (/SSBal)A 
+; : 4795 1552 909 43 rc 0 0 0 sco F0_40
+Ji 
+4896 1552 M 
+-0.794 0 (MOSIBal)A 
+; : 4795 1598 909 43 rc 0 0 0 sco F0_40
+Ji 
+4896 1598 M 
+-0.794 0 (MISOBal)A 
+; : 4795 1643 909 43 rc 0 0 0 sco F0_40
+Ji 
+4896 1643 M 
+-0.766 0 (SCKBalb)A 
+; 
+317 3091 N M 0 -45 - 0 0 0 sco K 
+317 3227 N M 0 46 - 0 0 0 sco K 
+390 3191 N M -18 -18 - 0 0 0 sco K 
+390 3155 N M -18 -19 - 0 0 0 sco K 
+317 3091 N M 0 136 - 0 0 0 sco K 
+358 3123 N M -41 45 - -40 -45 - 81 0 - C : 1.000 1.000 1.000 sco O ; 0 0 0 sco K 
+358 3168 N M -81 5 rr : 1.000 1.000 1.000 sco O ; 0 Lc 0 Lj 0 0 0 sco K 
+399 3186 N M 0 14 - -14 0 - 14 -14 - C : 1.000 1.000 1.000 sco O ; 1 Lc 1 Lj 0 0 0 sco K 
+399 3150 N M 0 14 - -14 0 - 14 -14 - C : 1.000 1.000 1.000 sco O ; 0 0 0 sco K : 298 3091 404 43 rc 0 0 0 sco F0_40
+Ji 
+399 3091 M 
+-0.440 0 (D1)A 
+; : 298 3136 707 43 rc 0 0 0 sco F0_40
+Ji 
+399 3136 M 
+-0.776 0 (VERTE)A 
+; 
+317 3363 N M 0 -45 - 0 0 0 sco K 
+317 3499 N M 0 46 - 0 0 0 sco K 
+331 3499 N M -27 0 - 0 0 0 sco K 
+331 3363 N M -27 0 - 0 0 0 sco K 
+304 3363 N M 0 136 - 0 0 0 sco K 
+331 3363 N M 0 136 - 0 0 0 sco K : 234 3363 404 43 rc 0 0 0 sco F0_40
+Ji 
+335 3363 M 
+-0.340 0 (R5)A 
+; : 234 3409 505 43 rc 0 0 0 sco F0_40
+Ji 
+335 3409 M 
+(470)S 
+; 
+317 3318 N M 0 -45 - 0 0 0 sco K 
+317 3046 N M 0 -46 - 0 0 0 sco K 
+317 3545 N M 0 45 - 0 0 0 sco K 
+295 2955 N M 45 0 - 0 0 0 sco K : 176 2914 505 43 rc 0 0 0 sco F0_40
+Ji 
+277 2914 M 
+-0.747 0 (VCC)A 
+; 
+317 3000 N M 0 -45 - 0 0 0 sco K 
+295 3636 N M 45 0 - 0 0 0 sco K : 176 3636 505 43 rc 0 0 0 sco F0_40
+Ji 
+277 3636 M 
+-1.213 0 (GND)A 
+; 
+317 3590 N M 0 46 - 0 0 0 sco K 
+635 3318 N M 0 -45 - 0 0 0 sco K 
+635 3454 N M 0 45 - 0 0 0 sco K 
+707 3418 N M -18 -18 - 0 0 0 sco K 
+707 3381 N M -18 -18 - 0 0 0 sco K 
+635 3318 N M 0 136 - 0 0 0 sco K 
+675 3350 N M -40 45 - -41 -45 - 81 0 - C : 1.000 1.000 1.000 sco O ; 0 0 0 sco K 
+675 3395 N M -81 5 rr : 1.000 1.000 1.000 sco O ; 0 Lc 0 Lj 0 0 0 sco K 
+716 3413 N M 0 14 - -13 0 - 13 -14 - C : 1.000 1.000 1.000 sco O ; 1 Lc 1 Lj 0 0 0 sco K 
+716 3377 N M 0 14 - -13 0 - 13 -14 - C : 1.000 1.000 1.000 sco O ; 0 0 0 sco K : 615 3318 404 43 rc 0 0 0 sco F0_40
+Ji 
+716 3318 M 
+-0.440 0 (D2)A 
+; : 615 3363 707 43 rc 0 0 0 sco F0_40
+Ji 
+716 3363 M 
+-0.952 0 (ROUGE)A 
+; 
+635 3046 N M 0 -46 - 0 0 0 sco K 
+635 3182 N M 0 45 - 0 0 0 sco K 
+648 3182 N M -27 0 - 0 0 0 sco K 
+648 3046 N M -27 0 - 0 0 0 sco K 
+621 3046 N M 0 136 - 0 0 0 sco K 
+648 3046 N M 0 136 - 0 0 0 sco K : 552 3046 404 43 rc 0 0 0 sco F0_40
+Ji 
+653 3046 M 
+-0.340 0 (R4)A 
+; : 552 3091 505 43 rc 0 0 0 sco F0_40
+Ji 
+653 3091 M 
+(470)S 
+; 
+635 3499 N M 0 46 - 0 0 0 sco K 
+635 3273 N M 0 -46 - 0 0 0 sco K 
+635 3000 N M 0 -45 - 0 0 0 sco K 
+612 2909 N M 45 0 - 0 0 0 sco K : 493 2869 505 43 rc 0 0 0 sco F0_40
+Ji 
+594 2869 M 
+-1.213 0 (GND)A 
+; 
+635 2955 N M 0 -46 - 0 0 0 sco K : 534 3504 909 43 rc 0 0 0 sco F0_40
+Ji 
+635 3504 M 
+-0.577 0 (/RSTBal)A 
+; 
+5077 1911 N M -181 0 - 0 0 0 sco K : 4795 1870 808 43 rc 0 0 0 sco F0_40
+Ji 
+4896 1870 M 
+-0.667 0 (IntBal)A 
+; 
+5531 640 N M 453 0 - 0 408 - 0 0 0 sco K 
+5803 731 N M 0 45 - 0 0 0 sco K 
+5803 685 N M 0 -45 - 0 0 0 sco K 
+5803 699 N M 0 -14 - 0 0 0 sco K 
+5803 731 N M 0 -14 - 0 0 0 sco K 
+5843 699 N M -81 0 - 0 0 0 sco K 
+5843 717 N M -81 0 - 0 0 0 sco K : 5747 685 505 43 rc 0 0 0 sco F0_40
+Ji 
+5848 685 M 
+-0.227 0 (C16)A 
+; : 5747 731 707 43 rc 0 0 0 sco F0_40
+Ji 
+5848 731 M 
+-0.048 0 (100nF)A 
+; 
+5780 822 N M 45 0 - 0 0 0 sco K : 5661 822 505 43 rc 0 0 0 sco F0_40
+Ji 
+5762 822 M 
+-1.213 0 (GND)A 
+; 
+5803 776 N M 0 46 - 0 0 0 sco K 
+5961 1684 N M 46 0 - 0 0 0 sco K : 5842 1684 505 43 rc 0 0 0 sco F0_40
+Ji 
+5943 1684 M 
+-1.213 0 (GND)A 
+; 
+5984 1639 N M 0 45 - 0 0 0 sco K : 443 1870 606 43 rc 0 0 0 sco F0_40
+Ji 
+544 1870 M 
+-0.450 0 (REC1)A 
+; : 488 2415 808 43 rc 0 0 0 sco F0_40
+Ji 
+589 2415 M 
+-0.613 0 (LASER1)A 
+; 
+4941 2728 N M 363 363 rr : 1.000 1.000 1.000 sco O ; 1 Lw 0 Lc 0 Lj solid 0 0 0 sco K 
+4941 2909 N M -136 0 - 5 Lw 1 Lc 1 Lj solid 0 0 0 sco K : 4868 2891 606 43 rc 0 0 0 sco F0_40
+Ji 
+4969 2891 M 
+-1.580 0 (TRIG)A 
+; : 4754 2869 303 43 rc 0 0 0 sco F0_40
+Ji 
+4855 2869 M 
+(2)S 
+; 
+5304 2773 N M 136 0 - 0 0 0 sco K : 5149 2755 303 43 rc 0 0 0 sco F0_40
+Ji 
+5250 2755 M 
+-0.880 0 (Q)A 
+; : 5271 2732 303 43 rc 0 0 0 sco F0_40
+Ji 
+5372 2732 M 
+(3)S 
+; 
+N 4927 2773 13.000 360 0 An C 1 Lw solid 0 0 0 sco K 
+4914 2773 N M -109 0 - 5 Lw solid 0 0 0 sco K : 4868 2755 303 43 rc 0 0 0 sco F0_40
+Ji 
+4969 2755 M 
+-0.680 0 (R)A 
+; : 4754 2732 303 43 rc 0 0 0 sco F0_40
+Ji 
+4855 2732 M 
+(4)S 
+; 
+4941 3046 N M -136 0 - 0 0 0 sco K : 4868 3027 707 43 rc 0 0 0 sco F0_40
+Ji 
+4969 3027 M 
+-0.560 0 (CVolt)A 
+; : 4754 3005 303 43 rc 0 0 0 sco F0_40
+Ji 
+4855 3005 M 
+(5)S 
+; 
+5304 3046 N M 136 0 - 0 0 0 sco K : 5099 3027 505 43 rc 0 0 0 sco F0_40
+Ji 
+5200 3027 M 
+-1.333 0 (THR)A 
+; : 5271 3005 303 43 rc 0 0 0 sco F0_40
+Ji 
+5372 3005 M 
+(6)S 
+; 
+5304 2909 N M 136 0 - 0 0 0 sco K : 5117 2891 505 43 rc 0 0 0 sco F0_40
+Ji 
+5218 2891 M 
+-1.147 0 (DIS)A 
+; : 5271 2869 303 43 rc 0 0 0 sco F0_40
+Ji 
+5372 2869 M 
+(7)S 
+; 
+5168 2728 N M 0 -136 - 0 0 0 sco K : 0 0 6800 4725 rc 0 0 0 sco F0_40
+Ji 
+270.000 5145 2837 sR 
+-0.747 0 (VCC)A 
+eR 
+; : 0 0 6800 4725 rc 0 0 0 sco F0_40
+Ji 
+270.000 5123 2660 sR 
+(8)S 
+eR 
+; 
+5168 3091 N M 0 136 - 0 0 0 sco K : 0 0 6800 4725 rc 0 0 0 sco F0_40
+Ji 
+270.000 5145 3064 sR 
+-1.213 0 (GND)A 
+eR 
+; : 0 0 6800 4725 rc 0 0 0 sco F0_40
+Ji 
+270.000 5123 3177 sR 
+(1)S 
+eR 
+; : 5203 2687 404 43 rc 0 0 0 sco F0_40
+Ji 
+5304 2687 M 
+-0.440 0 (U3)A 
+; : 5203 3096 707 43 rc 0 0 0 sco F0_40
+Ji 
+5304 3096 M 
+-0.400 0 (LM555)A 
+; 
+4805 2909 N M -136 0 - 0 0 0 sco K : 4568 2869 909 43 rc 0 0 0 sco F0_40
+Ji 
+4669 2869 M 
+-0.640 0 (/SCKBal)A 
+; : 5339 2732 909 43 rc 0 0 0 sco F0_40
+Ji 
+5440 2732 M 
+-0.766 0 (SCKBalb)A 
+; 
+4783 2501 N M 45 0 - 0 0 0 sco K : 4664 2460 505 43 rc 0 0 0 sco F0_40
+Ji 
+4765 2460 M 
+-0.747 0 (VCC)A 
+; 
+4805 2546 N M 0 -45 - 0 0 0 sco K 
+5145 3363 N M 46 0 - 0 0 0 sco K : 5026 3363 505 43 rc 0 0 0 sco F0_40
+Ji 
+5127 3363 M 
+-1.213 0 (GND)A 
+; 
+5168 3318 N M 0 45 - 0 0 0 sco K 
+4805 2773 N M 0 -181 - 0 0 0 sco K 
+4805 2592 N M 0 -46 - 0 0 0 sco K 
+5168 2592 N M -363 0 - 0 0 0 sco K 
+5440 3046 N M 0 136 - -680 0 - 0 -273 - 0 0 0 sco K 
+5168 3227 N M 0 91 - 0 0 0 sco K 
+4624 3182 N M 0 -46 - 0 0 0 sco K 
+4624 3227 N M 0 46 - 0 0 0 sco K 
+4624 3214 N M 0 13 - 0 0 0 sco K 
+4624 3182 N M 0 13 - 0 0 0 sco K 
+4583 3214 N M 82 0 - 0 0 0 sco K 
+4583 3195 N M 82 0 - 0 0 0 sco K : 4568 3182 505 43 rc 0 0 0 sco F0_40
+Ji 
+4669 3182 M 
+-0.227 0 (C22)A 
+; : 4568 3227 707 43 rc 0 0 0 sco F0_40
+Ji 
+4669 3227 M 
+-0.048 0 (100nF)A 
+; 
+4624 3136 N M 0 -544 - 181 0 - 0 0 0 sco K 
+4624 3273 N M 0 45 - 544 0 - 0 0 0 sco K 
+3604 2410 N M 45 0 - 0 0 0 sco K : 3444 2369 909 43 rc 0 0 0 sco F0_40
+Ji 
+3545 2369 M 
+-0.749 0 (+BATT_P)A 
+; 
+3627 2456 N M 0 -46 - 0 0 0 sco K 
+3219 3182 N M 181 317 rr : 1.000 1.000 1.000 sco O ; 1 Lw 0 Lc 0 Lj solid 0 0 0 sco K 
+3264 3227 N M 91 46 - -91 45 - 0 -91 - 5 Lw 1 Lc 1 Lj solid 0 0 0 sco K 
+3264 3363 N M 91 46 - -91 45 - 0 -91 - 0 0 0 sco K 
+N 3354 3272 13.000 360 0 An C 1 Lw solid 0 0 0 sco K 
+N 3354 3408 13.000 360 0 An C 0 0 0 sco K 
+3219 3273 N M -136 0 - 5 Lw solid 0 0 0 sco K : 3032 3232 303 43 rc 0 0 0 sco F0_40
+Ji 
+3133 3232 M 
+(2)S 
+; 
+3309 3499 N M 0 137 - 0 0 0 sco K : 0 0 6800 4725 rc 0 0 0 sco F0_40
+Ji 
+270.000 3287 3472 sR 
+-1.213 0 (GND)A 
+eR 
+; : 0 0 6800 4725 rc 0 0 0 sco F0_40
+Ji 
+270.000 3264 3586 sR 
+(3)S 
+eR 
+; 
+3219 3409 N M -136 0 - 0 0 0 sco K : 3032 3368 303 43 rc 0 0 0 sco F0_40
+Ji 
+3133 3368 M 
+(4)S 
+; 
+3400 3409 N M 136 0 - 0 0 0 sco K : 3367 3368 303 43 rc 0 0 0 sco F0_40
+Ji 
+3468 3368 M 
+(5)S 
+; 
+3309 3182 N M 0 -136 - 0 0 0 sco K : 0 0 6800 4725 rc 0 0 0 sco F0_40
+Ji 
+270.000 3287 3291 sR 
+-0.747 0 (VCC)A 
+eR 
+; : 0 0 6800 4725 rc 0 0 0 sco F0_40
+Ji 
+270.000 3264 3114 sR 
+(6)S 
+eR 
+; 
+3400 3273 N M 136 0 - 0 0 0 sco K : 3367 3232 303 43 rc 0 0 0 sco F0_40
+Ji 
+3468 3232 M 
+(7)S 
+; : 3299 3141 404 43 rc 0 0 0 sco F0_40
+Ji 
+3400 3141 M 
+-0.440 0 (U4)A 
+; : 3299 3504 909 43 rc 0 0 0 sco F0_40
+Ji 
+3400 3504 M 
+-0.177 0 (MC33151)A 
+; 
+3287 3726 N M 45 0 - 0 0 0 sco K : 3131 3726 909 43 rc 0 0 0 sco F0_40
+Ji 
+3232 3726 M 
+-0.857 0 (-BATT_P)A 
+; 
+3309 3681 N M 0 45 - 0 0 0 sco K 
+3287 3000 N M 45 0 - 0 0 0 sco K : 3127 2959 909 43 rc 0 0 0 sco F0_40
+Ji 
+3228 2959 M 
+-0.749 0 (+BATT_P)A 
+; 
+3309 3046 N M 0 -46 - 0 0 0 sco K 
+3400 2501 N M 0 -45 - 0 0 0 sco K 
+3400 2546 N M 0 46 - 0 0 0 sco K 
+3355 2501 N M 90 0 - 0 0 0 sco K 
+3400 2519 N M 0 27 - 0 0 0 sco K 
+N CTMsave 
+3399.500 2591.000 + 145 144 +S 
+0 0 0.500 -52.079 -89.605 An 
+CTMrestore 
+0 0 0 sco K 
+N CTMsave 
+3399.500 2591.000 + 145 144 +S 
+0 0 0.500 -89.605 -127.306 An 
+CTMrestore 
+0 0 0 sco K : 3258 2410 505 43 rc 0 0 0 sco F0_40
+Ji 
+3359 2410 M 
+-0.227 0 (C26)A 
+; : 3258 2682 707 43 rc 0 0 0 sco F0_40
+Ji 
+3359 2682 M 
+-0.048 0 (100nF)A 
+; 
+3264 2501 N M 0 -45 - 0 0 0 sco K 
+3264 2546 N M 0 46 - 0 0 0 sco K 
+3219 2501 N M 90 0 - 0 0 0 sco K 
+3264 2519 N M 0 27 - 0 0 0 sco K 
+N CTMsave 
+3263.500 2591.000 + 145 144 +S 
+0 0 0.500 -52.079 -89.605 An 
+CTMrestore 
+0 0 0 sco K 
+N CTMsave 
+3263.500 2591.000 + 145 144 +S 
+0 0 0.500 -89.605 -127.306 An 
+CTMrestore 
+0 0 0 sco K : 3122 2410 505 43 rc 0 0 0 sco F0_40
+Ji 
+3223 2410 M 
+-0.227 0 (C25)A 
+; : 3122 2682 707 43 rc 0 0 0 sco F0_40
+Ji 
+3223 2682 M 
+-0.048 0 (100nF)A 
+; 
+3536 2637 N M -272 0 - 0 0 0 sco K 
+3604 2682 N M 45 0 - 0 0 0 sco K : 3449 2682 909 43 rc 0 0 0 sco F0_40
+Ji 
+3550 2682 M 
+-0.857 0 (-BATT_P)A 
+; 
+3627 2637 N M 0 45 - 0 0 0 sco K 
+3536 2637 N M 91 0 - 0 0 0 sco K 
+3083 2501 N M 0 -45 - 0 0 0 sco K 
+3083 2592 N M 0 45 - 0 0 0 sco K 
+3083 2564 N M 0 28 - 0 0 0 sco K 
+3037 2546 N M 91 0 - 0 0 0 sco K 
+3083 2501 N M 0 45 - 0 0 0 sco K 
+N CTMsave 
+3082.000 2636.500 + 144 145 +S 
+0 0 0.500 -51.628 -89.204 An 
+CTMrestore 
+0 0 0 sco K 
+N CTMsave 
+3082.000 2636.500 + 144 145 +S 
+0 0 0.500 -89.204 -127.760 An 
+CTMrestore 
+0 0 0 sco K : 3010 2510 258 36 rc 0 0 0 sco F2_31
+Ji 
+3096 2510 M 
+0.896 0 (+)A 
+; : 2941 2410 505 43 rc 0 0 0 sco F0_40
+Ji 
+3042 2410 M 
+-0.227 0 (C24)A 
+; : 2896 2728 1414 43 rc 0 0 0 sco F0_40
+Ji 
+2997 2728 M 
+-0.350 0 (Tantale 10uF)A 
+; 
+3264 2592 N M 0 45 - 0 0 0 sco K 
+3400 2592 N M 0 45 - 0 0 0 sco K 
+3264 2456 N M -181 0 - 0 0 0 sco K 
+3264 2637 N M -181 0 - 0 0 0 sco K 
+3264 2456 N M 363 0 - 0 0 0 sco K 
+N 3263 2636 8.500 360 0 An C : 0 0 0 sco O ; 1 Lw solid 0 0 0 sco K 
+N 3399 2636 8.500 360 0 An C : 0 0 0 sco O ; 0 0 0 sco K 
+453 1321 N M 0 136 - 136 0 - 5 Lw solid 0 0 0 sco K 
+453 1502 N M 0 137 - 0 0 0 sco K 
+997 1434 N M 0 46 - 0 0 0 sco K : 905 1439 909 43 rc 0 0 0 sco F0_40
+Ji 
+1006 1439 M 
+-0.749 0 (+BATT_P)A 
+; 
+952 1457 N M 45 0 - 0 0 0 sco K 
+635 1616 N M 0 45 - 0 0 0 sco K : 543 1620 909 43 rc 0 0 0 sco F0_40
+Ji 
+644 1620 M 
+-0.857 0 (-BATT_P)A 
+; 
+589 1639 N M 46 0 - 0 0 0 sco K 
+3309 3636 N M 0 45 - 0 0 0 sco K : 488 2324 808 43 rc 0 0 0 sco F0_40
+Ji 
+589 2324 M 
+-0.613 0 (LASER2)A 
+; 
+2947 2501 N M 0 -45 - 0 0 0 sco K 
+2947 2592 N M 0 45 - 0 0 0 sco K 
+2947 2564 N M 0 28 - 0 0 0 sco K 
+2901 2546 N M 91 0 - 0 0 0 sco K 
+2947 2501 N M 0 45 - 0 0 0 sco K 
+N CTMsave 
+2946.000 2636.500 + 144 145 +S 
+0 0 0.500 -51.628 -89.204 An 
+CTMrestore 
+0 0 0 sco K 
+N CTMsave 
+2946.000 2636.500 + 144 145 +S 
+0 0 0.500 -89.204 -127.760 An 
+CTMrestore 
+0 0 0 sco K : 2874 2510 258 36 rc 0 0 0 sco F2_31
+Ji 
+2960 2510 M 
+0.896 0 (+)A 
+; : 2805 2410 505 43 rc 0 0 0 sco F0_40
+Ji 
+2906 2410 M 
+-0.227 0 (C18)A 
+; : 2760 2682 1414 43 rc 0 0 0 sco F0_40
+Ji 
+2861 2682 M 
+-0.350 0 (Tantale 10uF)A 
+; 
+3083 2456 N M -136 0 - 0 0 0 sco K 
+N 17 18 3082 2455 ellp : 0 0 0 sco O ; 1 Lw solid 0 0 0 sco K 
+3083 2637 N M -136 0 - 5 Lw solid 0 0 0 sco K 
+N 3082 2636 8.500 360 0 An C : 0 0 0 sco O ; 1 Lw solid 0 0 0 sco K 
+2811 2501 N M 0 -45 - 5 Lw solid 0 0 0 sco K 
+2811 2592 N M 0 45 - 0 0 0 sco K 
+2811 2564 N M 0 28 - 0 0 0 sco K 
+2765 2546 N M 91 0 - 0 0 0 sco K 
+2811 2501 N M 0 45 - 0 0 0 sco K 
+N CTMsave 
+2810.000 2636.500 + 144 145 +S 
+0 0 0.500 -51.628 -89.204 An 
+CTMrestore 
+0 0 0 sco K 
+N CTMsave 
+2810.000 2636.500 + 144 145 +S 
+0 0 0.500 -89.204 -127.760 An 
+CTMrestore 
+0 0 0 sco K : 2738 2510 258 36 rc 0 0 0 sco F2_31
+Ji 
+2824 2510 M 
+0.896 0 (+)A 
+; : 2669 2410 404 43 rc 0 0 0 sco F0_40
+Ji 
+2770 2410 M 
+-0.340 0 (C7)A 
+; : 2578 2637 1212 43 rc 0 0 0 sco F0_40
+Ji 
+2679 2637 M 
+-0.124 0 (820\265F chim)A 
+; 
+2947 2456 N M -136 0 - 0 0 0 sco K 
+2947 2637 N M -136 0 - 0 0 0 sco K 
+635 1752 N M 0 45 - 0 0 0 sco K : 543 1757 505 43 rc 0 0 0 sco F0_40
+Ji 
+644 1757 M 
+-0.747 0 (VCC)A 
+; 
+589 1775 N M 46 0 - 0 0 0 sco K 
+544 1934 N M 0 45 - 0 0 0 sco K : 452 1938 505 43 rc 0 0 0 sco F0_40
+Ji 
+553 1938 M 
+-1.213 0 (GND)A 
+; 
+499 1956 N M 45 0 - 0 0 0 sco K : 443 1825 606 43 rc 0 0 0 sco F0_40
+Ji 
+544 1825 M 
+-0.450 0 (REC2)A 
+; 
+4760 3681 N M 363 363 rr : 1.000 1.000 1.000 sco O ; 1 Lw 0 Lc 0 Lj solid 0 0 0 sco K 
+4760 3863 N M -136 0 - 5 Lw 1 Lc 1 Lj solid 0 0 0 sco K : 4686 3844 606 43 rc 0 0 0 sco F0_40
+Ji 
+4787 3844 M 
+-1.580 0 (TRIG)A 
+; : 4573 3822 303 43 rc 0 0 0 sco F0_40
+Ji 
+4674 3822 M 
+(2)S 
+; 
+5123 3726 N M 136 0 - 0 0 0 sco K : 4967 3708 303 43 rc 0 0 0 sco F0_40
+Ji 
+5068 3708 M 
+-0.880 0 (Q)A 
+; : 5090 3686 303 43 rc 0 0 0 sco F0_40
+Ji 
+5191 3686 M 
+(3)S 
+; 
+N 4746 3726 13.000 360 0 An C 1 Lw solid 0 0 0 sco K 
+4733 3726 N M -109 0 - 5 Lw solid 0 0 0 sco K : 4686 3708 303 43 rc 0 0 0 sco F0_40
+Ji 
+4787 3708 M 
+-0.680 0 (R)A 
+; : 4573 3686 303 43 rc 0 0 0 sco F0_40
+Ji 
+4674 3686 M 
+(4)S 
+; 
+4760 3999 N M -136 0 - 0 0 0 sco K : 4686 3981 707 43 rc 0 0 0 sco F0_40
+Ji 
+4787 3981 M 
+-0.560 0 (CVolt)A 
+; : 4573 3958 303 43 rc 0 0 0 sco F0_40
+Ji 
+4674 3958 M 
+(5)S 
+; 
+5123 3999 N M 136 0 - 0 0 0 sco K : 4917 3981 505 43 rc 0 0 0 sco F0_40
+Ji 
+5018 3981 M 
+-1.333 0 (THR)A 
+; : 5090 3958 303 43 rc 0 0 0 sco F0_40
+Ji 
+5191 3958 M 
+(6)S 
+; 
+5123 3863 N M 136 0 - 0 0 0 sco K : 4936 3844 505 43 rc 0 0 0 sco F0_40
+Ji 
+5037 3844 M 
+-1.147 0 (DIS)A 
+; : 5090 3822 303 43 rc 0 0 0 sco F0_40
+Ji 
+5191 3822 M 
+(7)S 
+; 
+4987 3681 N M 0 -136 - 0 0 0 sco K : 0 0 6800 4725 rc 0 0 0 sco F0_40
+Ji 
+270.000 4964 3790 sR 
+-0.747 0 (VCC)A 
+eR 
+; : 0 0 6800 4725 rc 0 0 0 sco F0_40
+Ji 
+270.000 4941 3613 sR 
+(8)S 
+eR 
+; 
+4987 4044 N M 0 136 - 0 0 0 sco K : 0 0 6800 4725 rc 0 0 0 sco F0_40
+Ji 
+270.000 4964 4017 sR 
+-1.213 0 (GND)A 
+eR 
+; : 0 0 6800 4725 rc 0 0 0 sco F0_40
+Ji 
+270.000 4941 4130 sR 
+(1)S 
+eR 
+; : 5022 3640 505 43 rc 0 0 0 sco F0_40
+Ji 
+5123 3640 M 
+-0.293 0 (U10)A 
+; : 5022 4049 707 43 rc 0 0 0 sco F0_40
+Ji 
+5123 4049 M 
+-0.400 0 (LM555)A 
+; 
+4987 3545 N M 0 -46 - 0 0 0 sco K 
+4987 4180 N M 0 46 - 0 0 0 sco K 
+4964 3454 N M 45 0 - 0 0 0 sco K : 4845 3413 505 43 rc 0 0 0 sco F0_40
+Ji 
+4946 3413 M 
+-0.747 0 (VCC)A 
+; 
+4987 3499 N M 0 -45 - 0 0 0 sco K 
+4964 4271 N M 45 0 - 0 0 0 sco K : 4845 4271 505 43 rc 0 0 0 sco F0_40
+Ji 
+4946 4271 M 
+-1.213 0 (GND)A 
+; 
+4987 4226 N M 0 45 - 0 0 0 sco K 
+5032 3499 N M -45 0 - 0 0 0 sco K 
+5077 3499 N M 46 0 - 0 0 0 sco K 
+5064 3499 N M 13 0 - 0 0 0 sco K 
+5032 3499 N M 14 0 - 0 0 0 sco K 
+5064 3540 N M 0 -81 - 0 0 0 sco K 
+5046 3540 N M 0 -81 - 0 0 0 sco K : 4926 3413 505 43 rc 0 0 0 sco F0_40
+Ji 
+5027 3413 M 
+-0.227 0 (C27)A 
+; : 4926 3549 707 43 rc 0 0 0 sco F0_40
+Ji 
+5027 3549 M 
+-0.048 0 (100nF)A 
+; 
+5168 3477 N M 0 45 - 0 0 0 sco K : 5076 3481 505 43 rc 0 0 0 sco F0_40
+Ji 
+5177 3481 M 
+-1.213 0 (GND)A 
+; 
+5123 3499 N M 45 0 - 0 0 0 sco K 
+5259 3726 N M 45 0 - 0 0 0 sco K 
+4624 3863 N M -45 0 - 0 272 - 680 0 - 0 -136 - 0 0 0 sco K 
+5259 3863 N M 45 0 - 0 363 - -317 0 - 0 0 0 sco K 
+4624 3726 N M 0 -227 - 363 0 - 0 0 0 sco K 
+4579 3863 N M -136 0 - 0 0 0 sco K 
+N 5031 1002 8.500 360 0 An C : 0 0 0 sco O ; 1 Lw solid 0 0 0 sco K 
+N 5530 639 8.500 360 0 An C : 0 0 0 sco O ; 0 0 0 sco K 
+N 5258 639 8.500 360 0 An C : 0 0 0 sco O ; 0 0 0 sco K 
+N 4442 1093 8.500 360 0 An C : 0 0 0 sco O ; 0 0 0 sco K 
+N 17 18 4759 821 ellp : 0 0 0 sco O ; 0 0 0 sco K 
+N 4759 1093 8.500 360 0 An C : 0 0 0 sco O ; 0 0 0 sco K 
+N 5802 639 8.500 360 0 An C : 0 0 0 sco O ; 0 0 0 sco K : 4342 3822 606 43 rc 0 0 0 sco F0_40
+Ji 
+4443 3822 M 
+-0.450 0 (REC1)A 
+; 
+5757 3681 N M 363 363 rr : 1.000 1.000 1.000 sco O ; 0 Lc 0 Lj 0 0 0 sco K 
+5757 3863 N M -136 0 - 5 Lw 1 Lc 1 Lj solid 0 0 0 sco K : 5684 3844 606 43 rc 0 0 0 sco F0_40
+Ji 
+5785 3844 M 
+-1.580 0 (TRIG)A 
+; : 5570 3822 303 43 rc 0 0 0 sco F0_40
+Ji 
+5671 3822 M 
+(2)S 
+; 
+6120 3726 N M 136 0 - 0 0 0 sco K : 5965 3708 303 43 rc 0 0 0 sco F0_40
+Ji 
+6066 3708 M 
+-0.880 0 (Q)A 
+; : 6087 3686 303 43 rc 0 0 0 sco F0_40
+Ji 
+6188 3686 M 
+(3)S 
+; 
+N 5743 3726 13.000 360 0 An C 1 Lw solid 0 0 0 sco K 
+5730 3726 N M -109 0 - 5 Lw solid 0 0 0 sco K : 5684 3708 303 43 rc 0 0 0 sco F0_40
+Ji 
+5785 3708 M 
+-0.680 0 (R)A 
+; : 5570 3686 303 43 rc 0 0 0 sco F0_40
+Ji 
+5671 3686 M 
+(4)S 
+; 
+5757 3999 N M -136 0 - 0 0 0 sco K : 5684 3981 707 43 rc 0 0 0 sco F0_40
+Ji 
+5785 3981 M 
+-0.560 0 (CVolt)A 
+; : 5570 3958 303 43 rc 0 0 0 sco F0_40
+Ji 
+5671 3958 M 
+(5)S 
+; 
+6120 3999 N M 136 0 - 0 0 0 sco K : 5915 3981 505 43 rc 0 0 0 sco F0_40
+Ji 
+6016 3981 M 
+-1.333 0 (THR)A 
+; : 6087 3958 303 43 rc 0 0 0 sco F0_40
+Ji 
+6188 3958 M 
+(6)S 
+; 
+6120 3863 N M 136 0 - 0 0 0 sco K : 5933 3844 505 43 rc 0 0 0 sco F0_40
+Ji 
+6034 3844 M 
+-1.147 0 (DIS)A 
+; : 6087 3822 303 43 rc 0 0 0 sco F0_40
+Ji 
+6188 3822 M 
+(7)S 
+; 
+5984 3681 N M 0 -136 - 0 0 0 sco K : 0 0 6800 4725 rc 0 0 0 sco F0_40
+Ji 
+270.000 5961 3790 sR 
+-0.747 0 (VCC)A 
+eR 
+; : 0 0 6800 4725 rc 0 0 0 sco F0_40
+Ji 
+270.000 5939 3613 sR 
+(8)S 
+eR 
+; 
+5984 4044 N M 0 136 - 0 0 0 sco K : 0 0 6800 4725 rc 0 0 0 sco F0_40
+Ji 
+270.000 5961 4017 sR 
+-1.213 0 (GND)A 
+eR 
+; : 0 0 6800 4725 rc 0 0 0 sco F0_40
+Ji 
+270.000 5939 4130 sR 
+(1)S 
+eR 
+; : 6019 3640 505 43 rc 0 0 0 sco F0_40
+Ji 
+6120 3640 M 
+-0.293 0 (U11)A 
+; : 6019 4049 707 43 rc 0 0 0 sco F0_40
+Ji 
+6120 4049 M 
+-0.400 0 (LM555)A 
+; 
+5984 3545 N M 0 -46 - 0 0 0 sco K 
+5984 4180 N M 0 46 - 0 0 0 sco K 
+5961 3454 N M 46 0 - 0 0 0 sco K : 5842 3413 505 43 rc 0 0 0 sco F0_40
+Ji 
+5943 3413 M 
+-0.747 0 (VCC)A 
+; 
+5984 3499 N M 0 -45 - 0 0 0 sco K 
+5961 4271 N M 46 0 - 0 0 0 sco K : 5842 4271 505 43 rc 0 0 0 sco F0_40
+Ji 
+5943 4271 M 
+-1.213 0 (GND)A 
+; 
+5984 4226 N M 0 45 - 0 0 0 sco K 
+6029 3499 N M -45 0 - 0 0 0 sco K 
+6075 3499 N M 45 0 - 0 0 0 sco K 
+6061 3499 N M 14 0 - 0 0 0 sco K 
+6029 3499 N M 14 0 - 0 0 0 sco K 
+6061 3540 N M 0 -81 - 0 0 0 sco K 
+6043 3540 N M 0 -81 - 0 0 0 sco K : 5924 3413 505 43 rc 0 0 0 sco F0_40
+Ji 
+6025 3413 M 
+-0.227 0 (C28)A 
+; : 5924 3549 707 43 rc 0 0 0 sco F0_40
+Ji 
+6025 3549 M 
+-0.048 0 (100nF)A 
+; 
+6165 3477 N M 0 45 - 0 0 0 sco K : 6073 3481 505 43 rc 0 0 0 sco F0_40
+Ji 
+6174 3481 M 
+-1.213 0 (GND)A 
+; 
+6120 3499 N M 45 0 - 0 0 0 sco K 
+6256 3726 N M 45 0 - 0 0 0 sco K 
+5621 3863 N M -45 0 - 0 272 - 680 0 - 0 -136 - 0 0 0 sco K 
+6256 3863 N M 45 0 - 0 363 - -317 0 - 0 0 0 sco K 
+5621 3726 N M 0 -227 - 363 0 - 0 0 0 sco K 
+5576 3863 N M -136 0 - 0 0 0 sco K : 5339 3822 606 43 rc 0 0 0 sco F0_40
+Ji 
+5440 3822 M 
+-0.450 0 (REC2)A 
+; 
+N 906 866 8.500 360 0 An C : 0 0 0 sco O ; 1 Lw solid 0 0 0 sco K 
+N 906 1093 8.500 360 0 An C : 0 0 0 sco O ; 0 0 0 sco K 
+1541 912 N M 0 -45 - 5 Lw solid 0 0 0 sco K 
+1541 958 N M 0 45 - 0 0 0 sco K 
+1541 944 N M 0 14 - 0 0 0 sco K 
+1541 912 N M 0 14 - 0 0 0 sco K 
+1501 944 N M 81 0 - 0 0 0 sco K 
+1501 926 N M 81 0 - 0 0 0 sco K : 1486 772 505 43 rc 0 0 0 sco F0_40
+Ji 
+1587 772 M 
+-0.227 0 (C20)A 
+; : 1486 812 707 43 rc 0 0 0 sco F0_40
+Ji 
+1587 812 M 
+-0.048 0 (100nF)A 
+; 
+1723 912 N M 0 -45 - 0 0 0 sco K 
+1723 1003 N M 0 45 - 0 0 0 sco K 
+1723 976 N M 0 27 - 0 0 0 sco K 
+1677 958 N M 91 0 - 0 0 0 sco K 
+1723 912 N M 0 46 - 0 0 0 sco K 
+N 1722.000 1048.000 72.000 -52.058 -89.204 An 
+0 0 0 sco K 
+N 1722.000 1048.000 72.000 -89.204 -127.333 An 
+0 0 0 sco K : 1650 921 258 36 rc 0 0 0 sco F2_31
+Ji 
+1736 921 M 
+0.896 0 (+)A 
+; : 1672 908 505 43 rc 0 0 0 sco F0_40
+Ji 
+1773 908 M 
+-0.227 0 (C21)A 
+; : 1672 949 1414 43 rc 0 0 0 sco F0_40
+Ji 
+1773 949 M 
+-0.470 0 (TANTALE 2\265F2)A 
+; 
+1541 1003 N M 0 91 - 182 0 - 0 -46 - 0 0 0 sco K 
+1541 867 N M 182 0 - 0 0 0 sco K 
+1541 867 N M 0 -91 - 0 0 0 sco K 
+1541 1094 N M 0 91 - 0 0 0 sco K 
+1519 1230 N M 45 0 - 0 0 0 sco K : 1363 1230 909 43 rc 0 0 0 sco F0_40
+Ji 
+1464 1230 M 
+-0.857 0 (-BATT_P)A 
+; 
+1541 1185 N M 0 45 - 0 0 0 sco K 
+1519 731 N M 45 0 - 0 0 0 sco K : 1359 690 909 43 rc 0 0 0 sco F0_40
+Ji 
+1460 690 M 
+-0.749 0 (+BATT_P)A 
+; 
+1541 776 N M 0 -45 - 0 0 0 sco K 
+2040 3273 N M -136 0 - 0 0 0 sco K : 1853 3232 303 43 rc 0 0 0 sco F0_40
+Ji 
+1954 3232 M 
+(1)S 
+; 
+2040 3363 N M -136 0 - 0 0 0 sco K : 1853 3322 303 43 rc 0 0 0 sco F0_40
+Ji 
+1954 3322 M 
+(2)S 
+; 
+N 2234 3317 13.500 360 0 An C 1 Lw solid 0 0 0 sco K 
+2249 3318 N M 108 0 - 5 Lw solid 0 0 0 sco K : 2188 3277 303 43 rc 0 0 0 sco F0_40
+Ji 
+2289 3277 M 
+(3)S 
+; 
+2158 3277 N M 0 82 - 0 0 0 sco K 
+2085 3277 N M 0 82 - 0 0 0 sco K 
+2040 3250 N M 0 136 - 0 0 0 sco K 
+2085 3359 N M 105 0 - 0 0 0 sco K 
+2058 3277 N M 100 0 - 0 0 0 sco K 
+2040 3386 N M 113 0 - 0 0 0 sco K 
+2040 3250 N M 113 0 - 0 0 0 sco K 
+N 2152.500 3317.500 67.500 89.582 -89.576 An 
+0 0 0 sco K : 1921 3141 505 43 rc 0 0 0 sco F0_40
+Ji 
+2022 3141 M 
+-0.587 0 (U2A)A 
+; : 1921 3186 606 43 rc 0 0 0 sco F0_40
+Ji 
+2022 3186 M 
+(4093)S 
+; 
+2539 3227 N M -136 0 - 0 0 0 sco K : 2352 3186 303 43 rc 0 0 0 sco F0_40
+Ji 
+2453 3186 M 
+(5)S 
+; 
+2539 3318 N M -136 0 - 0 0 0 sco K : 2352 3277 303 43 rc 0 0 0 sco F0_40
+Ji 
+2453 3277 M 
+(6)S 
+; 
+N 2733 3272 13.000 360 0 An C 1 Lw solid 0 0 0 sco K 
+2747 3273 N M 109 0 - 5 Lw solid 0 0 0 sco K : 2687 3232 303 43 rc 0 0 0 sco F0_40
+Ji 
+2788 3232 M 
+(4)S 
+; 
+2657 3232 N M 0 81 - 0 0 0 sco K 
+2584 3232 N M 0 81 - 0 0 0 sco K 
+2539 3204 N M 0 137 - 0 0 0 sco K 
+2584 3313 N M 104 0 - 0 0 0 sco K 
+2557 3232 N M 100 0 - 0 0 0 sco K 
+2539 3341 N M 113 0 - 0 0 0 sco K 
+2539 3204 N M 113 0 - 0 0 0 sco K 
+N CTMsave 
+2651.500 3272.000 + 135 136 +S 
+0 0 0.500 89.582 -89.576 An 
+CTMrestore 
+0 0 0 sco K : 2433 3159 505 43 rc 0 0 0 sco F0_40
+Ji 
+2534 3159 M 
+-0.520 0 (U2B)A 
+; : 2433 3345 606 43 rc 0 0 0 sco F0_40
+Ji 
+2534 3345 M 
+(4093)S 
+; 
+2357 3318 N M 46 0 - 0 0 0 sco K 
+1904 3499 N M 0 -45 - 0 0 0 sco K 
+1904 3545 N M 0 45 - 0 0 0 sco K 
+1904 3531 N M 0 14 - 0 0 0 sco K 
+1904 3499 N M 0 14 - 0 0 0 sco K 
+1863 3531 N M 82 0 - 0 0 0 sco K 
+1863 3513 N M 82 0 - 0 0 0 sco K : 1848 3495 404 43 rc 0 0 0 sco F0_40
+Ji 
+1949 3495 M 
+-0.340 0 (C2)A 
+; : 1848 3536 707 43 rc 0 0 0 sco F0_40
+Ji 
+1949 3536 M 
+-0.248 0 (220pF)A 
+; 
+2176 3454 N M -45 0 - 0 0 0 sco K 
+2312 3454 N M 45 0 - 0 0 0 sco K 
+2312 3440 N M 0 28 - 0 0 0 sco K 
+2176 3440 N M 0 28 - 0 0 0 sco K 
+2176 3468 N M 136 0 - 0 0 0 sco K 
+2176 3440 N M 136 0 - 0 0 0 sco K : 2070 3395 404 43 rc 0 0 0 sco F0_40
+Ji 
+2171 3395 M 
+-0.340 0 (R1)A 
+; : 2070 3477 909 43 rc 0 0 0 sco F0_40
+Ji 
+2171 3477 M 
+-0.794 0 (4K7ohms)A 
+; 
+1904 3363 N M 0 91 - 227 0 - 0 0 0 sco K 
+2357 3454 N M 0 -136 - 0 0 0 sco K 
+1904 3273 N M 0 -46 - 499 0 - 0 0 0 sco K 
+1904 3590 N M 0 46 - 0 0 0 sco K 
+1881 3681 N M 46 0 - 0 0 0 sco K : 1762 3681 505 43 rc 0 0 0 sco F0_40
+Ji 
+1863 3681 M 
+-1.213 0 (GND)A 
+; 
+1904 3636 N M 0 45 - 0 0 0 sco K 
+2856 3273 N M 45 0 - 0 0 0 sco K 
+2901 3273 N M 182 0 - 0 0 0 sco K 
+5077 1865 N M -181 0 - 0 0 0 sco K : 4795 2006 1212 43 rc 0 0 0 sco F0_40
+Ji 
+4896 2006 M 
+-0.556 0 (ValidLASER)A 
+; : 2120 3186 1212 43 rc 0 0 0 sco F0_40
+Ji 
+2221 3186 M 
+-0.556 0 (ValidLASER)A 
+; : 488 1961 909 43 rc 0 0 0 sco F0_40
+Ji 
+589 1961 M 
+-0.886 0 (TopTour)A 
+; 
+453 1956 N M 46 0 - 0 0 0 sco K 
+2312 3999 N M -136 0 - 0 0 0 sco K : 2125 3958 303 43 rc 0 0 0 sco F0_40
+Ji 
+2226 3958 M 
+(8)S 
+; 
+2312 4090 N M -136 0 - 0 0 0 sco K : 2125 4049 303 43 rc 0 0 0 sco F0_40
+Ji 
+2226 4049 M 
+(9)S 
+; 
+N 27 26 2506 4044 ellp 1 Lw solid 0 0 0 sco K 
+2521 4044 N M 108 0 - 5 Lw solid 0 0 0 sco K : 2460 4003 404 43 rc 0 0 0 sco F0_40
+Ji 
+2561 4003 M 
+(10)S 
+; 
+2430 4003 N M 0 82 - 0 0 0 sco K 
+2357 4003 N M 0 82 - 0 0 0 sco K 
+2312 3976 N M 0 136 - 0 0 0 sco K 
+2357 4085 N M 105 0 - 0 0 0 sco K 
+2330 4003 N M 100 0 - 0 0 0 sco K 
+2312 4112 N M 113 0 - 0 0 0 sco K 
+2312 3976 N M 113 0 - 0 0 0 sco K 
+N 2424.500 4043.500 67.500 89.582 -89.576 An 
+0 0 0 sco K : 2206 3931 505 43 rc 0 0 0 sco F0_40
+Ji 
+2307 3931 M 
+-0.520 0 (U2C)A 
+; : 2206 4117 606 43 rc 0 0 0 sco F0_40
+Ji 
+2307 4117 M 
+(4093)S 
+; : 5203 3686 707 43 rc 0 0 0 sco F0_40
+Ji 
+5304 3686 M 
+-0.472 0 (REC1s)A 
+; : 6200 3686 600 43 rc 0 0 0 sco F0_40
+Ji 
+6301 3686 M 
+-0.472 0 (REC2s)A 
+; 
+5077 1956 N M -181 0 - 0 0 0 sco K 
+5077 2002 N M -181 0 - 0 0 0 sco K : 4795 1915 707 43 rc 0 0 0 sco F0_40
+Ji 
+4896 1915 M 
+-0.472 0 (REC1s)A 
+; : 4795 1961 707 43 rc 0 0 0 sco F0_40
+Ji 
+4896 1961 M 
+-0.472 0 (REC2s)A 
+; : 2483 1734 909 43 rc 0 0 0 sco F0_40
+Ji 
+2584 1734 M 
+-0.886 0 (TopTour)A 
+; 
+2629 4044 N M 46 0 - 0 0 0 sco K : 4478 1552 1010 43 rc 0 0 0 sco F0_40
+Ji 
+4579 1552 M 
+-0.805 0 (TopTourS)A 
+; 
+5077 2138 N M -181 0 - 0 0 0 sco K : 4795 2097 1010 43 rc 0 0 0 sco F0_40
+Ji 
+4896 2097 M 
+-0.805 0 (TopTourS)A 
+; 
+453 1820 N M 46 0 - 0 136 - 0 0 0 sco K 
+453 2002 N M 136 0 - 0 0 0 sco K 
+453 1911 N M 136 0 - 0 0 0 sco K 
+771 1457 N M 45 0 - 0 0 0 sco K 
+635 1457 N M -46 0 - 0 0 0 sco K 
+635 1475 N M 0 -36 - 0 0 0 sco K 
+771 1475 N M 0 -36 - 0 0 0 sco K 
+771 1439 N M -136 0 - 0 0 0 sco K 
+771 1457 N M -136 0 - 0 0 0 sco K 
+771 1475 N M -136 0 - 0 0 0 sco K : 529 1393 404 43 rc 0 0 0 sco F0_40
+Ji 
+630 1393 M 
+-0.120 0 (F1)A 
+; : 529 1484 707 43 rc 0 0 0 sco F0_40
+Ji 
+630 1484 M 
+-0.360 0 (FUSE1)A 
+; 
+816 1457 N M 136 0 - 0 0 0 sco K 
+453 1639 N M 136 0 - 0 0 0 sco K 
+2312 3726 N M -136 0 - 0 0 0 sco K : 2102 3686 404 43 rc 0 0 0 sco F0_40
+Ji 
+2203 3686 M 
+(12)S 
+; 
+2312 3817 N M -136 0 - 0 0 0 sco K : 2102 3776 404 43 rc 0 0 0 sco F0_40
+Ji 
+2203 3776 M 
+(13)S 
+; 
+N 27 26 2506 3771 ellp 1 Lw solid 0 0 0 sco K 
+2521 3772 N M 108 0 - 5 Lw solid 0 0 0 sco K : 2460 3731 404 43 rc 0 0 0 sco F0_40
+Ji 
+2561 3731 M 
+(11)S 
+; 
+2430 3731 N M 0 82 - 0 0 0 sco K 
+2357 3731 N M 0 82 - 0 0 0 sco K 
+2312 3704 N M 0 136 - 0 0 0 sco K 
+2357 3813 N M 105 0 - 0 0 0 sco K 
+2330 3731 N M 100 0 - 0 0 0 sco K 
+2312 3840 N M 113 0 - 0 0 0 sco K 
+2312 3704 N M 113 0 - 0 0 0 sco K 
+N 2424.500 3771.500 67.500 89.582 -89.576 An 
+0 0 0 sco K : 2206 3658 505 43 rc 0 0 0 sco F0_40
+Ji 
+2307 3658 M 
+-0.587 0 (U2D)A 
+; : 2206 3844 606 43 rc 0 0 0 sco F0_40
+Ji 
+2307 3844 M 
+(4093)S 
+; 
+2131 3704 N M 0 45 - 0 0 0 sco K : 1939 3708 505 43 rc 0 0 0 sco F0_40
+Ji 
+2040 3708 M 
+-1.213 0 (GND)A 
+; 
+2176 3726 N M -45 0 - 0 0 0 sco K 
+2131 3976 N M 0 45 - 0 0 0 sco K : 1939 3981 505 43 rc 0 0 0 sco F0_40
+Ji 
+2040 3981 M 
+-1.213 0 (GND)A 
+; 
+2176 3999 N M -45 0 - 0 0 0 sco K 
+589 2456 N M 0 -46 - 0 0 0 sco K 
+589 2365 N M 0 -46 - 0 0 0 sco K 
+589 2274 N M 0 -45 - 0 0 0 sco K 
+589 2183 N M 0 -45 - 0 0 0 sco K 
+635 2251 N M 0 46 - 0 0 0 sco K : 543 2256 909 43 rc 0 0 0 sco F0_40
+Ji 
+644 2256 M 
+-0.857 0 (-BATT_P)A 
+; 
+589 2274 N M 46 0 - 0 0 0 sco K 
+N 588 2273 8.500 360 0 An C : 0 0 0 sco O ; 1 Lw solid 0 0 0 sco K 
+6664 1593 N M 0 -45 - 5 Lw solid 0 0 0 sco K 
+6664 1729 N M 0 46 - 0 0 0 sco K 
+6737 1693 N M -19 -18 - 0 0 0 sco K 
+6737 1657 N M -19 -18 - 0 0 0 sco K 
+6664 1593 N M 0 136 - 0 0 0 sco K 
+6705 1625 N M -41 45 - -41 -45 - 82 0 - C : 1.000 1.000 1.000 sco O ; 0 0 0 sco K 
+6705 1670 N M -82 5 rr : 1.000 1.000 1.000 sco O ; 0 Lc 0 Lj 0 0 0 sco K 
+6746 1688 N M 0 14 - -14 0 - 14 -14 - C : 1.000 1.000 1.000 sco O ; 1 Lc 1 Lj 0 0 0 sco K 
+6746 1652 N M 0 14 - -14 0 - 14 -14 - C : 1.000 1.000 1.000 sco O ; 0 0 0 sco K : 6554 1548 246 43 rc 0 0 0 sco F0_40
+Ji 
+6655 1548 M 
+-0.440 0 (D3)A 
+; : 6509 1684 291 43 rc 0 0 0 sco F0_40
+Ji 
+6610 1684 M 
+-0.776 0 (VERTE)A 
+; 
+6664 1321 N M 0 -46 - 0 0 0 sco K 
+6664 1457 N M 0 45 - 0 0 0 sco K 
+6678 1457 N M -28 0 - 0 0 0 sco K 
+6678 1321 N M -28 0 - 0 0 0 sco K 
+6650 1321 N M 0 136 - 0 0 0 sco K 
+6678 1321 N M 0 136 - 0 0 0 sco K : 6581 1321 219 43 rc 0 0 0 sco F0_40
+Ji 
+6682 1321 M 
+-0.340 0 (R8)A 
+; : 6581 1366 219 43 rc 0 0 0 sco F0_40
+Ji 
+6682 1366 M 
+(470)S 
+; 
+6664 1548 N M 0 -46 - 0 0 0 sco K 
+6664 1275 N M 0 -45 - 0 0 0 sco K 
+6664 1775 N M 0 45 - 0 0 0 sco K 
+6641 1865 N M 46 0 - 0 0 0 sco K : 6522 1865 278 43 rc 0 0 0 sco F0_40
+Ji 
+6623 1865 M 
+-1.213 0 (GND)A 
+; 
+6664 1820 N M 0 45 - 0 0 0 sco K 
+6528 1639 N M 0 -46 - 0 0 0 sco K 
+6528 1775 N M 0 45 - 0 0 0 sco K 
+6601 1738 N M -19 -18 - 0 0 0 sco K 
+6601 1702 N M -19 -18 - 0 0 0 sco K 
+6528 1639 N M 0 136 - 0 0 0 sco K 
+6569 1670 N M -41 46 - -41 -46 - 82 0 - C : 1.000 1.000 1.000 sco O ; 0 0 0 sco K 
+6569 1716 N M -82 4 rr : 1.000 1.000 1.000 sco O ; 0 Lc 0 Lj 0 0 0 sco K 
+6610 1734 N M 0 13 - -14 0 - 14 -13 - C : 1.000 1.000 1.000 sco O ; 1 Lc 1 Lj 0 0 0 sco K 
+6610 1698 N M 0 13 - -14 0 - 14 -13 - C : 1.000 1.000 1.000 sco O ; 0 0 0 sco K : 6418 1593 382 43 rc 0 0 0 sco F0_40
+Ji 
+6519 1593 M 
+-0.440 0 (D4)A 
+; : 6373 1729 427 43 rc 0 0 0 sco F0_40
+Ji 
+6474 1729 M 
+-0.776 0 (VERTE)A 
+; 
+6528 1366 N M 0 -45 - 0 0 0 sco K 
+6528 1502 N M 0 46 - 0 0 0 sco K 
+6542 1502 N M -28 0 - 0 0 0 sco K 
+6542 1366 N M -28 0 - 0 0 0 sco K 
+6514 1366 N M 0 136 - 0 0 0 sco K 
+6542 1366 N M 0 136 - 0 0 0 sco K : 6445 1366 355 43 rc 0 0 0 sco F0_40
+Ji 
+6546 1366 M 
+-0.340 0 (R9)A 
+; : 6445 1412 355 43 rc 0 0 0 sco F0_40
+Ji 
+6546 1412 M 
+(470)S 
+; 
+6528 1321 N M 0 -46 - 0 0 0 sco K 
+6528 1820 N M 0 45 - 0 0 0 sco K 
+6505 1911 N M 46 0 - 0 0 0 sco K : 6386 1911 414 43 rc 0 0 0 sco F0_40
+Ji 
+6487 1911 M 
+-1.213 0 (GND)A 
+; 
+6528 1865 N M 0 46 - 0 0 0 sco K 
+6392 1684 N M 0 -45 - 0 0 0 sco K 
+6392 1820 N M 0 45 - 0 0 0 sco K 
+6465 1784 N M -19 -18 - 0 0 0 sco K 
+6465 1747 N M -19 -18 - 0 0 0 sco K 
+6392 1684 N M 0 136 - 0 0 0 sco K 
+6433 1716 N M -41 45 - -41 -45 - 82 0 - C : 1.000 1.000 1.000 sco O ; 0 0 0 sco K 
+6433 1761 N M -82 5 rr : 1.000 1.000 1.000 sco O ; 0 Lc 0 Lj 0 0 0 sco K 
+6474 1779 N M 0 14 - -14 0 - 14 -14 - C : 1.000 1.000 1.000 sco O ; 1 Lc 1 Lj 0 0 0 sco K 
+6474 1743 N M 0 14 - -14 0 - 14 -14 - C : 1.000 1.000 1.000 sco O ; 0 0 0 sco K : 6282 1639 404 43 rc 0 0 0 sco F0_40
+Ji 
+6383 1639 M 
+-0.440 0 (D7)A 
+; : 6237 1775 563 43 rc 0 0 0 sco F0_40
+Ji 
+6338 1775 M 
+-0.776 0 (VERTE)A 
+; 
+6392 1412 N M 0 -46 - 0 0 0 sco K 
+6392 1548 N M 0 45 - 0 0 0 sco K 
+6406 1548 N M -28 0 - 0 0 0 sco K 
+6406 1412 N M -28 0 - 0 0 0 sco K 
+6378 1412 N M 0 136 - 0 0 0 sco K 
+6406 1412 N M 0 136 - 0 0 0 sco K : 6309 1412 491 43 rc 0 0 0 sco F0_40
+Ji 
+6410 1412 M 
+-0.227 0 (R10)A 
+; : 6309 1457 491 43 rc 0 0 0 sco F0_40
+Ji 
+6410 1457 M 
+(470)S 
+; 
+6392 1639 N M 0 -46 - 0 0 0 sco K 
+6392 1366 N M 0 -45 - 0 0 0 sco K 
+6392 1865 N M 0 46 - 0 0 0 sco K 
+6369 1956 N M 46 0 - 0 0 0 sco K : 6250 1956 505 43 rc 0 0 0 sco F0_40
+Ji 
+6351 1956 M 
+-1.213 0 (GND)A 
+; 
+6392 1911 N M 0 45 - 0 0 0 sco K 
+6256 1729 N M 0 -45 - 0 0 0 sco K 
+6256 1865 N M 0 46 - 0 0 0 sco K 
+6329 1829 N M -19 -18 - 0 0 0 sco K 
+6329 1793 N M -19 -18 - 0 0 0 sco K 
+6256 1729 N M 0 136 - 0 0 0 sco K 
+6297 1761 N M -41 45 - -41 -45 - 82 0 - C : 1.000 1.000 1.000 sco O ; 0 0 0 sco K 
+6297 1806 N M -82 5 rr : 1.000 1.000 1.000 sco O ; 0 Lc 0 Lj 0 0 0 sco K 
+6338 1825 N M 0 13 - -14 0 - 14 -13 - C : 1.000 1.000 1.000 sco O ; 1 Lc 1 Lj 0 0 0 sco K 
+6338 1788 N M 0 14 - -14 0 - 14 -14 - C : 1.000 1.000 1.000 sco O ; 0 0 0 sco K : 6146 1684 404 43 rc 0 0 0 sco F0_40
+Ji 
+6247 1684 M 
+-0.440 0 (D8)A 
+; : 6101 1820 699 43 rc 0 0 0 sco F0_40
+Ji 
+6202 1820 M 
+-0.776 0 (VERTE)A 
+; 
+6256 1457 N M 0 -45 - 0 0 0 sco K 
+6256 1593 N M 0 46 - 0 0 0 sco K 
+6270 1593 N M -28 0 - 0 0 0 sco K 
+6270 1457 N M -28 0 - 0 0 0 sco K 
+6242 1457 N M 0 136 - 0 0 0 sco K 
+6270 1457 N M 0 136 - 0 0 0 sco K : 6173 1457 505 43 rc 0 0 0 sco F0_40
+Ji 
+6274 1457 M 
+-0.227 0 (R11)A 
+; : 6173 1502 505 43 rc 0 0 0 sco F0_40
+Ji 
+6274 1502 M 
+(470)S 
+; 
+6256 1684 N M 0 -45 - 0 0 0 sco K 
+6256 1412 N M 0 -46 - 0 0 0 sco K 
+6256 1911 N M 0 45 - 0 0 0 sco K 
+6233 2002 N M 46 0 - 0 0 0 sco K : 6114 2002 505 43 rc 0 0 0 sco F0_40
+Ji 
+6215 2002 M 
+-1.213 0 (GND)A 
+; 
+6256 1956 N M 0 46 - 0 0 0 sco K 
+6075 1230 N M 589 0 - 0 0 0 sco K 
+6528 1275 N M -453 0 - 0 0 0 sco K 
+6075 1321 N M 317 0 - 0 0 0 sco K 
+6256 1366 N M -181 0 - 0 0 0 sco K 
+453 2047 N M 136 0 - 0 0 0 sco K : 488 2006 606 43 rc 0 0 0 sco F0_40
+Ji 
+589 2006 M 
+-0.820 0 (Vref)A 
+; 
+1360 2183 N M 453 227 rr : 1.000 1.000 1.000 sco O ; 1 Lw 0 Lc 0 Lj solid 0 0 0 sco K 
+1360 2229 N M -136 0 - 5 Lw 1 Lc 1 Lj solid 0 0 0 sco K : 1286 2210 505 43 rc 0 0 0 sco F0_40
+Ji 
+1387 2210 M 
+-0.333 0 (Vin)A 
+; : 1173 2188 303 43 rc 0 0 0 sco F0_40
+Ji 
+1274 2188 M 
+(3)S 
+; 
+1587 2410 N M 0 136 - 0 0 0 sco K : 0 0 6800 4725 rc 0 0 0 sco F0_40
+Ji 
+270.000 1564 2383 sR 
+-0.773 0 (ADJ)A 
+eR 
+; : 0 0 6800 4725 rc 0 0 0 sco F0_40
+Ji 
+270.000 1541 2496 sR 
+(1)S 
+eR 
+; 
+1813 2229 N M 136 0 - 0 0 0 sco K : 1585 2210 707 43 rc 0 0 0 sco F0_40
+Ji 
+1686 2210 M 
+-0.512 0 (+Vout)A 
+; : 1780 2188 303 43 rc 0 0 0 sco F0_40
+Ji 
+1881 2188 M 
+(2)S 
+; : 1259 2097 505 43 rc 0 0 0 sco F0_40
+Ji 
+1360 2097 M 
+-0.293 0 (U12)A 
+; : 1259 2142 808 43 rc 0 0 0 sco F0_40
+Ji 
+1360 2142 M 
+-0.573 0 (LM317T)A 
+; 
+1224 2365 N M 0 -46 - 0 0 0 sco K 
+1224 2410 N M 0 46 - 0 0 0 sco K 
+1224 2397 N M 0 13 - 0 0 0 sco K 
+1224 2365 N M 0 13 - 0 0 0 sco K 
+1183 2397 N M 82 0 - 0 0 0 sco K 
+1183 2378 N M 82 0 - 0 0 0 sco K : 1123 2319 505 43 rc 0 0 0 sco F0_40
+Ji 
+1224 2319 M 
+-0.227 0 (C29)A 
+; : 1123 2410 707 43 rc 0 0 0 sco F0_40
+Ji 
+1224 2410 M 
+-0.048 0 (100nF)A 
+; 
+2040 2365 N M 0 -46 - 0 0 0 sco K 
+2040 2410 N M 0 46 - 0 0 0 sco K 
+2040 2397 N M 0 13 - 0 0 0 sco K 
+2040 2365 N M 0 13 - 0 0 0 sco K 
+1999 2397 N M 82 0 - 0 0 0 sco K 
+1999 2378 N M 82 0 - 0 0 0 sco K : 1939 2319 505 43 rc 0 0 0 sco F0_40
+Ji 
+2040 2319 M 
+-0.227 0 (C30)A 
+; : 1894 2456 707 43 rc 0 0 0 sco F0_40
+Ji 
+1995 2456 M 
+-0.048 0 (100nF)A 
+; 
+1949 2456 N M 0 45 - 0 0 0 sco K 
+1949 2319 N M 0 -45 - 0 0 0 sco K 
+1936 2319 N M 27 0 - 0 0 0 sco K 
+1936 2456 N M 27 0 - 0 0 0 sco K 
+1963 2456 N M 0 -137 - 0 0 0 sco K 
+1936 2456 N M 0 -137 - 0 0 0 sco K : 1776 2274 505 43 rc 0 0 0 sco F0_40
+Ji 
+1877 2274 M 
+-0.227 0 (R13)A 
+; : 1776 2456 505 43 rc 0 0 0 sco F0_40
+Ji 
+1877 2456 M 
+-0.627 0 (1K8)A 
+; 
+1360 2637 N M 0 -45 - 0 0 0 sco K 
+1405 2728 N M 46 0 - 0 0 0 sco K 
+1360 2819 N M 0 45 - 0 0 0 sco K 
+1405 2728 N M -31 0 - 0 0 0 sco K 
+1360 2637 N M 0 23 - 14 13 - -28 28 - 28 27 - -28 27 - 28 27 - -14 14 - 0 23 - 0 0 0 sco K 
+1392 2746 N M 0 -36 - -18 18 - 18 18 - C : 1.000 1.000 1.000 sco O ; 0 0 0 sco K : 1309 2642 404 43 rc 0 0 0 sco F0_40
+Ji 
+1410 2642 M 
+-0.120 0 (P1)A 
+; : 1309 2687 505 43 rc 0 0 0 sco F0_40
+Ji 
+1410 2687 M 
+-0.627 0 (7K5)A 
+; 
+1224 2229 N M -91 0 - 0 90 - 0 0 0 sco K 
+1224 2319 N M 0 -90 - 0 0 0 sco K 
+1224 2546 N M 0 -90 - 0 0 0 sco K 
+2131 2319 N M 0 -90 - -182 0 - 0 0 0 sco K 
+1949 2274 N M 0 -45 - 0 0 0 sco K 
+2040 2319 N M 0 -90 - 0 0 0 sco K 
+N 2039 2228 8.500 360 0 An C : 0 0 0 sco O ; 1 Lw solid 0 0 0 sco K 
+1133 2365 N M 0 -46 - 5 Lw solid 0 0 0 sco K 
+1133 2456 N M 0 45 - 0 0 0 sco K 
+1133 2428 N M 0 28 - 0 0 0 sco K 
+1088 2410 N M 91 0 - 0 0 0 sco K 
+1133 2365 N M 0 45 - 0 0 0 sco K 
+N CTMsave 
+1133.000 2500.500 + 144 145 +S 
+0 0 0.500 -51.628 -90.000 An 
+CTMrestore 
+0 0 0 sco K 
+N CTMsave 
+1133.000 2500.500 + 144 145 +S 
+0 0 0.500 -90.000 -127.760 An 
+CTMrestore 
+0 0 0 sco K : 1061 2374 258 36 rc 0 0 0 sco F2_31
+Ji 
+1147 2374 M 
+0.896 0 (+)A 
+; : 946 2360 505 43 rc 0 0 0 sco F0_40
+Ji 
+1047 2360 M 
+-0.227 0 (C31)A 
+; : 901 2446 707 43 rc 0 0 0 sco F0_40
+Ji 
+1002 2446 M 
+0.352 0 (0,1\265F)A 
+; 
+2131 2365 N M 0 -46 - 0 0 0 sco K 
+2131 2456 N M 0 45 - 0 0 0 sco K 
+2131 2428 N M 0 28 - 0 0 0 sco K 
+2085 2410 N M 91 0 - 0 0 0 sco K 
+2131 2365 N M 0 45 - 0 0 0 sco K 
+N CTMsave 
+2130.000 2500.500 + 144 145 +S 
+0 0 0.500 -51.628 -89.204 An 
+CTMrestore 
+0 0 0 sco K 
+N CTMsave 
+2130.000 2500.500 + 144 145 +S 
+0 0 0.500 -89.204 -127.760 An 
+CTMrestore 
+0 0 0 sco K : 2058 2374 258 36 rc 0 0 0 sco F2_31
+Ji 
+2144 2374 M 
+0.896 0 (+)A 
+; : 2080 2360 505 43 rc 0 0 0 sco F0_40
+Ji 
+2181 2360 M 
+-0.227 0 (C32)A 
+; : 2080 2401 505 43 rc 0 0 0 sco F0_40
+Ji 
+2181 2401 M 
+0.587 0 (1\265F)A 
+; 
+1133 2501 N M 91 0 - 0 0 0 sco K 
+N 1223 2500 8.500 360 0 An C : 0 0 0 sco O ; 1 Lw solid 0 0 0 sco K 
+2131 2501 N M 0 45 - -91 0 - 5 Lw solid 0 0 0 sco K 
+1111 2546 N M 45 0 - 0 0 0 sco K : 955 2546 909 43 rc 0 0 0 sco F0_40
+Ji 
+1056 2546 M 
+-0.857 0 (-BATT_P)A 
+; 
+1133 2501 N M 0 45 - 0 0 0 sco K 
+1201 2183 N M 46 0 - 0 0 0 sco K : 1041 2142 909 43 rc 0 0 0 sco F0_40
+Ji 
+1142 2142 M 
+-0.749 0 (+BATT_P)A 
+; 
+1224 2229 N M 0 -46 - 0 0 0 sco K 
+N 1223 2228 8.500 360 0 An C : 0 0 0 sco O ; 1 Lw solid 0 0 0 sco K 
+1405 2546 N M -45 0 - 5 Lw solid 0 0 0 sco K 
+1541 2546 N M 46 0 - 0 0 0 sco K 
+1541 2533 N M 0 27 - 0 0 0 sco K 
+1405 2533 N M 0 27 - 0 0 0 sco K 
+1405 2560 N M 136 0 - 0 0 0 sco K 
+1405 2533 N M 136 0 - 0 0 0 sco K : 1300 2487 505 43 rc 0 0 0 sco F0_40
+Ji 
+1401 2487 M 
+-0.227 0 (R12)A 
+; : 1300 2569 808 43 rc 0 0 0 sco F0_40
+Ji 
+1401 2569 M 
+-0.927 0 (6Kohms)A 
+; 
+1587 2546 N M 362 0 - 0 -45 - 0 0 0 sco K 
+1360 2592 N M 0 -46 - 0 0 0 sco K 
+2040 2456 N M 0 544 - -680 0 - 0 0 0 sco K 
+1224 2546 N M 0 318 - 136 0 - 0 0 0 sco K 
+N 1132 2500 8.500 360 0 An C : 0 0 0 sco O ; 1 Lw solid 0 0 0 sco K 
+1451 2728 N M 0 136 - 5 Lw solid 0 0 0 sco K : 1848 2188 606 43 rc 0 0 0 sco F0_40
+Ji 
+1949 2188 M 
+-1.030 0 (Vmot)A 
+; 
+N 17 18 452 1638 ellp : 0 0 0 sco O ; 1 Lw solid 0 0 0 sco K 
+N 452 1592 8.500 360 0 An C : 0 0 0 sco O ; 0 0 0 sco K 
+N 452 1547 8.500 360 0 An C : 0 0 0 sco O ; 0 0 0 sco K 
+N 452 1456 8.500 360 0 An C : 0 0 0 sco O ; 0 0 0 sco K 
+N 452 1411 8.500 360 0 An C : 0 0 0 sco O ; 0 0 0 sco K 
+N 452 1365 8.500 360 0 An C : 0 0 0 sco O ; 0 0 0 sco K 
+N 452 1229 8.500 360 0 An C : 0 0 0 sco O ; 0 0 0 sco K 
+N 452 1184 8.500 360 0 An C : 0 0 0 sco O ; 0 0 0 sco K 
+N 452 1138 8.500 360 0 An C : 0 0 0 sco O ; 0 0 0 sco K 
+N 17 18 452 1048 ellp : 0 0 0 sco O ; 0 0 0 sco K 
+6528 1593 N M 0 -45 - 5 Lw solid 0 0 0 sco K : 488 2142 606 43 rc 0 0 0 sco F0_40
+Ji 
+589 2142 M 
+-1.030 0 (Vmot)A 
+; 
+1360 1412 N M 0 -46 - 0 0 0 sco K 
+1360 1911 N M 0 45 - 0 0 0 sco K 
+1337 2002 N M 46 0 - 0 0 0 sco K : 1218 2002 505 43 rc 0 0 0 sco F0_40
+Ji 
+1319 2002 M 
+-1.213 0 (GND)A 
+; 
+1360 1956 N M 0 46 - 0 0 0 sco K 
+1337 1321 N M 46 0 - 0 0 0 sco K : 1218 1280 505 43 rc 0 0 0 sco F0_40
+Ji 
+1319 1280 M 
+-0.747 0 (VCC)A 
+; 
+1360 1366 N M 0 -45 - 0 0 0 sco K : 1350 1598 606 43 rc 0 0 0 sco F0_40
+Ji 
+1451 1598 M 
+-0.820 0 (Vref)A 
+; 
+4669 2229 N M 0 45 - 0 0 0 sco K 
+4669 2092 N M 0 -45 - 0 0 0 sco K 
+4656 2092 N M 27 0 - 0 0 0 sco K 
+4656 2229 N M 27 0 - 0 0 0 sco K 
+4683 2229 N M 0 -137 - 0 0 0 sco K 
+4656 2229 N M 0 -137 - 0 0 0 sco K : 4450 2088 505 43 rc 0 0 0 sco F0_40
+Ji 
+4551 2088 M 
+-0.227 0 (R15)A 
+; : 4450 2129 505 43 rc 0 0 0 sco F0_40
+Ji 
+4551 2129 M 
+-0.627 0 (4K7)A 
+; 
+4669 2274 N M 0 45 - 0 0 0 sco K 
+4647 2365 N M 45 0 - 0 0 0 sco K : 4528 2365 505 43 rc 0 0 0 sco F0_40
+Ji 
+4629 2365 M 
+-1.213 0 (GND)A 
+; 
+4669 2319 N M 0 46 - 0 0 0 sco K 
+5077 2047 N M -408 0 - 0 0 0 sco K 
+5077 2092 N M -272 0 - 0 0 0 sco K 
+4805 2274 N M 0 45 - 0 0 0 sco K 
+4805 2138 N M 0 -46 - 0 0 0 sco K 
+4792 2138 N M 27 0 - 0 0 0 sco K 
+4792 2274 N M 27 0 - 0 0 0 sco K 
+4819 2274 N M 0 -136 - 0 0 0 sco K 
+4792 2274 N M 0 -136 - 0 0 0 sco K : 4722 2133 505 43 rc 0 0 0 sco F0_40
+Ji 
+4823 2133 M 
+-0.227 0 (R16)A 
+; : 4722 2174 505 43 rc 0 0 0 sco F0_40
+Ji 
+4823 2174 M 
+-0.627 0 (4K7)A 
+; 
+4783 2365 N M 45 0 - 0 0 0 sco K : 4664 2365 505 43 rc 0 0 0 sco F0_40
+Ji 
+4765 2365 M 
+-0.747 0 (VCC)A 
+; 
+4805 2319 N M 0 46 - 0 0 0 sco K : 4795 2052 1313 43 rc 0 0 0 sco F0_40
+Ji 
+4896 2052 M 
+-0.422 0 (ValidMoteur)A 
+; : 2120 2778 1313 43 rc 0 0 0 sco F0_40
+Ji 
+2221 2778 M 
+-0.422 0 (ValidMoteur)A 
+; 
+1723 2682 N M 45 0 - 0 0 0 sco K 
+1587 2592 N M 0 -46 - 0 0 0 sco K 
+1587 2773 N M 0 46 - 0 0 0 sco K 
+1655 2701 N M -41 40 - 0 0 0 sco K 
+1587 2764 N M 0 9 - 0 0 0 sco K 
+1723 2682 N M -68 0 - 0 0 0 sco K 
+1587 2592 N M 0 13 - 68 68 - 0 0 0 sco K 
+1655 2623 N M 9 118 rr : 1.000 1.000 1.000 sco O ; 0 Lc 0 Lj 0 0 0 sco K 
+1605 2732 N M 18 19 - -36 13 - 18 -32 - C : 1.000 1.000 1.000 sco O ; 1 Lc 1 Lj 0 0 0 sco K 
+N 181 180 1631 2682 ellp 0 0 0 sco K : 1626 2546 404 43 rc 0 0 0 sco F0_40
+Ji 
+1727 2546 M 
+-0.720 0 (T1)A 
+; : 1626 2596 707 43 rc 0 0 0 sco F0_40
+Ji 
+1727 2596 M 
+-0.272 0 (BC547)A 
+; 
+1587 2819 N M 0 45 - 0 0 0 sco K 
+2040 2819 N M -45 0 - 0 0 0 sco K 
+2176 2819 N M 45 0 - 0 0 0 sco K 
+2176 2805 N M 0 27 - 0 0 0 sco K 
+2040 2805 N M 0 27 - 0 0 0 sco K 
+2040 2832 N M 136 0 - 0 0 0 sco K 
+2040 2805 N M 136 0 - 0 0 0 sco K : 1934 2760 505 43 rc 0 0 0 sco F0_40
+Ji 
+2035 2760 M 
+-0.227 0 (R17)A 
+; : 1934 2841 505 43 rc 0 0 0 sco F0_40
+Ji 
+2035 2841 M 
+-0.627 0 (4K7)A 
+; 
+2176 3726 N M 0 91 - 0 0 0 sco K 
+589 1865 N M 136 0 - 0 0 0 sco K 
+725 1911 N M -136 0 - 0 0 0 sco K 
+3219 4044 N M 181 318 rr : 1.000 1.000 1.000 sco O ; 1 Lw 0 Lc 0 Lj solid 0 0 0 sco K 
+3264 4090 N M 91 45 - -91 45 - 0 -90 - 5 Lw 1 Lc 1 Lj solid 0 0 0 sco K 
+3264 4226 N M 91 45 - -91 45 - 0 -90 - 0 0 0 sco K 
+N 26 27 3354 4134 ellp 1 Lw solid 0 0 0 sco K 
+N 26 27 3354 4270 ellp 0 0 0 sco K 
+3219 4135 N M -136 0 - 5 Lw solid 0 0 0 sco K : 3032 4094 303 43 rc 0 0 0 sco F0_40
+Ji 
+3133 4094 M 
+(2)S 
+; 
+3309 4362 N M 0 136 - 0 0 0 sco K : 0 0 6800 4725 rc 0 0 0 sco F0_40
+Ji 
+270.000 3287 4335 sR 
+-1.213 0 (GND)A 
+eR 
+; : 0 0 6800 4725 rc 0 0 0 sco F0_40
+Ji 
+270.000 3264 4448 sR 
+(3)S 
+eR 
+; 
+3219 4271 N M -136 0 - 0 0 0 sco K : 3032 4230 303 43 rc 0 0 0 sco F0_40
+Ji 
+3133 4230 M 
+(4)S 
+; 
+3400 4271 N M 136 0 - 0 0 0 sco K : 3367 4230 303 43 rc 0 0 0 sco F0_40
+Ji 
+3468 4230 M 
+(5)S 
+; 
+3309 4044 N M 0 -136 - 0 0 0 sco K : 0 0 6800 4725 rc 0 0 0 sco F0_40
+Ji 
+270.000 3287 4153 sR 
+-0.747 0 (VCC)A 
+eR 
+; : 0 0 6800 4725 rc 0 0 0 sco F0_40
+Ji 
+270.000 3264 3976 sR 
+(6)S 
+eR 
+; 
+3400 4135 N M 136 0 - 0 0 0 sco K : 3367 4094 303 43 rc 0 0 0 sco F0_40
+Ji 
+3468 4094 M 
+(7)S 
+; : 3299 4003 404 43 rc 0 0 0 sco F0_40
+Ji 
+3400 4003 M 
+-0.440 0 (U5)A 
+; : 3299 4366 909 43 rc 0 0 0 sco F0_40
+Ji 
+3400 4366 M 
+-0.177 0 (MC33151)A 
+; 
+N 2356 3317 8.500 360 0 An C : 0 0 0 sco O ; 1 Lw solid 0 0 0 sco K 
+N 17 18 2175 3726 ellp : 0 0 0 sco O ; 0 0 0 sco K 
+3287 3863 N M 45 0 - 5 Lw solid 0 0 0 sco K : 3127 3822 909 43 rc 0 0 0 sco F0_40
+Ji 
+3228 3822 M 
+-0.749 0 (+BATT_P)A 
+; 
+3309 3908 N M 0 -45 - 0 0 0 sco K 
+3287 4543 N M 45 0 - 0 0 0 sco K : 3131 4543 909 43 rc 0 0 0 sco F0_40
+Ji 
+3232 4543 M 
+-0.857 0 (-BATT_P)A 
+; 
+3309 4498 N M 0 45 - 0 0 0 sco K 
+3083 3273 N M 0 136 - 0 0 0 sco K 
+N 17 18 3082 3272 ellp : 0 0 0 sco O ; 1 Lw solid 0 0 0 sco K 
+3083 4135 N M 0 136 - 5 Lw solid 0 0 0 sco K 
+3536 3273 N M 0 136 - 0 0 0 sco K 
+3536 4135 N M 0 136 - 0 0 0 sco K 
+2357 3454 N M 590 0 - 0 681 - 136 0 - 0 0 0 sco K 
+N 2356 3453 8.500 360 0 An C : 0 0 0 sco O ; 1 Lw solid 0 0 0 sco K 
+N 3082 4134 8.500 360 0 An C : 0 0 0 sco O ; 0 0 0 sco K 
+3536 3273 N M 181 0 - 5 Lw solid 0 0 0 sco K 
+N 17 18 3535 3272 ellp : 0 0 0 sco O ; 1 Lw solid 0 0 0 sco K 
+3536 4135 N M 181 0 - 5 Lw solid 0 0 0 sco K 
+N 3535 4134 8.500 360 0 An C : 0 0 0 sco O ; 1 Lw solid 0 0 0 sco K 
+3808 3273 N M -45 0 - 5 Lw solid 0 0 0 sco K 
+3853 3273 N M 46 0 - 0 0 0 sco K 
+3840 3273 N M 13 0 - 0 0 0 sco K 
+3808 3273 N M 14 0 - 0 0 0 sco K 
+3840 3313 N M 0 -81 - 0 0 0 sco K 
+3822 3313 N M 0 -81 - 0 0 0 sco K : 3702 3186 505 43 rc 0 0 0 sco F0_40
+Ji 
+3803 3186 M 
+-0.227 0 (C17)A 
+; : 3702 3322 707 43 rc 0 0 0 sco F0_40
+Ji 
+3803 3322 M 
+-0.248 0 (220pF)A 
+; 
+3717 3273 N M 46 0 - 0 0 0 sco K 
+3899 3273 N M 136 0 - 0 0 0 sco K 
+3717 4135 N M 318 0 - 0 0 0 sco K : 4160 3232 808 43 rc 0 0 0 sco F0_40
+Ji 
+4261 3232 M 
+-0.613 0 (LASER1)A 
+; : 3934 4094 808 43 rc 0 0 0 sco F0_40
+Ji 
+4035 4094 M 
+-0.613 0 (LASER2)A 
+; 
+N 1540 1093 8.500 360 0 An C : 0 0 0 sco O ; 1 Lw solid 0 0 0 sco K 
+N 1540 866 8.500 360 0 An C : 0 0 0 sco O ; 0 0 0 sco K 
+N 17 18 2946 2455 ellp : 0 0 0 sco O ; 0 0 0 sco K 
+N 2946 2636 8.500 360 0 An C : 0 0 0 sco O ; 0 0 0 sco K 
+4080 3273 N M -45 0 - 5 Lw solid 0 0 0 sco K 
+4216 3273 N M 45 0 - 0 0 0 sco K 
+4216 3259 N M 0 27 - 0 0 0 sco K 
+4080 3259 N M 0 27 - 0 0 0 sco K 
+4080 3286 N M 136 0 - 0 0 0 sco K 
+4080 3259 N M 136 0 - 0 0 0 sco K : 3974 3214 404 43 rc 0 0 0 sco F0_40
+Ji 
+4075 3214 M 
+-0.340 0 (R3)A 
+; : 3974 3295 808 43 rc 0 0 0 sco F0_40
+Ji 
+4075 3295 M 
+-0.613 0 (22ohms)A 
+; 
+1360 1548 N M 0 -46 - 0 0 0 sco K 
+1405 1639 N M 46 0 - 0 0 0 sco K 
+1360 1729 N M 0 46 - 0 0 0 sco K 
+1405 1639 N M -31 0 - 0 0 0 sco K 
+1360 1548 N M 0 22 - 14 14 - -28 27 - 28 28 - -28 27 - 28 27 - -14 14 - 0 22 - 0 0 0 sco K 
+1392 1657 N M 0 -37 - -18 19 - 18 18 - C : 1.000 1.000 1.000 sco O ; 0 0 0 sco K : 1309 1507 404 43 rc 0 0 0 sco F0_40
+Ji 
+1410 1507 M 
+-0.120 0 (P2)A 
+; : 1309 1548 1010 43 rc 0 0 0 sco F0_40
+Ji 
+1410 1548 M 
+-0.695 0 (50 Kohms)A 
+; 
+1360 1502 N M 0 -90 - 0 0 0 sco K 
+1360 1911 N M 0 -136 - 0 0 0 sco K 
+1587 1684 N M 0 -45 - 0 0 0 sco K 
+1587 1729 N M 0 46 - 0 0 0 sco K 
+1587 1716 N M 0 13 - 0 0 0 sco K 
+1587 1684 N M 0 14 - 0 0 0 sco K 
+1546 1716 N M 81 0 - 0 0 0 sco K 
+1546 1698 N M 81 0 - 0 0 0 sco K : 1531 1543 505 43 rc 0 0 0 sco F0_40
+Ji 
+1632 1543 M 
+-0.227 0 (C33)A 
+; : 1531 1584 707 43 rc 0 0 0 sco F0_40
+Ji 
+1632 1584 M 
+-0.048 0 (100nF)A 
+; 
+1587 1775 N M 0 90 - 181 0 - 0 -45 - 0 0 0 sco K 
+1587 1639 N M 181 0 - 0 0 0 sco K 
+1587 1865 N M 0 91 - 0 0 0 sco K 
+N 17 18 1586 1865 ellp : 0 0 0 sco O ; 1 Lw solid 0 0 0 sco K 
+1451 1639 N M 136 0 - 5 Lw solid 0 0 0 sco K 
+N 17 18 1586 1638 ellp : 0 0 0 sco O ; 1 Lw solid 0 0 0 sco K 
+1587 1956 N M -227 0 - 5 Lw solid 0 0 0 sco K 
+N 1359 1955 8.500 360 0 An C : 0 0 0 sco O ; 1 Lw solid 0 0 0 sco K 
+1723 3499 N M 0 -45 - 5 Lw solid 0 0 0 sco K 
+1723 3545 N M 0 45 - 0 0 0 sco K 
+1723 3531 N M 0 14 - 0 0 0 sco K 
+1723 3499 N M 0 14 - 0 0 0 sco K 
+1682 3531 N M 81 0 - 0 0 0 sco K 
+1682 3513 N M 81 0 - 0 0 0 sco K : 1667 3499 505 43 rc 0 0 0 sco F0_40
+Ji 
+1768 3499 M 
+-0.227 0 (C35)A 
+; : 1667 3545 707 43 rc 0 0 0 sco F0_40
+Ji 
+1768 3545 M 
+-0.248 0 (220pF)A 
+; 
+1723 3590 N M 0 46 - 181 0 - 0 0 0 sco K 
+N 1903 3635 8.500 360 0 An C : 0 0 0 sco O ; 1 Lw solid 0 0 0 sco K 
+1723 3454 N M 181 0 - 5 Lw solid 0 0 0 sco K 
+N 1903 3453 8.500 360 0 An C : 0 0 0 sco O ; 1 Lw solid 0 0 0 sco K 
+2176 4090 N M 0 -91 - 5 Lw solid 0 0 0 sco K 
+N 2175 3998 8.500 360 0 An C : 0 0 0 sco O ; 1 Lw solid 0 0 0 sco K 
+6573 2592 N M 0 -46 - 5 Lw solid 0 0 0 sco K 
+6573 2728 N M 0 45 - 0 0 0 sco K 
+6646 2692 N M -18 -19 - 0 0 0 sco K 
+6646 2655 N M -18 -18 - 0 0 0 sco K 
+6573 2592 N M 0 136 - 0 0 0 sco K 
+6614 2623 N M -41 46 - -40 -46 - 81 0 - C : 1.000 1.000 1.000 sco O ; 0 0 0 sco K 
+6614 2669 N M -81 4 rr : 1.000 1.000 1.000 sco O ; 0 Lc 0 Lj 0 0 0 sco K 
+6655 2687 N M 0 14 - -14 0 - 14 -14 - C : 1.000 1.000 1.000 sco O ; 1 Lc 1 Lj 0 0 0 sco K 
+6655 2651 N M 0 13 - -14 0 - 14 -13 - C : 1.000 1.000 1.000 sco O ; 0 0 0 sco K : 6463 2546 337 43 rc 0 0 0 sco F0_40
+Ji 
+6564 2546 M 
+-0.440 0 (D9)A 
+; : 6418 2682 382 43 rc 0 0 0 sco F0_40
+Ji 
+6519 2682 M 
+-0.776 0 (VERTE)A 
+; 
+6573 2319 N M 0 -45 - 0 0 0 sco K 
+6573 2456 N M 0 45 - 0 0 0 sco K 
+6587 2456 N M -27 0 - 0 0 0 sco K 
+6587 2319 N M -27 0 - 0 0 0 sco K 
+6560 2319 N M 0 137 - 0 0 0 sco K 
+6587 2319 N M 0 137 - 0 0 0 sco K : 6490 2319 310 43 rc 0 0 0 sco F0_40
+Ji 
+6591 2319 M 
+-0.340 0 (R2)A 
+; : 6490 2365 310 43 rc 0 0 0 sco F0_40
+Ji 
+6591 2365 M 
+(470)S 
+; 
+6573 2546 N M 0 -45 - 0 0 0 sco K 
+6573 2274 N M 0 -45 - 0 0 0 sco K 
+6573 2773 N M 0 46 - 0 0 0 sco K 
+6551 2864 N M 45 0 - 0 0 0 sco K : 6432 2864 368 43 rc 0 0 0 sco F0_40
+Ji 
+6533 2864 M 
+-1.213 0 (GND)A 
+; 
+6573 2819 N M 0 45 - 0 0 0 sco K 
+6437 2637 N M 0 -45 - 0 0 0 sco K 
+6437 2773 N M 0 46 - 0 0 0 sco K 
+6510 2737 N M -18 -18 - 0 0 0 sco K 
+6510 2701 N M -18 -19 - 0 0 0 sco K 
+6437 2637 N M 0 136 - 0 0 0 sco K 
+6478 2669 N M -41 45 - -40 -45 - 81 0 - C : 1.000 1.000 1.000 sco O ; 0 0 0 sco K 
+6478 2714 N M -81 5 rr : 1.000 1.000 1.000 sco O ; 0 Lc 0 Lj 0 0 0 sco K 
+6519 2732 N M 0 14 - -14 0 - 14 -14 - C : 1.000 1.000 1.000 sco O ; 1 Lc 1 Lj 0 0 0 sco K 
+6519 2696 N M 0 14 - -14 0 - 14 -14 - C : 1.000 1.000 1.000 sco O ; 0 0 0 sco K : 6327 2592 473 43 rc 0 0 0 sco F0_40
+Ji 
+6428 2592 M 
+-0.293 0 (D10)A 
+; : 6282 2728 518 43 rc 0 0 0 sco F0_40
+Ji 
+6383 2728 M 
+-0.776 0 (VERTE)A 
+; 
+6437 2365 N M 0 -46 - 0 0 0 sco K 
+6437 2501 N M 0 45 - 0 0 0 sco K 
+6451 2501 N M -27 0 - 0 0 0 sco K 
+6451 2365 N M -27 0 - 0 0 0 sco K 
+6424 2365 N M 0 136 - 0 0 0 sco K 
+6451 2365 N M 0 136 - 0 0 0 sco K : 6354 2365 446 43 rc 0 0 0 sco F0_40
+Ji 
+6455 2365 M 
+-0.227 0 (R20)A 
+; : 6354 2410 446 43 rc 0 0 0 sco F0_40
+Ji 
+6455 2410 M 
+(470)S 
+; 
+6437 2319 N M 0 -45 - 0 0 0 sco K 
+6437 2819 N M 0 45 - 0 0 0 sco K 
+6415 2909 N M 45 0 - 0 0 0 sco K : 6296 2909 504 43 rc 0 0 0 sco F0_40
+Ji 
+6397 2909 M 
+-1.213 0 (GND)A 
+; 
+6437 2864 N M 0 45 - 0 0 0 sco K 
+6301 2682 N M 0 -45 - 0 0 0 sco K 
+6301 2819 N M 0 45 - 0 0 0 sco K 
+6374 2782 N M -18 -18 - 0 0 0 sco K 
+6374 2746 N M -18 -18 - 0 0 0 sco K 
+6301 2682 N M 0 137 - 0 0 0 sco K 
+6342 2714 N M -41 46 - -40 -46 - 81 0 - C : 1.000 1.000 1.000 sco O ; 0 0 0 sco K 
+6342 2760 N M -81 4 rr : 1.000 1.000 1.000 sco O ; 0 Lc 0 Lj 0 0 0 sco K 
+6383 2778 N M 0 13 - -14 0 - 14 -13 - C : 1.000 1.000 1.000 sco O ; 1 Lc 1 Lj 0 0 0 sco K 
+6383 2741 N M 0 14 - -14 0 - 14 -14 - C : 1.000 1.000 1.000 sco O ; 0 0 0 sco K : 6191 2637 505 43 rc 0 0 0 sco F0_40
+Ji 
+6292 2637 M 
+-0.293 0 (D11)A 
+; : 6146 2773 654 43 rc 0 0 0 sco F0_40
+Ji 
+6247 2773 M 
+-0.776 0 (VERTE)A 
+; 
+6301 2410 N M 0 -45 - 0 0 0 sco K 
+6301 2546 N M 0 46 - 0 0 0 sco K 
+6315 2546 N M -27 0 - 0 0 0 sco K 
+6315 2410 N M -27 0 - 0 0 0 sco K 
+6288 2410 N M 0 136 - 0 0 0 sco K 
+6315 2410 N M 0 136 - 0 0 0 sco K : 6218 2410 505 43 rc 0 0 0 sco F0_40
+Ji 
+6319 2410 M 
+-0.227 0 (R21)A 
+; : 6218 2456 505 43 rc 0 0 0 sco F0_40
+Ji 
+6319 2456 M 
+(470)S 
+; 
+6301 2637 N M 0 -45 - 0 0 0 sco K 
+6301 2365 N M 0 -46 - 0 0 0 sco K 
+6301 2864 N M 0 45 - 0 0 0 sco K 
+6279 2955 N M 45 0 - 0 0 0 sco K : 6160 2955 505 43 rc 0 0 0 sco F0_40
+Ji 
+6261 2955 M 
+-1.213 0 (GND)A 
+; 
+6301 2909 N M 0 46 - 0 0 0 sco K 
+6165 2728 N M 0 -46 - 0 0 0 sco K 
+6165 2864 N M 0 45 - 0 0 0 sco K 
+6238 2828 N M -18 -18 - 0 0 0 sco K 
+6238 2791 N M -18 -18 - 0 0 0 sco K 
+6165 2728 N M 0 136 - 0 0 0 sco K 
+6206 2760 N M -41 45 - -40 -45 - 81 0 - C : 1.000 1.000 1.000 sco O ; 0 0 0 sco K 
+6206 2805 N M -81 5 rr : 1.000 1.000 1.000 sco O ; 0 Lc 0 Lj 0 0 0 sco K 
+6247 2823 N M 0 14 - -14 0 - 14 -14 - C : 1.000 1.000 1.000 sco O ; 1 Lc 1 Lj 0 0 0 sco K 
+6247 2787 N M 0 14 - -14 0 - 14 -14 - C : 1.000 1.000 1.000 sco O ; 0 0 0 sco K : 6055 2682 505 43 rc 0 0 0 sco F0_40
+Ji 
+6156 2682 M 
+-0.293 0 (D12)A 
+; : 6010 2819 707 43 rc 0 0 0 sco F0_40
+Ji 
+6111 2819 M 
+-0.776 0 (VERTE)A 
+; 
+6165 2456 N M 0 -46 - 0 0 0 sco K 
+6165 2592 N M 0 45 - 0 0 0 sco K 
+6179 2592 N M -27 0 - 0 0 0 sco K 
+6179 2456 N M -27 0 - 0 0 0 sco K 
+6152 2456 N M 0 136 - 0 0 0 sco K 
+6179 2456 N M 0 136 - 0 0 0 sco K : 6082 2456 505 43 rc 0 0 0 sco F0_40
+Ji 
+6183 2456 M 
+-0.227 0 (R22)A 
+; : 6082 2501 505 43 rc 0 0 0 sco F0_40
+Ji 
+6183 2501 M 
+(470)S 
+; 
+6165 2682 N M 0 -45 - 0 0 0 sco K 
+6165 2410 N M 0 -45 - 0 0 0 sco K 
+6165 2909 N M 0 46 - 0 0 0 sco K 
+6143 3000 N M 45 0 - 0 0 0 sco K : 6024 3000 505 43 rc 0 0 0 sco F0_40
+Ji 
+6125 3000 M 
+-1.213 0 (GND)A 
+; 
+6165 2955 N M 0 45 - 0 0 0 sco K 
+6437 2592 N M 0 -46 - 0 0 0 sco K 
+5984 1412 N M 181 0 - 0 817 - 408 0 - 0 0 0 sco K 
+6437 2274 N M -317 0 - 0 -817 - -136 0 - 0 0 0 sco K 
+5984 1502 N M 91 0 - 0 817 - 226 0 - 0 0 0 sco K 
+6075 1230 N M -91 0 - 0 0 0 sco K 
+6075 1275 N M -91 0 - 0 0 0 sco K 
+6075 1321 N M -91 0 - 0 0 0 sco K 
+6075 1366 N M -91 0 - 0 0 0 sco K 
+5984 1548 N M 45 0 - 0 817 - 136 0 - 0 0 0 sco K : 352 2052 1010 43 rc 0 0 0 sco F0_40
+Ji 
+453 2052 M 
+-0.755 0 (VrefTour)A 
+; 
+1043 3046 N M 0 -46 - 0 0 0 sco K 
+1043 3545 N M 0 45 - 0 0 0 sco K 
+1020 3636 N M 45 0 - 0 0 0 sco K : 901 3636 505 43 rc 0 0 0 sco F0_40
+Ji 
+1002 3636 M 
+-1.213 0 (GND)A 
+; 
+1043 3590 N M 0 46 - 0 0 0 sco K 
+1020 2955 N M 45 0 - 0 0 0 sco K : 901 2914 505 43 rc 0 0 0 sco F0_40
+Ji 
+1002 2914 M 
+-0.747 0 (VCC)A 
+; 
+1043 3000 N M 0 -45 - 0 0 0 sco K : 1032 3232 1010 43 rc 0 0 0 sco F0_40
+Ji 
+1133 3232 M 
+-0.755 0 (VrefTour)A 
+; 
+1269 3318 N M 0 -45 - 0 0 0 sco K 
+1269 3363 N M 0 46 - 0 0 0 sco K 
+1269 3350 N M 0 13 - 0 0 0 sco K 
+1269 3318 N M 0 14 - 0 0 0 sco K 
+1229 3350 N M 81 0 - 0 0 0 sco K 
+1229 3332 N M 81 0 - 0 0 0 sco K : 1214 3177 404 43 rc 0 0 0 sco F0_40
+Ji 
+1315 3177 M 
+-0.340 0 (C1)A 
+; : 1214 3218 707 43 rc 0 0 0 sco F0_40
+Ji 
+1315 3218 M 
+-0.048 0 (100nF)A 
+; 
+1451 3318 N M 0 -45 - 0 0 0 sco K 
+1451 3409 N M 0 45 - 0 0 0 sco K 
+1451 3381 N M 0 28 - 0 0 0 sco K 
+1405 3363 N M 91 0 - 0 0 0 sco K 
+1451 3318 N M 0 45 - 0 0 0 sco K 
+N CTMsave 
+1450.000 3453.500 + 144 145 +S 
+0 0 0.500 -51.628 -89.204 An 
+CTMrestore 
+0 0 0 sco K 
+N CTMsave 
+1450.000 3453.500 + 144 145 +S 
+0 0 0.500 -89.204 -127.760 An 
+CTMrestore 
+0 0 0 sco K : 1378 3327 258 36 rc 0 0 0 sco F2_31
+Ji 
+1464 3327 M 
+0.896 0 (+)A 
+; : 1400 3313 404 43 rc 0 0 0 sco F0_40
+Ji 
+1501 3313 M 
+-0.340 0 (C3)A 
+; : 1400 3354 1414 43 rc 0 0 0 sco F0_40
+Ji 
+1501 3354 M 
+-0.470 0 (TANTALE 2\265F2)A 
+; 
+1269 3409 N M 0 90 - 182 0 - 0 -45 - 0 0 0 sco K 
+1269 3273 N M 182 0 - 0 0 0 sco K 
+1269 3499 N M 0 91 - 0 0 0 sco K 
+1133 3273 N M 136 0 - 0 0 0 sco K 
+1269 3590 N M -226 0 - 0 0 0 sco K 
+N 1042 3589 8.500 360 0 An C : 0 0 0 sco O ; 1 Lw solid 0 0 0 sco K 
+N 17 18 1268 3499 ellp : 0 0 0 sco O ; 0 0 0 sco K 
+1043 3499 N M 0 46 - 5 Lw solid 0 0 0 sco K 
+1043 3363 N M 0 -45 - 0 0 0 sco K 
+1029 3363 N M 27 0 - 0 0 0 sco K 
+1029 3499 N M 27 0 - 0 0 0 sco K 
+1056 3499 N M 0 -136 - 0 0 0 sco K 
+1029 3499 N M 0 -136 - 0 0 0 sco K : 960 3363 505 43 rc 0 0 0 sco F0_40
+Ji 
+1061 3363 M 
+-0.227 0 (R23)A 
+; : 960 3409 1010 43 rc 0 0 0 sco F0_40
+Ji 
+1061 3409 M 
+-0.695 0 (10 Kohms)A 
+; 
+1043 3091 N M 0 -45 - 0 0 0 sco K 
+1043 3227 N M 0 46 - 0 0 0 sco K 
+1056 3227 N M -27 0 - 0 0 0 sco K 
+1056 3091 N M -27 0 - 0 0 0 sco K 
+1029 3091 N M 0 136 - 0 0 0 sco K 
+1056 3091 N M 0 136 - 0 0 0 sco K : 960 3091 505 43 rc 0 0 0 sco F0_40
+Ji 
+1061 3091 M 
+-0.227 0 (R14)A 
+; : 960 3136 1010 43 rc 0 0 0 sco F0_40
+Ji 
+1061 3136 M 
+-0.695 0 (10 Kohms)A 
+; 
+1043 3318 N M 0 -45 - 90 0 - 0 0 0 sco K 
+N 5167 3317 8.500 360 0 An C : 0 0 0 sco O ; 1 Lw solid 0 0 0 sco K 
+N 4804 2591 8.500 360 0 An C : 0 0 0 sco O ; 0 0 0 sco K 
+N 17 18 4759 2909 ellp : 0 0 0 sco O ; 0 0 0 sco K 
+N 1948 2228 8.500 360 0 An C : 0 0 0 sco O ; 0 0 0 sco K 
+N 17 18 4986 3499 ellp : 0 0 0 sco O ; 0 0 0 sco K 
+N 4986 4225 8.500 360 0 An C : 0 0 0 sco O ; 0 0 0 sco K 
+N 4578 3862 8.500 360 0 An C : 0 0 0 sco O ; 0 0 0 sco K 
+N 17 18 5983 3499 ellp : 0 0 0 sco O ; 0 0 0 sco K 
+N 5983 4225 8.500 360 0 An C : 0 0 0 sco O ; 0 0 0 sco K 
+N 5575 3862 8.500 360 0 An C : 0 0 0 sco O ; 0 0 0 sco K 
+4035 1548 N M 362 363 rr : 1.000 1.000 1.000 sco O ; 0 Lc 0 Lj 0 0 0 sco K 
+4035 1729 N M -136 0 - 5 Lw 1 Lc 1 Lj solid 0 0 0 sco K : 3961 1711 606 43 rc 0 0 0 sco F0_40
+Ji 
+4062 1711 M 
+-1.580 0 (TRIG)A 
+; : 3848 1688 303 43 rc 0 0 0 sco F0_40
+Ji 
+3949 1688 M 
+(2)S 
+; 
+4397 1593 N M 136 0 - 0 0 0 sco K : 4242 1575 303 43 rc 0 0 0 sco F0_40
+Ji 
+4343 1575 M 
+-0.880 0 (Q)A 
+; : 4364 1552 303 43 rc 0 0 0 sco F0_40
+Ji 
+4465 1552 M 
+(3)S 
+; 
+N 27 26 4020 1593 ellp 1 Lw solid 0 0 0 sco K 
+4007 1593 N M -108 0 - 5 Lw solid 0 0 0 sco K : 3961 1575 303 43 rc 0 0 0 sco F0_40
+Ji 
+4062 1575 M 
+-0.680 0 (R)A 
+; : 3848 1552 303 43 rc 0 0 0 sco F0_40
+Ji 
+3949 1552 M 
+(4)S 
+; 
+4035 1865 N M -136 0 - 0 0 0 sco K : 3961 1847 707 43 rc 0 0 0 sco F0_40
+Ji 
+4062 1847 M 
+-0.560 0 (CVolt)A 
+; : 3848 1825 303 43 rc 0 0 0 sco F0_40
+Ji 
+3949 1825 M 
+(5)S 
+; 
+4397 1865 N M 136 0 - 0 0 0 sco K : 4192 1847 505 43 rc 0 0 0 sco F0_40
+Ji 
+4293 1847 M 
+-1.333 0 (THR)A 
+; : 4364 1825 303 43 rc 0 0 0 sco F0_40
+Ji 
+4465 1825 M 
+(6)S 
+; 
+4397 1729 N M 136 0 - 0 0 0 sco K : 4210 1711 505 43 rc 0 0 0 sco F0_40
+Ji 
+4311 1711 M 
+-1.147 0 (DIS)A 
+; : 4364 1688 303 43 rc 0 0 0 sco F0_40
+Ji 
+4465 1688 M 
+(7)S 
+; 
+4261 1548 N M 0 -136 - 0 0 0 sco K : 0 0 6800 4725 rc 0 0 0 sco F0_40
+Ji 
+270.000 4239 1657 sR 
+-0.747 0 (VCC)A 
+eR 
+; : 0 0 6800 4725 rc 0 0 0 sco F0_40
+Ji 
+270.000 4216 1480 sR 
+(8)S 
+eR 
+; 
+4261 1911 N M 0 136 - 0 0 0 sco K : 0 0 6800 4725 rc 0 0 0 sco F0_40
+Ji 
+270.000 4239 1884 sR 
+-1.213 0 (GND)A 
+eR 
+; : 0 0 6800 4725 rc 0 0 0 sco F0_40
+Ji 
+270.000 4216 1997 sR 
+(1)S 
+eR 
+; : 4296 1507 404 43 rc 0 0 0 sco F0_40
+Ji 
+4397 1507 M 
+-0.440 0 (U6)A 
+; : 4296 1915 707 43 rc 0 0 0 sco F0_40
+Ji 
+4397 1915 M 
+-0.400 0 (LM555)A 
+; 
+4261 1412 N M 0 -46 - 0 0 0 sco K 
+4261 2047 N M 0 45 - 0 0 0 sco K 
+4239 1321 N M 45 0 - 0 0 0 sco K : 4120 1280 505 43 rc 0 0 0 sco F0_40
+Ji 
+4221 1280 M 
+-0.747 0 (VCC)A 
+; 
+4261 1366 N M 0 -45 - 0 0 0 sco K 
+4239 2138 N M 45 0 - 0 0 0 sco K : 4120 2138 505 43 rc 0 0 0 sco F0_40
+Ji 
+4221 2138 M 
+-1.213 0 (GND)A 
+; 
+4261 2092 N M 0 46 - 0 0 0 sco K 
+4307 1366 N M -46 0 - 0 0 0 sco K 
+4352 1366 N M 45 0 - 0 0 0 sco K 
+4338 1366 N M 14 0 - 0 0 0 sco K 
+4307 1366 N M 13 0 - 0 0 0 sco K 
+4338 1407 N M 0 -82 - 0 0 0 sco K 
+4320 1407 N M 0 -82 - 0 0 0 sco K : 4201 1280 404 43 rc 0 0 0 sco F0_40
+Ji 
+4302 1280 M 
+-0.340 0 (C4)A 
+; : 4201 1416 707 43 rc 0 0 0 sco F0_40
+Ji 
+4302 1416 M 
+-0.048 0 (100nF)A 
+; 
+4443 1344 N M 0 45 - 0 0 0 sco K : 4351 1348 505 43 rc 0 0 0 sco F0_40
+Ji 
+4452 1348 M 
+-1.213 0 (GND)A 
+; 
+4397 1366 N M 46 0 - 0 0 0 sco K 
+4533 1593 N M 46 0 - 0 0 0 sco K 
+3899 1729 N M -46 0 - 0 273 - 680 0 - 0 -137 - 0 0 0 sco K 
+4533 1729 N M 46 0 - 0 363 - -318 0 - 0 0 0 sco K 
+3899 1593 N M 0 -227 - 362 0 - 0 0 0 sco K 
+3853 1729 N M -136 0 - 0 0 0 sco K 
+N 4260 1365 8.500 360 0 An C : 0 0 0 sco O ; 1 Lw solid 0 0 0 sco K 
+N 17 18 4260 2092 ellp : 0 0 0 sco O ; 0 0 0 sco K 
+N 3852 1728 8.500 360 0 An C : 0 0 0 sco O ; 0 0 0 sco K 
+3355 1684 N M -136 0 - 5 Lw solid 0 0 0 sco K : 3168 1643 303 43 rc 0 0 0 sco F0_40
+Ji 
+3269 1643 M 
+(3)S 
+; 
+3355 1775 N M -136 0 - 0 0 0 sco K : 3168 1734 303 43 rc 0 0 0 sco F0_40
+Ji 
+3269 1734 M 
+(2)S 
+; 
+3536 1729 N M 136 0 - 0 0 0 sco K : 3503 1688 303 43 rc 0 0 0 sco F0_40
+Ji 
+3604 1688 M 
+(1)S 
+; 
+3400 1639 N M 0 -137 - 0 0 0 sco K : 0 0 6800 4725 rc 0 0 0 sco F0_40
+Ji 
+270.000 3355 1570 sR 
+(8)S 
+eR 
+; 
+3400 1820 N M 0 136 - 0 0 0 sco K : 0 0 6800 4725 rc 0 0 0 sco F0_40
+Ji 
+270.000 3355 1906 sR 
+(4)S 
+eR 
+; 
+3400 1797 N M 0 23 - 0 0 0 sco K 
+3400 1639 N M 0 22 - 0 0 0 sco K 
+3386 1670 N M 0 28 - 0 0 0 sco K 
+3373 1775 N M 27 0 - 0 0 0 sco K 
+3373 1684 N M 27 0 - 0 0 0 sco K 
+3355 1639 N M 181 90 - -181 91 - 0 -181 - 0 0 0 sco K : 3344 1639 505 43 rc 0 0 0 sco F0_40
+Ji 
+3445 1639 M 
+-0.587 0 (U7A)A 
+; : 3344 1784 707 43 rc 0 0 0 sco F0_40
+Ji 
+3445 1784 M 
+-0.576 0 (TL072)A 
+; 
+2901 2002 N M 0 45 - 0 0 0 sco K 
+2901 1865 N M 0 -45 - 0 0 0 sco K 
+2888 1865 N M 27 0 - 0 0 0 sco K 
+2888 2002 N M 27 0 - 0 0 0 sco K 
+2915 2002 N M 0 -137 - 0 0 0 sco K 
+2888 2002 N M 0 -137 - 0 0 0 sco K : 2818 1865 505 43 rc 0 0 0 sco F0_40
+Ji 
+2919 1865 M 
+-0.227 0 (R25)A 
+; : 2818 1911 808 43 rc 0 0 0 sco F0_40
+Ji 
+2919 1911 M 
+-0.833 0 (1 Kohm)A 
+; 
+3128 1775 N M 45 0 - 0 0 0 sco K 
+2992 1775 N M -45 0 - 0 0 0 sco K 
+2992 1788 N M 0 -27 - 0 0 0 sco K 
+3128 1788 N M 0 -27 - 0 0 0 sco K 
+3128 1761 N M -136 0 - 0 0 0 sco K 
+3128 1788 N M -136 0 - 0 0 0 sco K : 2886 1716 505 43 rc 0 0 0 sco F0_40
+Ji 
+2987 1716 M 
+-0.227 0 (R26)A 
+; : 2886 1797 1010 43 rc 0 0 0 sco F0_40
+Ji 
+2987 1797 M 
+-0.610 0 (100 KOhm)A 
+; 
+3672 1729 N M 45 0 - 0 0 0 sco K 
+3445 1321 N M 46 0 - 0 0 0 sco K 
+3309 1321 N M -45 0 - 0 0 0 sco K 
+3309 1334 N M 0 -27 - 0 0 0 sco K 
+3445 1334 N M 0 -27 - 0 0 0 sco K 
+3445 1307 N M -136 0 - 0 0 0 sco K 
+3445 1334 N M -136 0 - 0 0 0 sco K : 3204 1262 505 43 rc 0 0 0 sco F0_40
+Ji 
+3305 1262 M 
+-0.227 0 (R27)A 
+; : 3204 1344 1111 43 rc 0 0 0 sco F0_40
+Ji 
+3305 1344 M 
+-0.618 0 (300 Kohms)A 
+; 
+3377 2002 N M 46 0 - 0 0 0 sco K : 3258 2002 505 43 rc 0 0 0 sco F0_40
+Ji 
+3359 2002 M 
+-1.213 0 (GND)A 
+; 
+3400 1956 N M 0 46 - 0 0 0 sco K 
+3377 1457 N M 46 0 - 0 0 0 sco K : 3258 1416 505 43 rc 0 0 0 sco F0_40
+Ji 
+3359 1416 M 
+-0.747 0 (VCC)A 
+; 
+3400 1502 N M 0 -45 - 0 0 0 sco K 
+N 17 18 3263 2455 ellp : 0 0 0 sco O ; 1 Lw solid 0 0 0 sco K 
+N 17 18 3399 2455 ellp : 0 0 0 sco O ; 0 0 0 sco K 
+2765 1775 N M -45 0 - 5 Lw solid 0 0 0 sco K 
+2811 1775 N M 45 0 - 0 0 0 sco K 
+2797 1775 N M 14 0 - 0 0 0 sco K 
+2765 1775 N M 14 0 - 0 0 0 sco K 
+2797 1816 N M 0 -82 - 0 0 0 sco K 
+2779 1816 N M 0 -82 - 0 0 0 sco K : 2660 1688 505 43 rc 0 0 0 sco F0_40
+Ji 
+2761 1688 M 
+-0.227 0 (C36)A 
+; : 2614 1825 707 43 rc 0 0 0 sco F0_40
+Ji 
+2715 1825 M 
+-0.048 0 (22 nF)A 
+; 
+2856 1775 N M 91 0 - 0 0 0 sco K 
+2901 1820 N M 0 -45 - 0 0 0 sco K 
+2720 1775 N M -136 0 - 0 0 0 sco K 
+3264 1321 N M -91 0 - 0 454 - 0 0 0 sco K 
+3491 1321 N M 181 0 - 0 408 - 0 0 0 sco K : 3118 1643 1010 43 rc 0 0 0 sco F0_40
+Ji 
+3219 1643 M 
+-0.755 0 (VrefTour)A 
+; 
+N 2900 1774 8.500 360 0 An C : 0 0 0 sco O ; 1 Lw solid 0 0 0 sco K 
+3219 1775 N M -46 0 - 5 Lw solid 0 0 0 sco K 
+N 3172 1774 8.500 360 0 An C : 0 0 0 sco O ; 1 Lw solid 0 0 0 sco K 
+2901 2047 N M 363 0 - 0 -91 - 136 0 - 5 Lw solid 0 0 0 sco K 
+N 3671 1728 8.500 360 0 An C : 0 0 0 sco O ; 1 Lw solid 0 0 0 sco K 
+N 3399 1955 8.500 360 0 An C : 0 0 0 sco O ; 0 0 0 sco K 
+3717 1865 N M -45 0 - 5 Lw solid 0 0 0 sco K 
+3853 1865 N M 46 0 - 0 0 0 sco K 
+3853 1852 N M 0 27 - 0 0 0 sco K 
+3717 1852 N M 0 27 - 0 0 0 sco K 
+3717 1879 N M 136 0 - 0 0 0 sco K 
+3717 1852 N M 136 0 - 0 0 0 sco K : 3589 1911 505 43 rc 0 0 0 sco F0_40
+Ji 
+3690 1911 M 
+-0.227 0 (R28)A 
+; : 3589 1956 909 43 rc 0 0 0 sco F0_40
+Ji 
+3690 1956 M 
+-0.971 0 (TRESIST)A 
+; 
+4443 3999 N M -46 0 - 0 0 0 sco K 
+4579 3999 N M 45 0 - 0 0 0 sco K 
+4579 3985 N M 0 27 - 0 0 0 sco K 
+4443 3985 N M 0 27 - 0 0 0 sco K 
+4443 4012 N M 136 0 - 0 0 0 sco K 
+4443 3985 N M 136 0 - 0 0 0 sco K : 4337 3940 505 43 rc 0 0 0 sco F0_40
+Ji 
+4438 3940 M 
+-0.227 0 (R29)A 
+; : 4337 4021 909 43 rc 0 0 0 sco F0_40
+Ji 
+4438 4021 M 
+-0.971 0 (TRESIST)A 
+; 
+5440 3999 N M -45 0 - 0 0 0 sco K 
+5576 3999 N M 45 0 - 0 0 0 sco K 
+5576 3985 N M 0 27 - 0 0 0 sco K 
+5440 3985 N M 0 27 - 0 0 0 sco K 
+5440 4012 N M 136 0 - 0 0 0 sco K 
+5440 3985 N M 136 0 - 0 0 0 sco K : 5334 3940 505 43 rc 0 0 0 sco F0_40
+Ji 
+5435 3940 M 
+-0.227 0 (R30)A 
+; : 5334 4021 909 43 rc 0 0 0 sco F0_40
+Ji 
+5435 4021 M 
+-0.971 0 (TRESIST)A 
+; 
+4352 3976 N M 0 45 - 0 0 0 sco K : 4160 3981 505 43 rc 0 0 0 sco F0_40
+Ji 
+4261 3981 M 
+-1.213 0 (GND)A 
+; 
+4397 3999 N M -45 0 - 0 0 0 sco K 
+5349 3976 N M 0 45 - 0 0 0 sco K : 5158 3981 505 43 rc 0 0 0 sco F0_40
+Ji 
+5259 3981 M 
+-1.213 0 (GND)A 
+; 
+5395 3999 N M -46 0 - 0 0 0 sco K 
+3627 1843 N M 0 45 - 0 0 0 sco K : 3435 1847 505 43 rc 0 0 0 sco F0_40
+Ji 
+3536 1847 M 
+-1.213 0 (GND)A 
+; 
+3672 1865 N M -45 0 - 0 0 0 sco K 
+N 17 18 1042 3272 ellp : 0 0 0 sco O ; 1 Lw solid 0 0 0 sco K 
+N 17 18 1268 3272 ellp : 0 0 0 sco O ; 0 0 0 sco K 
+861 1820 N M -45 0 - 5 Lw solid 0 0 0 sco K 
+952 1775 N M 0 -46 - 0 0 0 sco K 
+1043 1820 N M 45 0 - 0 0 0 sco K 
+952 1775 N M 0 31 - 0 0 0 sco K 
+861 1820 N M 23 0 - 14 -14 - 27 28 - 27 -28 - 27 28 - 27 -28 - 14 14 - 23 0 - 0 0 0 sco K 
+970 1788 N M -36 0 - 18 18 - 18 -18 - C : 1.000 1.000 1.000 sco O ; 0 0 0 sco K : 760 1747 404 43 rc 0 0 0 sco F0_40
+Ji 
+861 1747 M 
+-0.120 0 (P3)A 
+; : 896 1747 606 43 rc 0 0 0 sco F0_40
+Ji 
+997 1747 M 
+-1.000 0 (TPOT)A 
+; 
+861 1956 N M -45 0 - 0 0 0 sco K 
+952 1911 N M 0 -46 - 0 0 0 sco K 
+1043 1956 N M 45 0 - 0 0 0 sco K 
+952 1911 N M 0 32 - 0 0 0 sco K 
+861 1956 N M 23 0 - 14 -13 - 27 27 - 27 -27 - 27 27 - 27 -27 - 14 13 - 23 0 - 0 0 0 sco K 
+970 1924 N M -36 0 - 18 19 - 18 -19 - C : 1.000 1.000 1.000 sco O ; 0 0 0 sco K : 760 1884 404 43 rc 0 0 0 sco F0_40
+Ji 
+861 1884 M 
+-0.120 0 (P4)A 
+; : 851 1884 606 43 rc 0 0 0 sco F0_40
+Ji 
+952 1884 M 
+-1.000 0 (TPOT)A 
+; 
+725 1865 N M 91 0 - 0 -45 - 0 0 0 sco K 
+952 1729 N M 136 0 - 0 318 - -499 0 - 0 0 0 sco K 
+N 1087 1819 8.500 360 0 An C : 0 0 0 sco O ; 1 Lw solid 0 0 0 sco K 
+N 1087 1955 8.500 360 0 An C : 0 0 0 sco O ; 0 0 0 sco K 
+952 1865 N M 136 0 - 5 Lw solid 0 0 0 sco K 
+N 17 18 1087 1865 ellp : 0 0 0 sco O ; 1 Lw solid 0 0 0 sco K 
+725 1911 N M 91 0 - 0 45 - 5 Lw solid 0 0 0 sco K 
+N 498 1955 8.500 360 0 An C : 0 0 0 sco O ; 1 Lw solid 0 0 0 sco K 
+1949 2819 N M 46 0 - 5 Lw solid 0 0 0 sco K 
+1813 2728 N M 0 -46 - 0 0 0 sco K 
+1813 2909 N M 0 46 - 0 0 0 sco K 
+1881 2837 N M -40 41 - 0 0 0 sco K 
+1813 2900 N M 0 9 - 0 0 0 sco K 
+1949 2819 N M -68 0 - 0 0 0 sco K 
+1813 2728 N M 0 13 - 68 69 - 0 0 0 sco K 
+1881 2760 N M 9 118 rr : 1.000 1.000 1.000 sco O ; 0 Lc 0 Lj 0 0 0 sco K 
+1831 2869 N M 19 18 - -37 13 - 18 -31 - C : 1.000 1.000 1.000 sco O ; 1 Lc 1 Lj 0 0 0 sco K 
+N 1858 2818 90.000 360 0 An C 0 0 0 sco K : 1808 2909 404 43 rc 0 0 0 sco F0_40
+Ji 
+1909 2909 M 
+-0.720 0 (T2)A 
+; : 1762 2959 707 43 rc 0 0 0 sco F0_40
+Ji 
+1863 2959 M 
+-0.272 0 (BC547)A 
+; 
+N 2039 2545 8.500 360 0 An C : 0 0 0 sco O ; 1 Lw solid 0 0 0 sco K 
+1360 2864 N M 0 136 - 5 Lw solid 0 0 0 sco K 
+N 1359 2863 8.500 360 0 An C : 0 0 0 sco O ; 1 Lw solid 0 0 0 sco K 
+1451 2864 N M 0 136 - 5 Lw solid 0 0 0 sco K 
+N 1450 2999 8.500 360 0 An C : 0 0 0 sco O ; 1 Lw solid 0 0 0 sco K 
+1587 2864 N M 0 136 - 5 Lw solid 0 0 0 sco K 
+N 1586 2999 8.500 360 0 An C : 0 0 0 sco O ; 1 Lw solid 0 0 0 sco K 
+1813 2955 N M 0 45 - 5 Lw solid 0 0 0 sco K 
+N 1812 2999 8.500 360 0 An C : 0 0 0 sco O ; 1 Lw solid 0 0 0 sco K 
+1768 2682 N M 45 0 - 5 Lw solid 0 0 0 sco K 
+2176 2682 N M -45 0 - 0 0 0 sco K 
+2312 2682 N M 45 0 - 0 0 0 sco K 
+2312 2669 N M 0 27 - 0 0 0 sco K 
+2176 2669 N M 0 27 - 0 0 0 sco K 
+2176 2696 N M 136 0 - 0 0 0 sco K 
+2176 2669 N M 136 0 - 0 0 0 sco K : 2070 2623 505 43 rc 0 0 0 sco F0_40
+Ji 
+2171 2623 M 
+-0.227 0 (R31)A 
+; : 2070 2705 1010 43 rc 0 0 0 sco F0_40
+Ji 
+2171 2705 M 
+-0.695 0 (10 Kohms)A 
+; 
+1813 2682 N M 318 0 - 0 0 0 sco K 
+2335 2637 N M 45 0 - 0 0 0 sco K : 2175 2596 909 43 rc 0 0 0 sco F0_40
+Ji 
+2276 2596 M 
+-0.749 0 (+BATT_P)A 
+; 
+2357 2682 N M 0 -45 - 0 0 0 sco K 
+N 17 18 1812 2682 ellp : 0 0 0 sco O ; 1 Lw solid 0 0 0 sco K 
+N 1586 2545 8.500 360 0 An C : 0 0 0 sco O ; 0 0 0 sco K 
+1768 1684 N M 0 -45 - 5 Lw solid 0 0 0 sco K 
+1768 1775 N M 0 45 - 0 0 0 sco K 
+1768 1747 N M 0 28 - 0 0 0 sco K 
+1723 1729 N M 90 0 - 0 0 0 sco K 
+1768 1684 N M 0 45 - 0 0 0 sco K 
+N 1767.500 1819.500 72.500 -52.125 -89.605 An 
+0 0 0 sco K 
+N 1767.500 1819.500 72.500 -89.605 -127.260 An 
+0 0 0 sco K : 1696 1693 258 36 rc 0 0 0 sco F2_31
+Ji 
+1782 1693 M 
+0.896 0 (+)A 
+; : 1717 1679 505 43 rc 0 0 0 sco F0_40
+Ji 
+1818 1679 M 
+-0.227 0 (C34)A 
+; : 1717 1720 1414 43 rc 0 0 0 sco F0_40
+Ji 
+1818 1720 M 
+-0.470 0 (TANTALE 2\265F2)A 
+; 
+LH 
+pagesave restore
+
+(%%[ Page: 1 ]%%)  =
+%%PageTrailer
+
+%%Trailer
+%%DocumentNeededFonts: Times-Roman
+%%+ Helvetica
+%%DocumentSuppliedFonts: 
+Pscript_Win_Driver_Incr dup /terminate get exec
+savelevel0 restore 
+%%Pages: 1
+(%%[ LastPage ]%%)  =
+%%EOF
+%-12345X@PJL EOJ
+%-12345X

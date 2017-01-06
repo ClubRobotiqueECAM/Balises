@@ -1,0 +1,40 @@
+
+**** 02/06/12 12:33:18 *********** Evaluation PSpice (Nov 1999) **************
+
+ * C:\Documents and Settings\Marwin\Mes documents\Etudes\ECAM 3\Club Robotique\Partie lctronique\Balise IR\Emetteur\Diode mtrice.sch
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+* Schematics Version 9.1 - Web Update 1
+* Mon Feb 06 12:33:14 2012
+
+
+
+** Analysis setup **
+.tran 100ns 1000ns
+.OP 
+
+
+* From [PSPICE NETLIST] section of pspiceev.ini:
+.lib "nom.lib"
+
+.INC "Diode mtrice.net"
+-----------------------$
+ERROR -- Unable to open file
+.INC "Diode mtrice.als"
+
+
+-----------------------$
+ERROR -- Unable to open file
+.probe
+
+
+.END
+

@@ -1,0 +1,24 @@
+* C:\Documents and Settings\Marwin\Mes documents\Etudes\ECAM 3\Club Robotique\Partie éléctronique\Balise IR\Emetteur\Diode emettrice.sch
+
+* Schematics Version 9.1 - Web Update 1
+* Wed Feb 08 11:47:55 2012
+
+
+
+** Analysis setup **
+.tran 100ns 1000ns
+.OP 
+
+
+* From [PSPICE NETLIST] section of pspiceev.ini:
+.lib "C:\Program Files\OrCAD_Demo\PSpice\UserLib\MaBibli.lib"
+.lib "nom.lib"
+
+.INC "Diode emettrice.net"
+.INC "Diode emettrice.als"
+
+
+.probe
+
+
+.END

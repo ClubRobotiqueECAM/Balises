@@ -1,0 +1,51 @@
+session {11/12 9:58:14am > christine.billon opened job C:/ProgramData/Stratasys/FDMControlCenter/10.1/jobs/christine247/Default.sjb.  Insight 10.1 (4582).}
+msg {9:58:16am > Read 52396 facets in 0:00 from "D:/CAO/Support 180.STL"}
+msg {9:58:16am > STL comment: solid Support 180}
+msg {9:58:16am > 62 free surface edges left in model (object is not closed).}
+msg {9:58:16am > Bounding box of this STL X, Y, Z:}
+msg {9:58:16am >       min = (0.0464, 0.5628, 0.0027)}
+msg {9:58:16am >       max = (30.0461, 10.5628, 59.9973)}
+msg {9:58:16am > Done loading STL file after 2 sec.}
+msg {9:58:40am > 	Slice height:	0.2540}
+msg {9:58:41am > Done slicing after 1 sec.}
+msg {9:58:43am > Supports removed}
+msg {9:58:43am > 	Support style:	SMART}
+msg {9:58:44am > Inspecting part curves}
+msg {9:58:44am > Generating supports}
+msg {9:58:46am > Done generating supports after 3 sec.}
+msg {9:58:48am > 	Part fill style:	One contour /  rasters}
+msg {9:58:48am > 	Part interior style:	Sparse - low density}
+msg {9:58:48am > 	Contour width:	0.5080}
+msg {9:58:48am > 	Part raster width:	0.5080}
+msg {9:58:52am > Done generating toolpaths after 4 sec.}
+msg {9:59:34am > 	Part fill style:	One contour /  rasters}
+msg {9:59:34am > 	Part interior style:	Sparse - low density}
+msg {9:59:34am > 	Contour width:	0.5080}
+msg {9:59:34am > 	Part raster width:	0.5080}
+msg {9:59:38am > Done generating toolpaths after 4 sec.}
+msg {9:59:44am > Done writing boundary curves.}
+msg {9:59:45am > CMB moved to envelope center.}
+msg {9:59:47am > Toolpath Information}
+msg {9:59:47am > 	Est. build time:	56 min }
+msg {9:59:47am > 	Model material:	4.287 cm³}
+msg {9:59:47am > 	Support material:	2.833 cm³}
+msg {9:59:47am > Done writing CMB file.}
+msg {9:59:47am > Job Summary}
+msg {9:59:47am > 	Full job path:	D:/CAO/ssys_Support 180/Support 180.sjb}
+msg {9:59:47am > 	Toolpath file name:	Support 180.cmb}
+msg {9:59:47am > 	Modeler:		Fortus 250mc}
+msg {9:59:47am > 	Est. build time:	56 min }
+msg {9:59:47am > 	Model material:	4.287 cm³,	T14,	ABS P430}
+msg {9:59:47am > 	Support material:	2.833 cm³,	T16,	ABS SR30}
+msg {9:59:47am > 	Slice height:	0.2540}
+msg {9:59:47am > 	Part fill style:	One contour /  rasters}
+msg {9:59:47am > 	Part interior style:	Sparse - low density}
+msg {9:59:47am > 	Visible surface style:	Enhanced}
+msg {9:59:47am > 	Support style:	SMART}
+msg {9:59:47am > 	Contour width:	0.5080}
+msg {9:59:47am > 	Number of contours:	6.3500}
+msg {9:59:47am > 	Part interior contours:	0.3810}
+msg {9:59:47am > 	Part raster width:	0.5080}
+msg {9:59:47am > 	Application:	Insight 10.1, Build version: 4582}
+msg {9:59:47am > Saved job:  D:/CAO/ssys_Support 180/Support 180.sjb,  approximate build time 56 min }
+session {11/12 10:00:25am > christine.billon closed job.}
