@@ -58,7 +58,7 @@ void loop() {
   }
 
   /* Reception US */
-  long timeoutUS = dateHFRecu + 300000 // en microsecondes
+  long timeoutUS = dateHFRecu + 300000; // en microsecondes
   while (i <= nbBits && micros() < timeoutUS) {
     if (dateAnalyse != 0 && dateAnalyse > derniereDateAnalysee + bitZero) {
       noInterrupts();

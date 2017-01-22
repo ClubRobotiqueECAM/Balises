@@ -90,6 +90,7 @@ void loop() {
   long departAttente = millis();
   long timeout = departAttente + 1500 * idBalise;
 
+  digitalWrite(ledPin[idBalise - 1], LOW); // Led allumée lors de l'écoute
   //Attente du top
   while (!Mirf.dataReady() && millis() < timeout)
   {
@@ -97,6 +98,8 @@ void loop() {
     //delayMicroseconds(100);
     delay(1);
   }
+  digitalWrite(ledPin[idBalise - 1], HIGH);
+  
   if (debug) Serial.print("J'ai attendu ");
   if (debug) Serial.print(millis() - departAttente);
   if (debug) Serial.println(" ms");
@@ -112,9 +115,9 @@ void loop() {
   if (debug) Serial.print("valeur HF emise: ");
   if (debug) Serial.println(valeur_octet[0] + (valeur_octet[1] << 8), DEC);
 
-  //Attente pour decalé
+  //Attente pour decaler
   delay(25);
-
+  
   //Envoi US
   mProtocoleEmetteur();
   if (debug) Serial.print("valeur US emise: ");

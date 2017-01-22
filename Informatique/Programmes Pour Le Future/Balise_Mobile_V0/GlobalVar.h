@@ -33,13 +33,13 @@
 #include "MirfHardwareSpiDriver.h" // communication SPI nRF24L01
 
 //Parametres Debug
-bool debug = false;
-bool debugHF = false;
-bool debugUS = false;
+bool debug = true;
+bool debugHF = true;
+bool debugUS = true;
 bool bProcessing = true;
 //long DebutDeMot = 0;
-if (debugUS) bool etatPin = 0;
-if (debugUS) int OscilloPin = 8;
+bool etatPin = 0;
+int OscilloPin = 8;
 //Fin Debug
 
 const int T = 19;
