@@ -124,7 +124,7 @@ void loop() {
   if (debug) Serial.println(motTransmis, DEC);
 
   // Attente analyse de reception
-  delay (100);
+  delay(250);
 
   //Changement et envoie HF au Suivant
   Mirf.setTADDR(myAdresses[motTransmis]);

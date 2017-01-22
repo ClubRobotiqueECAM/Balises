@@ -27,8 +27,10 @@ void setup()
 
 void loop()
 {
-  if (dateAnalyse!= 0 && dateAnalyse>dateAnalysedavant+30){
+  if (dateAnalyse!= 0 && dateAnalyse>dateAnalysedavant+20000){
     //Serial.println("Je suis interrompu");
+    if(long(dateAnalyse - dateAnalysedavant) < 60000)
+      Serial.println(long(dateAnalyse - dateAnalysedavant));
     noInterrupts();
     etatPin=!etatPin;
     digitalWrite(OscilloPin,etatPin);
@@ -39,6 +41,6 @@ void loop()
 }
 void takeTheTime() //déclaration de la fonction d'interruption sur voie UL
 {
-    dateAnalyse=millis();  
+    dateAnalyse=micros();
 }
 

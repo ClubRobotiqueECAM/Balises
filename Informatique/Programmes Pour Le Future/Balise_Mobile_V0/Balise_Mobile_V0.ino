@@ -1,24 +1,24 @@
 /*
- * Ce programme contrôles la balise mobile aussi bien le HF que l'US
- *  Ce programme a été remanié depuis les derniers tests.
- *
- * Objectif:
- *   Optimisation du sérial pour ne pas affecter le programme quand on ne l'utilise pas.
- *   Compréhension facile du code par des commentaires très détaillés
- *   Support pour les explications dans le dossier
- *
- * Si il fonctionne avec les balises (normalement c'est le cas) il est préférable de
- * l'utiliser.
- *
- * Si vous avez des questions contactez-nous:
- *   @auteur Maxence Beroujon
- *   @auteur Bruno Bellier    bru.bellier38@gmail.com
- *
- * Copyright (c) 2016
- *   Vous pouvez en faire ce que vous voulez! Mais surtout assez de ne pas le perdre :p
- *   Ce programme ne peut être responsable d'aucune détérioration matériel.
- *   Pour la distribution, consultez la licence de MIRF :p
- */
+   Ce programme contrôles la balise mobile aussi bien le HF que l'US
+    Ce programme a été remanié depuis les derniers tests.
+
+   Objectif:
+     Optimisation du sérial pour ne pas affecter le programme quand on ne l'utilise pas.
+     Compréhension facile du code par des commentaires très détaillés
+     Support pour les explications dans le dossier
+
+   Si il fonctionne avec les balises (normalement c'est le cas) il est préférable de
+   l'utiliser.
+
+   Si vous avez des questions contactez-nous:
+     @auteur Maxence Beroujon
+     @auteur Bruno Bellier    bru.bellier38@gmail.com
+
+   Copyright (c) 2016
+     Vous pouvez en faire ce que vous voulez! Mais surtout assez de ne pas le perdre :p
+     Ce programme ne peut être responsable d'aucune détérioration matériel.
+     Pour la distribution, consultez la licence de MIRF :p
+*/
 
 #include <SPI.h> // gestion du bus SPI 
 #include "GlobalVar.h"
@@ -49,17 +49,20 @@ void loop() {
   dateHFRecu = micros();
   Mirf.getData(motHF_octet); // récupére 2 octets
   motHF = motHF_octet[0] + (motHF_octet[1] << 8); // transforme en int
-  if (debugHF) {
-    Serial.print("Temps d'attente: ");
-    Serial.print(millis() - departAttente, DEC);
-    Serial.print(" ms.");
-    Serial.print(" Le mot HF recu: ");
-    Serial.println(motHF, DEC);
-  }
+  Serial.print("Temps d'attente: ");
+  Serial.print(millis() - departAttente, DEC);
+  Serial.print(" ms.");
+  Serial.print(" Le mot HF recu: ");
+  Serial.println(motHF, DEC);
+
 
   /* Reception US */
   long timeoutUS = dateHFRecu + 300000; // en microsecondes
   while (i <= nbBits && micros() < timeoutUS) {
+    /*Serial.print("dateAnalyse= ");
+    Serial.print(dateAnalyse);
+    Serial.print(" derniereDateAnalysee= ");
+    Serial.println(derniereDateAnalysee);*/
     if (dateAnalyse != 0 && dateAnalyse > derniereDateAnalysee + bitZero) {
       noInterrupts();
       analyseUS();

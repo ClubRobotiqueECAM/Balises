@@ -75,8 +75,8 @@ void analyseUS() {
       dateBitStart = dateAnalyse;
       i = 0;
       motUS = 0;
-      if (debugUS) Serial.print(lDeltaFront);
-      if (debugUS) Serial.println(" En attente du start");
+      /*if (debugUS) Serial.print(lDeltaFront);
+      if (debugUS) Serial.println(" En attente du start");*/
     } else {
       if (debugUS) Serial.print(lDeltaFront);
       if (debugUS) Serial.print(" ms: S ");

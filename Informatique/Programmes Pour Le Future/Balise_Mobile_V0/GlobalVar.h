@@ -34,7 +34,7 @@
 
 //Parametres Debug
 bool debug = true;
-bool debugHF = true;
+bool debugHF = false;
 bool debugUS = true;
 bool bProcessing = true;
 //long DebutDeMot = 0;
